@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>What's on | Nobody Gallery</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="utility-bar">
+        <span data-i18n="status">今日开放 10:00 - 19:00</span>
+        <span data-i18n="location">Shanghai</span>
+      </div>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a class="wordmark" href="../index.html" aria-label="Nobody Gallery home">
+          <img src="../assets/logo.png" alt="Nobody Gallery 旺无名画廊" />
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav-links" id="nav-links">
+          <a href="./" data-i18n="navWhatsOn">what's on</a>
+          <a href="../artists/" data-i18n="navArtists">艺术家</a>
+          <a href="../index.html#visit" data-i18n="navVisit">参观</a>
+          <a href="../index.html#contact" data-i18n="navContact">Contact</a>
+        </div>
+        <div class="lang-switch" aria-label="Language switcher">
+          <button class="active" type="button" data-lang="zh">中</button>
+          <button type="button" data-lang="en">EN</button>
+          <button type="button" data-lang="de">DE</button>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page-main">
+      <section class="page-hero">
+        <div>
+          <p class="kicker">what's on</p>
+          <h1>What's on</h1>
+        </div>
+        <p class="page-lede">
+          这里是展览、即将呈现、项目与历史档案的总入口。每个条目都预留了详情页，后续可以继续加图、展览文本、艺术家资料和作品清单。
+        </p>
+      </section>
+
+      <section class="page-section">
+        <div class="visual-card-grid archive-grid">
+          <a class="visual-card" href="../exhibitions/sun-guangyi-game.html">
+            <div class="visual-card-media poster image-slot">
+              <img src="../assets/exhibitions/sun-guangyi-game-poster.jpg" alt="心手相印的游戏展览海报" />
+            </div>
+            <p class="kicker">Now / 2026.05.23 - 2026.07.08</p>
+            <h2>心手相印的游戏</h2>
+            <p>孙广义 / Guangyi Sun</p>
+          </a>
+          <a class="visual-card is-empty" href="../exhibitions/upcoming.html">
+            <div class="visual-card-media poster"><span>Upcoming</span></div>
+            <p class="kicker">Upcoming</p>
+            <h2>Upcoming Exhibition</h2>
+            <p>展览页面占位</p>
+          </a>
+          <a class="visual-card is-empty" href="../projects/nobody-editions.html">
+            <div class="visual-card-media poster"><span>Project</span></div>
+            <p class="kicker">Project / Ongoing</p>
+            <h2>Nobody Editions</h2>
+            <p>限量作品、出版与衍生项目</p>
+          </a>
+          <a class="visual-card" href="../archive/">
+            <div class="visual-card-media poster image-slot">
+              <img src="../assets/exhibitions/one-thousand-two-nights.jpg" alt="第一千零二夜展览海报" />
+            </div>
+            <p class="kicker">Archive</p>
+            <h2>Exhibition Archive</h2>
+            <p>历史展览索引</p>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>NOBODY GALLERY</p>
+      <p data-i18n="footerLine">nobody is somebody</p>
+    </footer>
+    <script src="../script.js"></script>
+  </body>
+</html>

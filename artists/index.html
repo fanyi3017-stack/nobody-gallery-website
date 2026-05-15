@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artists | Nobody Gallery</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="utility-bar">
+        <span data-i18n="status">今日开放 10:00 - 19:00</span>
+        <span data-i18n="location">Shanghai</span>
+      </div>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a class="wordmark" href="../index.html" aria-label="Nobody Gallery home">
+          <img src="../assets/logo.png" alt="Nobody Gallery 旺无名画廊" />
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav-links" id="nav-links">
+          <a href="../whats-on/" data-i18n="navWhatsOn">what's on</a>
+          <a href="./" data-i18n="navArtists">艺术家</a>
+          <a href="../index.html#visit" data-i18n="navVisit">参观</a>
+          <a href="../index.html#contact" data-i18n="navContact">Contact</a>
+        </div>
+        <div class="lang-switch" aria-label="Language switcher">
+          <button class="active" type="button" data-lang="zh">中</button>
+          <button type="button" data-lang="en">EN</button>
+          <button type="button" data-lang="de">DE</button>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page-main">
+      <section class="page-hero">
+        <div>
+          <p class="kicker">Artists A-Z</p>
+          <h1>Artists</h1>
+        </div>
+        <p class="page-lede">
+          艺术家索引按 A-Z 排列。当前先放入孙广义，其余位置保留为空，后续可以继续增加艺术家详情页、bio、作品与价格。
+        </p>
+      </section>
+
+      <section class="page-section">
+        <div class="visual-card-grid artist-directory" aria-label="Artists A-Z">
+          <a class="visual-card" href="./sun-guangyi.html">
+            <div class="visual-card-media square image-slot">
+              <img src="../assets/artist-avatars/sun-guangyi.jpg" alt="孙广义肖像" />
+            </div>
+            <p class="kicker">G</p>
+            <h2>孙广义</h2>
+            <p>Guangyi Sun</p>
+          </a>
+          <span class="visual-card is-empty">
+            <div class="visual-card-media square"><span>A</span></div>
+            <p class="kicker">A</p>
+            <h2>Open Slot</h2>
+            <p>Artist profile ready</p>
+          </span>
+          <span class="visual-card is-empty">
+            <div class="visual-card-media square"><span>B</span></div>
+            <p class="kicker">B</p>
+            <h2>Open Slot</h2>
+            <p>Artist profile ready</p>
+          </span>
+          <span class="visual-card is-empty">
+            <div class="visual-card-media square"><span>C-Z</span></div>
+            <p class="kicker">C-Z</p>
+            <h2>Open Slot</h2>
+            <p>More artists can be added here</p>
+          </span>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>NOBODY GALLERY</p>
+      <p data-i18n="footerLine">nobody is somebody</p>
+    </footer>
+    <script src="../script.js"></script>
+  </body>
+</html>
