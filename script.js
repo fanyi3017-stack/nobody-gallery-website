@@ -1,179 +1,53 @@
 const copy = {
   zh: {
-    status: "今日开放 10:00 - 19:00",
-    location: "Shanghai",
-    navWhatsOn: "what's on",
-    navArtists: "艺术家",
-    navVisit: "参观",
-    navContact: "Contact",
-    heroKicker: "what's on",
-    heroTitle: "心手相印的游戏",
-    heroText: "旺无名画廊以展览、现场与跨文化对话连接艺术家、作品与观看者。",
-    heroPrimary: "当前展览",
-    heroSecondary: "预约参观",
-    introLead:
-      "Nobody Gallery 关注年轻艺术家、国际驻留、收藏研究与公共教育，将展览作为连接不同语境的开放场域。",
-    exhibitionsKicker: "正在展出 / 即将呈现",
-    exhibitionsTitle: "What's on",
-    currentDates: "2026.05.23 - 2026.07.08",
-    currentTitle: "心手相印的游戏",
-    currentText: "孙广义个展，由范懿策展。开幕时间：2026.05.23 16:00。",
-    currentLink: "进入展览页",
-    programOneType: "Upcoming",
-    programOneTitle: "Upcoming Exhibition",
-    programOneDate: "预留展览详情入口",
-    programTwoType: "Project",
-    programTwoTitle: "Nobody Editions",
-    programTwoDate: "限量作品与出版计划",
-    programThreeType: "Archive",
-    programThreeTitle: "Exhibition Archive",
-    programThreeDate: "历史展览与项目索引",
-    artistsKicker: "艺术家与项目",
-    artistsTitle: "Artists",
-    artistOne: "孙广义 / Guangyi Sun",
-    artistMetaOne: "Painting / Mixed media",
-    artistTwo: "Artists A-Z",
-    artistMetaTwo: "待补充艺术家索引",
-    artistThree: "Open Slot",
-    artistMetaThree: "Artist profile template",
-    visitKicker: "开放信息",
-    visitTitle: "Visit",
-    hoursLabel: "开放时间",
-    hoursValue: "周二至周日 10:00 - 19:00，周一闭馆",
-    xuhuiAddressLabel: "徐汇馆",
-    xuhuiAddressValue: "上海市徐汇区宜山路660号12幢3楼302室",
-    jinshanAddressLabel: "金山馆",
-    jinshanAddressValue: "上海市金山区亭卫公路8255号",
-    bookingLabel: "预约",
-    bookingValue: "团体导览与媒体访问请提前联系。",
-    contactKicker: "Contact",
-    contactTitle: "Contact",
-    contactAddressLabel: "地址",
-    contactAddressValue:
-      "徐汇馆：上海市徐汇区宜山路660号12幢3楼302室 / 金山馆：上海市金山区亭卫公路8255号",
-    contactEmailLabel: "邮箱",
-    emailLabel: "订阅展讯",
-    emailButton: "提交",
+    status: "周二至周日开放 10:00 - 19:00",
+    location: "上海",
+    openingTimes: "开放时间",
+    navWhatsOn: "当前展览",
+    navAbout: "关于",
+    navPlanVisit: "参观计划",
+    navTicketInfo: "票务信息",
+    navShop: "商店",
+    navArtists: "商店",
+    navVisit: "参观计划",
+    navContact: "联系",
+    heroKicker: "当前展览",
+    heroPrimary: "了解更多",
+    heroSecondary: "计划参观",
     footerLine: "nobody is somebody",
   },
   en: {
-    status: "Open today 10:00 - 19:00",
+    status: "Open Tuesday - Sunday, 10:00 - 19:00",
     location: "Shanghai",
+    openingTimes: "Opening times",
     navWhatsOn: "What's on",
-    navArtists: "Artists",
-    navVisit: "Visit",
+    navAbout: "About",
+    navPlanVisit: "Plan your visit",
+    navTicketInfo: "Ticket Info",
+    navShop: "Shop",
+    navArtists: "Shop",
+    navVisit: "Plan your visit",
     navContact: "Contact",
     heroKicker: "What's on",
-    heroTitle: "The Game of Heart and Hand",
-    heroText:
-      "Nobody Gallery connects artists, artworks, and audiences through exhibitions, live encounters, and cross-cultural dialogue.",
-    heroPrimary: "Current exhibition",
-    heroSecondary: "Plan a visit",
-    introLead:
-      "Nobody Gallery supports emerging artists, international residencies, collection research, and public learning through exhibitions that connect different contexts.",
-    exhibitionsKicker: "Now / Upcoming",
-    exhibitionsTitle: "Exhibitions",
-    currentDates: "23 May 2026 - 08 Jul 2026",
-    currentTitle: "The Game of Heart and Hand",
-    currentText:
-      "A solo exhibition by Guangyi Sun, curated by Yi Fan. Opening: 23 May 2026, 16:00.",
-    currentLink: "Enter exhibition",
-    programOneType: "Upcoming",
-    programOneTitle: "Upcoming Exhibition",
-    programOneDate: "Reserved detail-page entry",
-    programTwoType: "Project",
-    programTwoTitle: "Nobody Editions",
-    programTwoDate: "Limited works and publishing",
-    programThreeType: "Archive",
-    programThreeTitle: "Exhibition Archive",
-    programThreeDate: "Past exhibitions and projects",
-    artistsKicker: "Artists and projects",
-    artistsTitle: "Artists",
-    artistOne: "Guangyi Sun",
-    artistMetaOne: "Painting / Mixed media",
-    artistTwo: "Artists A-Z",
-    artistMetaTwo: "Index to be expanded",
-    artistThree: "Open Slot",
-    artistMetaThree: "Artist profile template",
-    visitKicker: "Visitor information",
-    visitTitle: "Visit",
-    hoursLabel: "Opening hours",
-    hoursValue: "Tue - Sun, 10:00 - 19:00. Closed Mondays.",
-    xuhuiAddressLabel: "Xuhui space",
-    xuhuiAddressValue:
-      "Room 302, 3/F, Building 12, 660 Yishan Road, Xuhui District, Shanghai, China.",
-    jinshanAddressLabel: "Jinshan space",
-    jinshanAddressValue: "8255 Tingwei Road, Jinshan District, Shanghai, China.",
-    bookingLabel: "Booking",
-    bookingValue: "Please contact us in advance for group tours and press visits.",
-    contactKicker: "Contact",
-    contactTitle: "Stay in touch",
-    contactAddressLabel: "Address",
-    contactAddressValue:
-      "Xuhui: Room 302, 3/F, Building 12, 660 Yishan Road, Xuhui District, Shanghai, China. Jinshan: 8255 Tingwei Road, Jinshan District, Shanghai, China.",
-    contactEmailLabel: "Email",
-    emailLabel: "Subscribe for updates",
-    emailButton: "Submit",
+    heroPrimary: "More info",
+    heroSecondary: "Plan your visit",
     footerLine: "nobody is somebody",
   },
   de: {
-    status: "Heute geoeffnet 10:00 - 19:00",
+    status: "Di - So geoeffnet, 10:00 - 19:00",
     location: "Shanghai",
+    openingTimes: "Opening times",
     navWhatsOn: "What's on",
-    navArtists: "Kuenstler",
-    navVisit: "Besuch",
+    navAbout: "About",
+    navPlanVisit: "Plan your visit",
+    navTicketInfo: "Ticket Info",
+    navShop: "Shop",
+    navArtists: "Shop",
+    navVisit: "Plan your visit",
     navContact: "Contact",
     heroKicker: "What's on",
-    heroTitle: "Das Spiel von Herz und Hand",
-    heroText:
-      "Nobody Gallery verbindet Kuenstler, Werke und Publikum durch Ausstellungen, Begegnungen und kulturellen Dialog.",
-    heroPrimary: "Aktuelle Ausstellung",
-    heroSecondary: "Besuch planen",
-    introLead:
-      "Nobody Gallery foerdert junge Kuenstler, internationale Residenzen, Sammlungsforschung und oeffentliche Bildung durch Ausstellungen, die verschiedene Kontexte verbinden.",
-    exhibitionsKicker: "Aktuell / Demnaechst",
-    exhibitionsTitle: "Ausstellungen",
-    currentDates: "23.05.2026 - 08.07.2026",
-    currentTitle: "Das Spiel von Herz und Hand",
-    currentText:
-      "Einzelausstellung von Guangyi Sun, kuratiert von Yi Fan. Eroeffnung: 23.05.2026, 16:00.",
-    currentLink: "Zur Ausstellung",
-    programOneType: "Demnaechst",
-    programOneTitle: "Upcoming Exhibition",
-    programOneDate: "Detailseite als Platzhalter",
-    programTwoType: "Projekt",
-    programTwoTitle: "Nobody Editions",
-    programTwoDate: "Limitierte Werke und Publikationen",
-    programThreeType: "Archiv",
-    programThreeTitle: "Exhibition Archive",
-    programThreeDate: "Vergangene Ausstellungen und Projekte",
-    artistsKicker: "Kuenstler und Projekte",
-    artistsTitle: "Kuenstler",
-    artistOne: "Guangyi Sun",
-    artistMetaOne: "Malerei / Mixed Media",
-    artistTwo: "Artists A-Z",
-    artistMetaTwo: "Index wird ergaenzt",
-    artistThree: "Open Slot",
-    artistMetaThree: "Vorlage fuer Kuenstlerprofil",
-    visitKicker: "Besucherinformation",
-    visitTitle: "Besuch",
-    hoursLabel: "Oeffnungszeiten",
-    hoursValue: "Di - So, 10:00 - 19:00. Montags geschlossen.",
-    xuhuiAddressLabel: "Xuhui Space",
-    xuhuiAddressValue:
-      "Raum 302, 3. Etage, Gebaeude 12, Yishan Road 660, Bezirk Xuhui, Shanghai, China.",
-    jinshanAddressLabel: "Jinshan Space",
-    jinshanAddressValue: "Tingwei Road 8255, Bezirk Jinshan, Shanghai, China.",
-    bookingLabel: "Buchung",
-    bookingValue: "Fuer Gruppenfuehrungen und Pressebesuche kontaktieren Sie uns bitte vorab.",
-    contactKicker: "Contact",
-    contactTitle: "Contact",
-    contactAddressLabel: "Adresse",
-    contactAddressValue:
-      "Xuhui: Raum 302, 3. Etage, Gebaeude 12, Yishan Road 660, Bezirk Xuhui, Shanghai, China. Jinshan: Tingwei Road 8255, Bezirk Jinshan, Shanghai, China.",
-    contactEmailLabel: "E-Mail",
-    emailLabel: "Ausstellungsnews abonnieren",
-    emailButton: "Senden",
+    heroPrimary: "More info",
+    heroSecondary: "Plan your visit",
     footerLine: "nobody is somebody",
   },
 };
@@ -197,6 +71,95 @@ function setLanguage(lang) {
   });
 
   localStorage.setItem("nobody-gallery-lang", lang);
+}
+
+function getPath(source, path) {
+  return path.split(".").reduce((value, key) => {
+    if (value && Object.prototype.hasOwnProperty.call(value, key)) {
+      return value[key];
+    }
+    return undefined;
+  }, source);
+}
+
+function publicUrl(url) {
+  if (!url || url.startsWith("http") || url.startsWith("mailto:") || url.startsWith("/")) {
+    return url;
+  }
+  return `/${url.replace(/^\.\//, "")}`;
+}
+
+function applyContent(data) {
+  document.querySelectorAll("[data-content]").forEach((node) => {
+    const value = getPath(data, node.dataset.content);
+    if (typeof value === "string") {
+      node.textContent = value;
+    }
+  });
+
+  document.querySelectorAll("[data-content-html]").forEach((node) => {
+    const value = getPath(data, node.dataset.contentHtml);
+    if (typeof value === "string") {
+      node.innerHTML = value;
+    }
+  });
+
+  document.querySelectorAll("[data-content-attr]").forEach((node) => {
+    const [path, attr] = node.dataset.contentAttr.split(":");
+    const value = getPath(data, path);
+    if (typeof value === "string" && attr) {
+      node.setAttribute(attr, attr === "src" || attr === "href" ? publicUrl(value) : value);
+    }
+  });
+}
+
+function renderProgrammeCard(item) {
+  const imageMarkup = item.image
+    ? `<img src="${publicUrl(item.image)}" alt="${item.imageAlt || item.title}" />`
+    : `<span>${item.placeholder || "Programme"}</span>`;
+  const imageClass = item.image ? "visual-card-media image-slot" : "visual-card-media";
+  const admission = item.admission ? `<p class="admission"><strong>参观：</strong>${item.admission}</p>` : "";
+
+  return `
+    <article class="programme-card">
+      <a class="${imageClass}" href="${publicUrl(item.url)}">
+        ${imageMarkup}
+      </a>
+      <div>
+        <p class="programme-type">${item.type || ""}</p>
+        <h3>${item.title || ""}</h3>
+        <p>${item.meta || ""}</p>
+        <p class="description">${item.description || ""}</p>
+        ${admission}
+        <div class="card-actions">
+          <a class="button" href="${publicUrl(item.url)}">${item.buttonLabel || "了解更多"}</a>
+        </div>
+      </div>
+    </article>
+  `;
+}
+
+function renderProgrammeLists(data) {
+  const programmes = data.programmes || {};
+  document.querySelectorAll("[data-programme-list]").forEach((node) => {
+    const listName = node.dataset.programmeList;
+    const items = listName === "home-now" ? (programmes.now || []).slice(0, 2) : programmes[listName] || [];
+    if (items.length) {
+      node.innerHTML = items.map(renderProgrammeCard).join("");
+    }
+  });
+}
+
+async function loadEditableContent() {
+  try {
+    const response = await fetch("/content/site.json", { cache: "no-store" });
+    if (!response.ok) return;
+    const data = await response.json();
+    applyContent(data);
+    renderProgrammeLists(data);
+  } catch (error) {
+    console.warn("Editable content could not be loaded.", error);
+  }
 }
 
 if (navToggle && navLinks) {
@@ -225,4 +188,5 @@ if (mailForm) {
   });
 }
 
-setLanguage(localStorage.getItem("nobody-gallery-lang") || "zh");
+setLanguage("zh");
+loadEditableContent();

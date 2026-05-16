@@ -1,0 +1,66 @@
+backend:
+  name: github
+  repo: fanyi3017-stack/nobody-gallery-website
+  branch: main
+
+local_backend: true
+publish_mode: editorial_workflow
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  - name: "site_content"
+    label: "网站内容"
+    files:
+      - label: "首页 / 关于 / 展览列表"
+        name: "site"
+        file: "content/site.json"
+        format: "json"
+        fields:
+          - label: "首页主视觉"
+            name: "home"
+            widget: "object"
+            fields:
+              - label: "主视觉"
+                name: "hero"
+                widget: "object"
+                fields:
+                  - { label: "展览标题", name: "title", widget: "string" }
+                  - { label: "展期", name: "dates", widget: "string" }
+                  - { label: "摘要", name: "summary", widget: "text" }
+                  - { label: "图片路径", name: "image", widget: "image", required: false }
+          - label: "关于"
+            name: "about"
+            widget: "object"
+            fields:
+              - { label: "引言", name: "quote", widget: "text" }
+              - { label: "首页关于 HTML", name: "homeHtml", widget: "text" }
+              - { label: "故事 HTML", name: "storyHtml", widget: "text" }
+              - { label: "理念 HTML", name: "missionHtml", widget: "text" }
+              - { label: "艺术家招募 HTML", name: "artistCallHtml", widget: "text" }
+          - label: "展览列表"
+            name: "programmes"
+            widget: "object"
+            fields:
+              - label: "正在展出"
+                name: "now"
+                widget: "list"
+                fields: &programme_fields
+                  - { label: "类型", name: "type", widget: "string" }
+                  - { label: "标题", name: "title", widget: "string" }
+                  - { label: "时间地点", name: "meta", widget: "string" }
+                  - { label: "简介", name: "description", widget: "text" }
+                  - { label: "参观说明", name: "admission", widget: "string", required: false }
+                  - { label: "图片", name: "image", widget: "image", required: false }
+                  - { label: "图片替代文字", name: "imageAlt", widget: "string", required: false }
+                  - { label: "无图占位文字", name: "placeholder", widget: "string", required: false }
+                  - { label: "链接", name: "url", widget: "string" }
+                  - { label: "按钮文字", name: "buttonLabel", widget: "string", default: "了解更多" }
+              - label: "即将呈现"
+                name: "upcoming"
+                widget: "list"
+                fields: *programme_fields
+              - label: "过往展览"
+                name: "past"
+                widget: "list"
+                fields: *programme_fields

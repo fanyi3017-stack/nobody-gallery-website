@@ -2,79 +2,70 @@
 
 ## Project Goal
 
-Build a multilingual Nobody Gallery website prototype with a Saatchi Gallery-like editorial/gallery structure: restrained layout, strong exhibition hierarchy, clear navigation, and room to grow into a real gallery website.
+Build a static Nobody Gallery website prototype with a Saatchi Gallery-inspired hierarchy: current exhibition first, clear programme layers, About, Visit, Ticket Info, Shop, Archive, and artist detail pages.
 
-The site should support Chinese, English, and German UI switching, and should include:
+The project remains plain HTML/CSS/JS and is suitable for Cloudflare Pages hosting plus Decap CMS content editing.
 
-- Homepage
-- What's on index
-- Current exhibition detail
-- Upcoming exhibition placeholder
-- Project placeholder
-- Archive index and archive exhibition detail
-- Artists A-Z index
-- Artist profile/detail page with bio and works table
-- Visit/contact information with both gallery locations
-
-## Current Status
-
-The project is a static HTML/CSS/JS site. It does not require GitHub, a build system, npm, or deployment tooling to run locally.
-
-Local preview is available with:
+## Local Preview
 
 ```bash
 python3 -m http.server 4173
 ```
 
-Then open:
+Open:
 
 ```text
 http://localhost:4173
 ```
 
-The site currently includes 9 HTML pages:
+## Latest Structural Direction
 
-- `index.html`
-- `whats-on/index.html`
-- `exhibitions/sun-guangyi-game.html`
-- `exhibitions/upcoming.html`
-- `projects/nobody-editions.html`
-- `archive/index.html`
-- `archive/one-thousand-two-nights.html`
-- `artists/index.html`
-- `artists/sun-guangyi.html`
+The homepage now keeps only:
 
-## Changed Files
+- current exhibition hero
+- sticky current exhibitions section
+- macaron-green About section
 
-Core files:
+Shop and Visit previews were removed from the homepage because those now live in their own top-level pages.
 
-- `index.html`: homepage, navigation, current exhibition feature, artist teasers, visit/contact info
-- `styles.css`: global layout, responsive styles, page/detail/index/table styles
-- `script.js`: Chinese/English/German UI dictionary and language switching
-- `README.md`: project usage and page map
+## Current Navigation
 
-New handoff files:
+- 当前展览
+- 关于
+- 参观计划
+- 票务信息
+- 商店
 
-- `HANDOFF.md`: this handoff summary
-- `BACKUP_NOTES.md`: extra source/context notes
+`Now / Upcoming / Past` are no longer sections on one page. They are independent pages:
 
-Content pages:
+- `/whats-on/now/`
+- `/whats-on/upcoming/`
+- `/whats-on/past/`
 
-- `whats-on/index.html`: what's on index with links into current, upcoming, project, archive
-- `exhibitions/sun-guangyi-game.html`: current exhibition detail for `心手相印的游戏`
-- `exhibitions/upcoming.html`: placeholder detail page for future upcoming exhibition
-- `projects/nobody-editions.html`: placeholder project detail page
-- `archive/index.html`: archive index
-- `archive/one-thousand-two-nights.html`: archive detail for `第一千零二夜`
-- `artists/index.html`: Artists A-Z index
-- `artists/sun-guangyi.html`: artist profile template for Guangyi Sun with works and prices
+## Current Pages
 
-Assets:
+- `index.html`: current exhibition hero, current exhibitions, About
+- `whats-on/index.html`: redirect to `whats-on/now/`
+- `whats-on/now/index.html`: current exhibitions
+- `whats-on/upcoming/index.html`: upcoming exhibitions and events
+- `whats-on/past/index.html`: past exhibitions
+- `about/index.html`: gallery story, philosophy, artist call
+- `visit/index.html`: opening times, spaces, booking info
+- `ticket-info/index.html`: ticket layer for future screenings, talks, events
+- `shop/index.html`: featured artists and available works
+- `exhibitions/sun-guangyi-game.html`: current exhibition detail
+- `artists/sun-guangyi.html`: artist profile and works list
+- archive/project placeholder pages are retained
 
-- `assets/logo.png`: optimized Nobody Gallery logo used on site
-- `assets/exhibitions/sun-guangyi-game.jpg`: optimized exhibition image for `心手相印的游戏`
-- `assets/exhibitions/one-thousand-two-nights.jpg`: optimized exhibition image for `第一千零二夜`
-- `assets/artists/sun-guangyi.jpg`: current placeholder/artist image for Guangyi Sun
+## CMS-Ready Files
+
+- `admin/index.html`: Decap CMS entry
+- `admin/config.yml`: Decap CMS config
+- `content/site.json`: editable content source consumed by `script.js`
+- `assets/uploads/.gitkeep`: upload folder placeholder
+- `CMS_SETUP.md`: notes for Cloudflare Pages and Decap CMS setup
+
+Decap CMS is the editing interface. Cloudflare Pages is the static hosting and publishing platform.
 
 ## Current Content
 
@@ -88,119 +79,34 @@ Current exhibition:
 - Curator: `范懿 / Yi Fan`
 - WeChat article link: `https://mp.weixin.qq.com/s/8H-DtUTQD0za3LijRqoHHw`
 
-Archive example:
+About:
 
-- Title: `第一千零二夜`
-- English working title: `One Thousand and Two Nights`
-- Artist: `周韫仪 / Zhou Yunyi`
-- Duration: `2026.03.29 - 2026.05.18`
-- Opening: `2026.03.29 16:00`
-- Curator: `范懿 / Yi Fan`
-- WeChat article link: `https://mp.weixin.qq.com/s/9GtFsjLOdmfY6gNeBL69bg`
+- Added Walter Benjamin / “nobody is somebody” text in Chinese
+- Added artist recruitment / open call language
 
 Visit/contact:
 
-- Hours: Tue-Sun, `10:00-19:00`; Monday closed
+- Hours: Tuesday - Sunday, `10:00-19:00`; Monday closed
 - Xuhui space: `上海市徐汇区宜山路660号12幢3楼302室`
 - Jinshan space: `上海市金山区亭卫公路8255号`
 - Email: `nobodygallery@163.com`
+- Instagram link currently points to `https://www.instagram.com/nobodygallery/` and should be replaced if the final handle differs.
 
-## Verification Already Done
+## Verification
 
-Static checks:
+Run after changes:
 
 ```bash
 node --check script.js
+node -e "JSON.parse(require('fs').readFileSync('content/site.json','utf8')); console.log('JSON OK')"
 ```
 
-Local link/image path check was run across all 9 HTML files.
-
-HTTP checks returned `200` for:
-
-- `/`
-- `/whats-on/`
-- `/exhibitions/sun-guangyi-game.html`
-- `/exhibitions/upcoming.html`
-- `/projects/nobody-editions.html`
-- `/archive/`
-- `/archive/one-thousand-two-nights.html`
-- `/artists/`
-- `/artists/sun-guangyi.html`
-
-Safari visual spot-check:
-
-- Homepage loads
-- Hero logo above `nobody is somebody` has been removed
-- `what's on` appears above hero title
-- Current exhibition image appears
-- Sun Guangyi exhibition detail page loads and shows metadata, poster image, text, and works table
+Also run local HTTP/link checks and browser visual checks before deploy.
 
 ## Unfinished Tasks
 
-- Replace placeholder copy with final gallery-approved exhibition text.
-- Add finalized English and German translations for detail pages. Current language switch only updates shared UI/navigation/contact copy.
-- Add real artist bios, CVs, portraits, and statements.
-- Add real artwork images for each artwork in the Sun Guangyi list.
-- Confirm all Sun Guangyi artwork names, dimensions, prices, and availability before publishing.
-- Decide whether prices should be public or hidden behind inquiry.
-- Expand Upcoming, Project, Archive, and Artists pages with real entries.
-- Add form handling for newsletter/contact submission; current form only resets locally.
-- Add SEO metadata and social sharing images.
-- Add deployment target when ready.
-
-## Setup Commands
-
-From the project root:
-
-```bash
-cd /Users/amarisxue/Documents/Codex/2026-05-12/files-mentioned-by-the-user-wechatimg30
-python3 -m http.server 4173
-```
-
-Open:
-
-```text
-http://localhost:4173
-```
-
-No install step is required.
-
-## Next Steps
-
-1. Review the homepage and the Sun Guangyi exhibition page visually.
-2. Decide whether the homepage hero should use a full exhibition poster crop or a more editorial installation/teaser image.
-3. Provide finalized bios for Guangyi Sun and future artists.
-4. Provide final exhibition texts for current, upcoming, project, and archive pages.
-5. Provide artwork images and confirm which works/prices should be public.
-6. When ready, choose deployment path: static host, existing website builder, or GitHub/Vercel later.
-
-## Files To Bring Into The Next Conversation
-
-Upload or download the entire project folder:
-
-```text
-/Users/amarisxue/Documents/Codex/2026-05-12/files-mentioned-by-the-user-wechatimg30
-```
-
-If uploading individual files instead of the full folder, include every file listed below:
-
-```text
-HANDOFF.md
-BACKUP_NOTES.md
-README.md
-index.html
-styles.css
-script.js
-whats-on/index.html
-exhibitions/sun-guangyi-game.html
-exhibitions/upcoming.html
-projects/nobody-editions.html
-archive/index.html
-archive/one-thousand-two-nights.html
-artists/index.html
-artists/sun-guangyi.html
-assets/logo.png
-assets/exhibitions/sun-guangyi-game.jpg
-assets/exhibitions/one-thousand-two-nights.jpg
-assets/artists/sun-guangyi.jpg
-```
+- Confirm final Instagram URL.
+- Configure Decap CMS GitHub OAuth/auth for the Cloudflare Pages domain.
+- Add final images and texts for Upcoming, Ticket Info, Shop, and all artist shop entries.
+- Decide whether prices remain public or become inquiry-only.
+- Deploy via Cloudflare Pages when ready.

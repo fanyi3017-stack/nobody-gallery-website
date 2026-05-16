@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>过往展览 | Nobody Gallery</title>
+    <link rel="stylesheet" href="../../styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-top">
+        <a class="wordmark" href="../../index.html" aria-label="Nobody Gallery home">
+          <img src="../../assets/logo.png" alt="Nobody Gallery 旺无名画廊" />
+        </a>
+        <div class="header-meta" aria-label="Gallery status">
+          <span data-i18n="status">周二至周日开放 10:00 - 19:00</span>
+          <a class="opening-link" href="../../visit/" data-i18n="openingTimes">开放时间</a>
+        </div>
+      </div>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav-links" id="nav-links">
+          <a href="../now/" data-i18n="navWhatsOn">当前展览</a>
+          <a href="../../about/" data-i18n="navAbout">关于</a>
+          <a href="../../visit/" data-i18n="navPlanVisit">参观计划</a>
+          <a href="../../ticket-info/" data-i18n="navTicketInfo">票务信息</a>
+          <a href="../../shop/" data-i18n="navShop">商店</a>
+        </div>
+        <div class="nav-tools">
+          <div class="social-links" aria-label="Contact links">
+            <a class="social-icon" href="mailto:nobodygallery@163.com" aria-label="Email Nobody Gallery">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M4 6h16v12H4z" stroke-width="1.8" />
+                <path d="m4 7 8 6 8-6" stroke-width="1.8" />
+              </svg>
+            </a>
+          </div>
+          <div class="lang-switch" aria-label="Language switcher">
+            <button class="active" type="button" data-lang="zh">中</button>
+            <button type="button" data-lang="en">EN</button>
+            <button type="button" data-lang="de">DE</button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page-main">
+      <section class="page-hero compact-page-hero">
+        <div>
+          <h1>过往展览</h1>
+          <div class="section-tabs" aria-label="Programme filters">
+            <a href="../now/">正在展出</a>
+            <span>|</span>
+            <a href="../upcoming/">即将呈现</a>
+            <span>|</span>
+            <a class="active" href="./">过往展览</a>
+          </div>
+        </div>
+        <p class="page-lede">历史展览和项目按档案方式保留，可继续进入每个展览详情。</p>
+      </section>
+
+      <section class="page-section">
+        <div class="programme-grid" data-programme-list="past">
+          <article class="programme-card">
+            <a class="visual-card-media image-slot" href="../../archive/one-thousand-two-nights.html">
+              <img src="../../assets/exhibitions/one-thousand-two-nights.jpg" alt="第一千零二夜展览海报" />
+            </a>
+            <div>
+              <p class="programme-type">过往展览</p>
+              <h3>第一千零二夜</h3>
+              <p>2026.03.29 - 2026.05.18</p>
+              <p class="description">周韫仪个展，由范懿策展。</p>
+              <div class="card-actions">
+                <a class="button" href="../../archive/one-thousand-two-nights.html">了解更多</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer"><p>NOBODY GALLERY</p></footer>
+    <script src="../../script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>商店 | Nobody Gallery</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-top">
+        <a class="wordmark" href="../index.html" aria-label="Nobody Gallery home">
+          <img src="../assets/logo.png" alt="Nobody Gallery 旺无名画廊" />
+        </a>
+        <div class="header-meta" aria-label="Gallery status">
+          <span data-i18n="status">周二至周日开放 10:00 - 19:00</span>
+          <a class="opening-link" href="../visit/" data-i18n="openingTimes">开放时间</a>
+        </div>
+      </div>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav-links" id="nav-links">
+          <a href="../whats-on/now/" data-i18n="navWhatsOn">当前展览</a>
+          <a href="../about/" data-i18n="navAbout">关于</a>
+          <a href="../visit/" data-i18n="navPlanVisit">参观计划</a>
+          <a href="../ticket-info/" data-i18n="navTicketInfo">票务信息</a>
+          <a href="./" data-i18n="navShop">商店</a>
+        </div>
+        <div class="nav-tools">
+          <div class="social-links" aria-label="Contact links">
+            <a class="social-icon" href="mailto:nobodygallery@163.com" aria-label="Email Nobody Gallery">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M4 6h16v12H4z" stroke-width="1.8" />
+                <path d="m4 7 8 6 8-6" stroke-width="1.8" />
+              </svg>
+            </a>
+            <a class="social-icon" href="https://www.instagram.com/nobodygallery/" target="_blank" rel="noreferrer" aria-label="Nobody Gallery Instagram">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <rect x="5" y="5" width="14" height="14" rx="4" stroke-width="1.8" />
+                <circle cx="12" cy="12" r="3.4" stroke-width="1.8" />
+                <circle cx="16.5" cy="7.5" r="0.9" fill="currentColor" />
+              </svg>
+            </a>
+          </div>
+          <div class="lang-switch" aria-label="Language switcher">
+            <button class="active" type="button" data-lang="zh">中</button>
+            <button type="button" data-lang="en">EN</button>
+            <button type="button" data-lang="de">DE</button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="shop-hero">
+        <div class="media-slot image-slot image-contain">
+          <img src="../assets/works/sun-wenming-suipian.png" alt="孙广义作品，文明碎片" />
+        </div>
+        <div class="shop-hero-copy">
+          <h1 class="shop-heading">商店</h1>
+          <p>浏览旺无名画廊的在售作品、限量版本和艺术家页面。</p>
+          <div class="action-row">
+            <a class="button" href="#sun-guangyi">查看艺术家</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="page-main page-section" id="sun-guangyi">
+        <div class="section-heading">
+          <p class="kicker">艺术家</p>
+          <h2>在售艺术家</h2>
+        </div>
+
+        <div class="shop-artist-grid">
+          <a class="shop-artist-card" href="../artists/sun-guangyi.html">
+            <div class="visual-card-media image-slot">
+              <img src="../assets/works/sun-wujin.png" alt="孙广义作品，无尽" />
+            </div>
+            <div class="shop-artist-meta">
+              <div class="shop-artist-avatar">
+                <img src="../assets/artist-avatars/sun-guangyi.jpg" alt="孙广义肖像" />
+              </div>
+              <div>
+                <p class="kicker">G</p>
+                <h2>孙广义</h2>
+                <p>Guangyi Sun</p>
+              </div>
+            </div>
+            <span class="button">查看</span>
+          </a>
+          <span class="shop-artist-card is-empty">
+            <div class="visual-card-media"><span>艺术家</span></div>
+            <div class="shop-artist-meta">
+              <div class="shop-artist-avatar"></div>
+              <div>
+                <p class="kicker">待补充</p>
+                <h2>即将加入</h2>
+                <p>艺术家商店入口</p>
+              </div>
+            </div>
+            <span class="button">查看</span>
+          </span>
+          <span class="shop-artist-card is-empty">
+            <div class="visual-card-media"><span>艺术家</span></div>
+            <div class="shop-artist-meta">
+              <div class="shop-artist-avatar"></div>
+              <div>
+                <p class="kicker">待补充</p>
+                <h2>即将加入</h2>
+                <p>艺术家商店入口</p>
+              </div>
+            </div>
+            <span class="button">查看</span>
+          </span>
+          <span class="shop-artist-card is-empty">
+            <div class="visual-card-media"><span>艺术家</span></div>
+            <div class="shop-artist-meta">
+              <div class="shop-artist-avatar"></div>
+              <div>
+                <p class="kicker">待补充</p>
+                <h2>即将加入</h2>
+                <p>艺术家商店入口</p>
+              </div>
+            </div>
+            <span class="button">查看</span>
+          </span>
+        </div>
+      </section>
+
+      <section class="page-main page-section works-section">
+        <h2>在售作品</h2>
+        <div class="work-grid">
+          <article class="work-card">
+            <div class="work-image image-slot"><img src="../assets/works/sun-song-ci.png" alt="宋瓷作品图" /></div>
+            <h3>宋瓷</h3><p>40 x 20 cm</p><p>RMB 12,000</p>
+          </article>
+          <article class="work-card">
+            <div class="work-image image-slot"><img src="../assets/works/sun-shang.png" alt="殇作品图" /></div>
+            <h3>殇</h3><p>40 x 20 cm</p><p>RMB 12,000</p>
+          </article>
+          <article class="work-card">
+            <div class="work-image image-slot"><img src="../assets/works/sun-chai-an.png" alt="柴庵作品图" /></div>
+            <h3>柴庵</h3><p>40 x 40 cm</p><p>RMB 18,000</p>
+          </article>
+          <article class="work-card">
+            <div class="work-image image-slot"><img src="../assets/works/sun-dunhuang.png" alt="敦煌遗韵作品图" /></div>
+            <h3>敦煌遗韵</h3><p>40 x 40 cm</p><p>RMB 18,000</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>NOBODY GALLERY</p>
+      <div class="social-links" aria-label="Contact links">
+        <a class="social-icon" href="mailto:nobodygallery@163.com" aria-label="Email Nobody Gallery">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M4 6h16v12H4z" stroke-width="1.8" />
+            <path d="m4 7 8 6 8-6" stroke-width="1.8" />
+          </svg>
+        </a>
+        <a class="social-icon" href="https://www.instagram.com/nobodygallery/" target="_blank" rel="noreferrer" aria-label="Nobody Gallery Instagram">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <rect x="5" y="5" width="14" height="14" rx="4" stroke-width="1.8" />
+            <circle cx="12" cy="12" r="3.4" stroke-width="1.8" />
+            <circle cx="16.5" cy="7.5" r="0.9" fill="currentColor" />
+          </svg>
+        </a>
+      </div>
+    </footer>
+    <script src="../script.js"></script>
+  </body>
+</html>

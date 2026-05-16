@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>票务信息 | Nobody Gallery</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-top">
+        <a class="wordmark" href="../index.html" aria-label="Nobody Gallery home">
+          <img src="../assets/logo.png" alt="Nobody Gallery 旺无名画廊" />
+        </a>
+        <div class="header-meta" aria-label="Gallery status">
+          <span data-i18n="status">周二至周日开放 10:00 - 19:00</span>
+          <a class="opening-link" href="../visit/" data-i18n="openingTimes">开放时间</a>
+        </div>
+      </div>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav-links" id="nav-links">
+          <a href="../whats-on/now/" data-i18n="navWhatsOn">当前展览</a>
+          <a href="../about/" data-i18n="navAbout">关于</a>
+          <a href="../visit/" data-i18n="navPlanVisit">参观计划</a>
+          <a href="./" data-i18n="navTicketInfo">票务信息</a>
+          <a href="../shop/" data-i18n="navShop">商店</a>
+        </div>
+        <div class="nav-tools">
+          <div class="social-links" aria-label="Contact links">
+            <a class="social-icon" href="mailto:nobodygallery@163.com" aria-label="Email Nobody Gallery">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M4 6h16v12H4z" stroke-width="1.8" />
+                <path d="m4 7 8 6 8-6" stroke-width="1.8" />
+              </svg>
+            </a>
+            <a class="social-icon" href="https://www.instagram.com/nobodygallery/" target="_blank" rel="noreferrer" aria-label="Nobody Gallery Instagram">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <rect x="5" y="5" width="14" height="14" rx="4" stroke-width="1.8" />
+                <circle cx="12" cy="12" r="3.4" stroke-width="1.8" />
+                <circle cx="16.5" cy="7.5" r="0.9" fill="currentColor" />
+              </svg>
+            </a>
+          </div>
+          <div class="lang-switch" aria-label="Language switcher">
+            <button class="active" type="button" data-lang="zh">中</button>
+            <button type="button" data-lang="en">EN</button>
+            <button type="button" data-lang="de">DE</button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page-main">
+      <section class="page-hero">
+        <div>
+          <p class="kicker">票务</p>
+          <h1>票务信息</h1>
+        </div>
+        <p class="page-lede">
+          这里为未来电影放映、公共活动、艺术家谈话和特别项目预留票务层级。展览免费信息也会在这里统一说明。
+        </p>
+      </section>
+
+      <section class="page-section ticket-layout">
+        <nav class="side-nav" aria-label="Ticket sections">
+          <a class="active" href="#exhibitions">展览</a>
+          <a href="#screenings">放映</a>
+          <a href="#events">活动</a>
+        </nav>
+
+        <div class="ticket-content">
+          <section id="exhibitions">
+            <h2>展览</h2>
+            <div class="ticket-grid">
+              <div class="ticket-card">
+                <p class="label">当前展览</p>
+                <p>免费开放。团体参观与导览请提前预约。</p>
+              </div>
+              <div class="ticket-card">
+                <p class="label">预约</p>
+                <p>团体参观、媒体访问和特别安排请发送邮件至 nobodygallery@163.com。</p>
+              </div>
+            </div>
+          </section>
+
+          <section id="screenings" class="page-section">
+            <h2>放映</h2>
+            <p>
+              电影放映票务将在项目确认后发布。这里会预留票务链接、价格、人数限制和观众须知。
+            </p>
+          </section>
+
+          <section id="events" class="page-section">
+            <h2>活动</h2>
+            <p>
+              艺术家谈话、表演、工作坊和公共项目也会使用同一票务层级，后续内容可通过 Decap CMS 更新，并由 Cloudflare Pages 发布。
+            </p>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>NOBODY GALLERY</p>
+      <div class="social-links" aria-label="Contact links">
+        <a class="social-icon" href="mailto:nobodygallery@163.com" aria-label="Email Nobody Gallery">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M4 6h16v12H4z" stroke-width="1.8" />
+            <path d="m4 7 8 6 8-6" stroke-width="1.8" />
+          </svg>
+        </a>
+        <a class="social-icon" href="https://www.instagram.com/nobodygallery/" target="_blank" rel="noreferrer" aria-label="Nobody Gallery Instagram">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <rect x="5" y="5" width="14" height="14" rx="4" stroke-width="1.8" />
+            <circle cx="12" cy="12" r="3.4" stroke-width="1.8" />
+            <circle cx="16.5" cy="7.5" r="0.9" fill="currentColor" />
+          </svg>
+        </a>
+      </div>
+    </footer>
+    <script src="../script.js"></script>
+  </body>
+</html>
