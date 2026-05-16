@@ -1,10 +1,10 @@
 :root {
-  --paper: #f8f8f6;
+  --paper: #fbfbfa;
   --ink: #101010;
   --muted: #585858;
-  --soft: #e8e8e6;
-  --mint: #dcefd7;
-  --mint-deep: #c8e5c2;
+  --soft: #ece9e3;
+  --mint: #f0ede7;
+  --mint-deep: #d9e7d3;
   --line: #cfcfca;
   --white: #ffffff;
   --accent: #bd2d18;
@@ -25,7 +25,7 @@ body {
   background: var(--paper);
   color: var(--ink);
   font-family:
-    Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Helvetica Neue", Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     "Noto Sans SC", "Microsoft YaHei", sans-serif;
   line-height: 1.45;
   overflow-x: hidden;
@@ -180,6 +180,11 @@ img {
   width: 20px;
   height: 20px;
   stroke: currentColor;
+}
+
+.social-icon:hover,
+.xhs-link:hover {
+  color: var(--accent);
 }
 
 .lang-switch {
@@ -408,29 +413,31 @@ p {
   align-self: start;
 }
 
-.home-section-rail h2 {
+.home-section-rail h2,
+.page-side-title {
   margin: 0 0 18px;
-  font-size: clamp(34px, 3.8vw, 58px);
+  font-size: clamp(34px, 3.8vw, 54px);
   line-height: 1;
   text-transform: uppercase;
 }
 
-.home-about .home-section-rail h2 {
+.home-about .home-section-rail h2,
+.page-side-title {
   text-transform: none;
 }
 
 .home-about-copy {
   max-width: 980px;
-  font-size: clamp(17px, 1.25vw, 21px);
-  line-height: 1.82;
+  font-size: clamp(15px, 1vw, 17px);
+  line-height: 1.78;
 }
 
 .home-about-copy .quote {
   max-width: 860px;
-  margin-bottom: 24px;
+  margin-bottom: 22px;
   font-family: Georgia, "Times New Roman", "Songti SC", "Noto Serif SC", serif;
-  font-size: clamp(28px, 3vw, 48px);
-  line-height: 1.2;
+  font-size: clamp(21px, 2vw, 30px);
+  line-height: 1.28;
 }
 
 .section-tabs {
@@ -468,9 +475,9 @@ p {
 
 .programme-card h3 {
   margin: 0;
-  font-size: clamp(23px, 2vw, 34px);
+  font-size: clamp(18px, 1.25vw, 22px);
   font-weight: 800;
-  line-height: 1.05;
+  line-height: 1.12;
   text-transform: uppercase;
 }
 
@@ -481,8 +488,8 @@ p {
 .programme-card .description {
   max-width: 620px;
   color: #222;
-  font-size: 16px;
-  line-height: 1.7;
+  font-size: 14px;
+  line-height: 1.72;
 }
 
 .admission {
@@ -499,8 +506,8 @@ p {
 
 .section-heading h2 {
   margin: 0;
-  font-size: clamp(48px, 7vw, 110px);
-  line-height: 0.98;
+  font-size: clamp(34px, 3.8vw, 58px);
+  line-height: 1;
 }
 
 .split-section,
@@ -625,24 +632,30 @@ p {
   padding-bottom: clamp(42px, 6vw, 86px);
 }
 
-.page-hero h1,
+.page-hero h1 {
+  max-width: none;
+  margin: 0;
+  font-size: clamp(38px, 3.8vw, 58px);
+  line-height: 1;
+}
+
 .detail-copy h1 {
   max-width: none;
   margin: 0;
-  font-size: clamp(52px, 7vw, 112px);
-  line-height: 0.98;
+  font-size: clamp(42px, 5.4vw, 82px);
+  line-height: 1;
 }
 
 .compact-page-hero h1 {
-  font-size: clamp(38px, 5vw, 70px);
+  font-size: clamp(36px, 3.8vw, 56px);
 }
 
 .page-lede {
-  max-width: 860px;
+  max-width: 760px;
   margin: 0;
   color: #262626;
-  font-size: clamp(18px, 1.45vw, 24px);
-  line-height: 1.62;
+  font-size: clamp(15px, 1.1vw, 18px);
+  line-height: 1.68;
 }
 
 .page-section {
@@ -680,8 +693,8 @@ p {
 .visit-content h2,
 .ticket-content h2 {
   margin: 0 0 26px;
-  font-size: clamp(26px, 3vw, 46px);
-  line-height: 1.05;
+  font-size: clamp(22px, 1.8vw, 30px);
+  line-height: 1.12;
 }
 
 .about-cover,
@@ -710,8 +723,8 @@ p {
 .about-title,
 .shop-heading {
   margin: 0 0 22px;
-  font-size: clamp(42px, 6vw, 88px);
-  line-height: 0.98;
+  font-size: clamp(36px, 3.8vw, 58px);
+  line-height: 1;
   text-transform: uppercase;
 }
 
@@ -794,8 +807,8 @@ p {
 .text-columns h2,
 .works-section h2 {
   margin: 0;
-  font-size: clamp(36px, 5vw, 76px);
-  line-height: 0.98;
+  font-size: clamp(32px, 3.6vw, 54px);
+  line-height: 1;
 }
 
 .text-columns p {
@@ -901,6 +914,74 @@ p {
 .placeholder-note {
   border-top: 1px solid var(--line);
   padding-top: 22px;
+}
+
+.address-line {
+  margin-top: 22px;
+  color: var(--ink);
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+.side-nav-with-title {
+  gap: 16px;
+}
+
+.side-nav-with-title .page-side-title {
+  margin-bottom: 12px;
+}
+
+.newsletter-signup {
+  width: 100%;
+  border-top: 1px solid var(--line);
+  background: var(--soft);
+  padding: clamp(34px, 5vw, 66px) clamp(18px, 3vw, 42px);
+}
+
+.newsletter-inner {
+  width: min(100%, 760px);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.newsletter-title {
+  margin: 0 0 12px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.newsletter-text {
+  margin: 0 auto 20px;
+  color: #252525;
+  font-size: 13px;
+}
+
+.newsletter-signup .mail-form {
+  max-width: none;
+  margin: 0 auto;
+}
+
+.newsletter-signup .mail-form div {
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.newsletter-signup .mail-form input {
+  min-height: 48px;
+  border: 1px solid var(--line);
+}
+
+.newsletter-signup .mail-form button {
+  justify-self: center;
+  min-width: 162px;
+  min-height: 48px;
+  background: transparent;
+  color: var(--ink);
+}
+
+.newsletter-signup .mail-form button:hover {
+  background: var(--ink);
+  color: var(--white);
 }
 
 .site-footer {
