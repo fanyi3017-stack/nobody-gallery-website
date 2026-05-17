@@ -158,6 +158,67 @@ node -e "for (const f of ['content/site.json','content/site.en.json','content/si
 ruby -e "require 'yaml'; YAML.load_file('admin/config.yml')"
 ```
 
+## Responsive Checks
+
+Portrait responsive checks were run locally against all current public pages plus `/admin/`:
+
+- `/`
+- `/whats-on/now/`
+- `/whats-on/upcoming/`
+- `/whats-on/past/`
+- `/about/`
+- `/visit/`
+- `/ticket-info/`
+- `/shop/`
+- `/artists/`
+- `/artists/sun-guangyi.html`
+- `/exhibitions/sun-guangyi-game.html`
+- `/exhibitions/upcoming.html`
+- `/archive/`
+- `/archive/one-thousand-two-nights.html`
+- `/archive/landscape-after-processing.html`
+- `/projects/nobody-editions.html`
+- `/admin/`
+
+Checks covered:
+
+- horizontal overflow
+- logo visibility
+- image loading and image overflow
+- poster/card width
+- work grid columns
+- mobile menu opening
+- touch target size for primary buttons and menu button
+- Decap CMS admin entry loading
+
+## Mobile Portrait Fixes
+
+The mobile-only CSS fixes are in `styles.css`:
+
+- Increased `.nav-toggle` to a 44px tall touch target.
+- Forced `.shop-artist-grid` to one column under `760px` so cooperating artist cards do not become narrow or distorted on phones.
+- Reduced mobile page/detail heading scale and added `overflow-wrap: anywhere` for long German titles such as `Ausstellungsarchiv`.
+- Bumped HTML asset query strings to `v=20260517b` so mobile browsers fetch the latest CSS and JS.
+
+These changes are inside the existing responsive media query and do not change the confirmed desktop layout.
+
+## Tested Viewport Widths
+
+Phone portrait:
+
+- `375px`
+- `390px`
+- `414px`
+- `430px`
+
+Tablet portrait:
+
+- `768px`
+- `820px`
+- `834px`
+
+Final responsive audit result: all tested widths returned 0 layout problems across the checked pages, including `/admin/`.
+
 ## Next Tasks
 
 - Configure GitHub OAuth/auth for Decap CMS on the Cloudflare Pages production domain.
