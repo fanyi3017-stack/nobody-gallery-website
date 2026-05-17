@@ -1,387 +1,6 @@
 {
-  "home": {
-    "hero": {
-      "title": "心手相印的游戏",
-      "dates": "2026.05.23 - 2026.07.08",
-      "summary": "孙广义个展，由范懿策展。旺无名画廊以展览、现场与跨文化对话连接艺术家、作品与观看者。",
-      "image": "assets/exhibitions/sun-guangyi-game.jpg",
-      "imageAlt": "心手相印的游戏，孙广义个展"
-    }
-  },
-  "about": {
-    "storyTitle": "故事",
-    "missionTitle": "理念",
-    "artistCallTitle": "艺术家招募",
-    "contactButtonLabel": "联系画廊",
-    "quote": "“纪念无名者比纪念知名者更困难。历史的构建是献给对无名者的记忆。”",
-    "homeHtml": "<p>德国出生的阿什肯纳兹犹太裔哲学家、文化评论家和散文家瓦尔特·本雅明在《历史哲学论纲》中提醒我们，历史更多由无名者的贡献构成，而非仅仅由那些备受瞩目的人物书写。</p><p>在旺无名画廊，我们坚持“nobody is somebody”的信念。艺术的意义不该被名气定义，而是由作品本身去触动人心。我们致力于发现和支持那些尚未被发现的艺术家，推动一个更包容、更多元的艺术世界。</p><p>画廊长期招募艺术家。只要您的作品能触动人心，我们愿意倾注资源支持您。</p>",
-    "storyHtml": "<p>德国出生的阿什肯纳兹犹太裔哲学家、文化评论家和散文家瓦尔特·本雅明（Walter Benjamin, 1892—1940）在生前最后一部作品《历史哲学论纲》中提到：“纪念无名者比纪念知名者更困难。历史的构建是献给对无名者的记忆。”</p><p>“纪念无名者比纪念知名者更困难”提示我们，历史更多地由无名者的贡献构成，而非仅仅是那些备受瞩目的人物。无名者往往代表了一种不被轻易看到却至关重要的存在，他们的努力和创造可能未被历史铭记，却依然不可或缺。</p><p>这种对无名者的关注与尊重，正是一种超越名气与标签的价值判断。纪念无名者比纪念知名者更困难，因为他们的价值往往被掩盖在历史的洪流中。然而，历史的构建，归根结底是献给无名者的记忆。</p>",
-    "missionHtml": "<p>在旺无名画廊，我们坚持“nobody is somebody”的信念。艺术的意义不该被名气定义，而是由作品本身去触动人心。我们致力于发现和支持那些尚未被发现的艺术家，用行动打破艺术生态中的壁垒，推动一个更包容、更多元的艺术世界。</p><p>在这里，生活与艺术融为一体。我们相信每一位“nobody”都有成为“somebody”的可能性，因为艺术属于所有人。</p><p>“nobody is somebody”的理念，是一种对艺术生态多样性和包容性的坚持。我们希望让更多有才华的艺术家被看到，从而推动艺术市场更健康、更开放的发展。同时，藏家也将在这个过程中，收获一段与多元艺术碰撞的丰富体验。</p>",
-    "artistCallHtml": "<p>我们希望通过画廊的平台，将那些可能尚未被发现但具有非凡潜力的艺术家介绍给社会和藏家。这不仅是在发掘“nobody”的艺术价值，更是推动艺术界向更多元、更开放的方向发展，让艺术的可能性超越名气本身。</p><p>无论您是否是资深艺术家，作品本身永远是我们关注的重点，而不是背景或资历的堆砌。在旺无名画廊，艺术为所有人而生，我们相信生活即艺术，艺术即生活。只要您的作品能触动人心，我们愿意倾注资源支持您。</p><p>画廊长期招募艺术家，欢迎积极联系，加入我们。</p>"
-  },
-  "programmes": {
-    "now": [
-      {
-        "type": "正在展出",
-        "title": "心手相印的游戏",
-        "meta": "2026.05.23 - 2026.07.08，徐汇馆",
-        "description": "孙广义个展，以身体、记忆与图像经验展开一场“心”与“手”之间的观看游戏。",
-        "admission": "免费开放，团体参观请提前预约。",
-        "image": "assets/exhibitions/sun-guangyi-game-poster.jpg",
-        "imageAlt": "心手相印的游戏展览海报",
-        "url": "exhibitions/sun-guangyi-game.html",
-        "buttonLabel": "了解更多"
-      },
-      {
-        "type": "项目",
-        "title": "风景加工之后",
-        "meta": "2026.04.26 - 2026.05.31，金山馆",
-        "description": "Nobody Project 无名计划第二期驻留展，围绕风景、加工与现场经验展开。",
-        "admission": "免费开放，请先确认开放时间。",
-        "image": "assets/exhibitions/landscape-after-processing.jpg",
-        "imageAlt": "风景加工之后展览海报",
-        "url": "archive/landscape-after-processing.html",
-        "buttonLabel": "了解更多"
-      }
-    ],
-    "upcoming": [
-      {
-        "type": "即将呈现",
-        "title": "Upcoming Exhibition",
-        "meta": "日期待公布",
-        "description": "未来展览入口，后续可在 CMS 中替换为正式展览信息。",
-        "admission": "票务或预约信息将在这里更新。",
-        "placeholder": "Upcoming",
-        "url": "exhibitions/upcoming.html",
-        "buttonLabel": "了解更多"
-      },
-      {
-        "type": "活动",
-        "title": "电影放映与艺术家谈话",
-        "meta": "即将公布",
-        "description": "为后续电影放映、公共教育、艺术家谈话和票务活动预留入口。",
-        "admission": "票务信息将在票务信息页面发布。",
-        "placeholder": "Screening",
-        "url": "ticket-info/",
-        "buttonLabel": "票务信息"
-      }
-    ],
-    "past": [
-      {
-        "type": "过往展览",
-        "title": "第一千零二夜",
-        "meta": "2026.03.29 - 2026.05.18",
-        "description": "周韫仪个展，由范懿策展。历史展览进入 Archive 层级，保留详情页和微信推文入口。",
-        "image": "assets/exhibitions/one-thousand-two-nights.jpg",
-        "imageAlt": "第一千零二夜展览海报",
-        "url": "archive/one-thousand-two-nights.html",
-        "buttonLabel": "了解更多"
-      },
-      {
-        "type": "过往项目",
-        "title": "展览档案",
-        "meta": "历史展览与项目索引",
-        "description": "全部历史展览、驻留项目和跨文化项目将集中进入 Archive 索引。",
-        "image": "assets/exhibitions/sun-guangyi-game-poster.jpg",
-        "imageAlt": "展览档案海报",
-        "url": "archive/",
-        "buttonLabel": "查看档案"
-      }
-    ]
-  },
-  "global": {
-    "heroPrimary": "了解更多",
-    "heroSecondary": "计划参观",
-    "aboutReadMore": "阅读更多",
-    "homeAboutTitle": "关于旺无名",
-    "footerLine": "nobody is somebody",
-    "status": "周二至周日开放 10:00 - 19:00",
-    "location": "上海",
-    "openingTimes": "开放时间",
-    "navWhatsOn": "当前展览",
-    "navAbout": "关于",
-    "navPlanVisit": "参观计划",
-    "navTicketInfo": "票务信息",
-    "navShop": "商店",
-    "newsletterTitle": "订阅邮件更新",
-    "newsletterText": "第一时间了解旺无名画廊的最新展览、活动、作品与新闻。",
-    "emailPlaceholder": "邮箱",
-    "subscribe": "订阅",
-    "galleryAddress": "旺无名画廊地址：徐汇馆，上海市徐汇区宜山路660号12幢3楼302室；金山馆，上海市金山区亭卫公路8255号。",
-    "email": "nobodygallery@163.com",
-    "instagramUrl": "https://www.instagram.com/nobodygallery/",
-    "xiaohongshuUrl": "https://xhslink.com/m/8yE2abYjyN8",
-    "heroPrimaryUrl": "exhibitions/sun-guangyi-game.html",
-    "heroSecondaryUrl": "visit/",
-    "aboutReadMoreUrl": "about/"
-  },
-  "pageIntros": {
-    "now": {
-      "title": "WHAT'S ON?",
-      "lede": "正在展出的展览与项目会集中在这里，每个条目进入独立详情页。"
-    },
-    "upcoming": {
-      "title": "即将呈现",
-      "lede": "未来展览、放映、讲座与公共项目会在这里发布。"
-    },
-    "past": {
-      "title": "过往展览",
-      "lede": "历史展览和项目按档案方式保留，可继续进入每个展览详情。"
-    }
-  },
-  "visit": {
-    "kicker": "参观",
-    "title": "参观计划",
-    "lede": "参观信息集中在这里：开放时间、两个空间地址、预约说明和后续票务入口。",
-    "navHours": "开放时间",
-    "navSpaces": "空间地址",
-    "navBooking": "预约",
-    "hoursTitle": "开放时间",
-    "hours": [
-      {
-        "label": "常规开放",
-        "text": "周二至周日，10:00 - 19:00"
-      },
-      {
-        "label": "闭馆",
-        "text": "周一"
-      }
-    ],
-    "spacesTitle": "空间地址",
-    "spaces": [
-      {
-        "label": "徐汇馆",
-        "text": "上海市徐汇区宜山路660号12幢3楼302室"
-      },
-      {
-        "label": "金山馆",
-        "text": "上海市金山区亭卫公路8255号"
-      }
-    ],
-    "bookingTitle": "预约",
-    "bookingHtml": "<p>当前展览可免费参观。团体导览、媒体访问、放映活动与特别项目请提前通过邮箱联系。</p>",
-    "bookingButtonLabel": "发送邮件",
-    "bookingButtonUrl": "mailto:nobodygallery@163.com"
-  },
-  "ticket": {
-    "kicker": "票务",
-    "title": "票务信息",
-    "lede": "这里为未来电影放映、公共活动、艺术家谈话和特别项目预留票务层级。展览免费信息也会在这里统一说明。",
-    "navExhibitions": "展览",
-    "navScreenings": "放映",
-    "navEvents": "活动",
-    "exhibitionsTitle": "展览",
-    "exhibitionCards": [
-      {
-        "label": "当前展览",
-        "text": "免费开放。团体参观与导览请提前预约。"
-      },
-      {
-        "label": "预约",
-        "text": "团体参观、媒体访问和特别安排请发送邮件至 nobodygallery@163.com。"
-      }
-    ],
-    "screeningsTitle": "放映",
-    "screeningsHtml": "<p>电影放映票务将在项目确认后发布。这里会预留票务链接、价格、人数限制和观众须知。</p>",
-    "eventsTitle": "活动",
-    "eventsHtml": "<p>艺术家谈话、表演、工作坊和公共项目也会使用同一票务层级，后续内容可通过 Decap CMS 更新，并由 Cloudflare Pages 发布。</p>"
-  },
-  "shop": {
-    "hero": {
-      "title": "商店",
-      "lede": "浏览旺无名画廊的在售作品、限量版本和艺术家页面。",
-      "image": "assets/works/sun-wenming-suipian.png",
-      "imageAlt": "孙广义作品，文明碎片",
-      "buttonLabel": "查看艺术家",
-      "buttonUrl": "#sun-guangyi"
-    },
-    "artistSection": {
-      "kicker": "艺术家",
-      "title": "合作艺术家"
-    },
-    "artists": [
-      {
-        "kicker": "G",
-        "name": "孙广义",
-        "subtitle": "Guangyi Sun",
-        "url": "artists/sun-guangyi.html",
-        "image": "assets/works/sun-wujin.png",
-        "imageAlt": "孙广义作品，无尽",
-        "avatar": "assets/artist-avatars/sun-guangyi.jpg",
-        "avatarAlt": "孙广义肖像",
-        "buttonLabel": "查看"
-      },
-      {
-        "kicker": "待补充",
-        "name": "即将加入",
-        "subtitle": "艺术家商店入口",
-        "placeholder": "艺术家",
-        "buttonLabel": "查看",
-        "empty": true
-      },
-      {
-        "kicker": "待补充",
-        "name": "即将加入",
-        "subtitle": "艺术家商店入口",
-        "placeholder": "艺术家",
-        "buttonLabel": "查看",
-        "empty": true
-      },
-      {
-        "kicker": "待补充",
-        "name": "即将加入",
-        "subtitle": "艺术家商店入口",
-        "placeholder": "艺术家",
-        "buttonLabel": "查看",
-        "empty": true
-      }
-    ],
-    "worksSection": {
-      "title": "在售作品"
-    },
-    "works": [
-      {
-        "title": "宋瓷",
-        "meta": "40 x 20 cm",
-        "price": "RMB 12,000",
-        "image": "assets/works/sun-song-ci.png",
-        "imageAlt": "宋瓷作品图"
-      },
-      {
-        "title": "殇",
-        "meta": "40 x 20 cm",
-        "price": "RMB 12,000",
-        "image": "assets/works/sun-shang.png",
-        "imageAlt": "殇作品图"
-      },
-      {
-        "title": "柴庵",
-        "meta": "40 x 40 cm",
-        "price": "RMB 18,000",
-        "image": "assets/works/sun-chai-an.png",
-        "imageAlt": "柴庵作品图"
-      },
-      {
-        "title": "接火",
-        "meta": "40 x 40 cm",
-        "price": "RMB 18,000",
-        "image": "assets/works/sun-shang.png",
-        "imageAlt": "接火作品图"
-      }
-    ]
-  },
-  "artistIndex": {
-    "kicker": "Artists A-Z",
-    "title": "Artists",
-    "lede": "艺术家索引按 A-Z 排列。你可以在 Decap CMS 中继续增加艺术家入口、头像、链接、简介与占位卡片。",
-    "items": [
-      {
-        "kicker": "G",
-        "name": "孙广义",
-        "subtitle": "Guangyi Sun",
-        "url": "artists/sun-guangyi.html",
-        "image": "assets/works/sun-wujin.png",
-        "imageAlt": "孙广义作品，无尽",
-        "avatar": "assets/artist-avatars/sun-guangyi.jpg",
-        "avatarAlt": "孙广义肖像",
-        "buttonLabel": "查看"
-      },
-      {
-        "kicker": "待补充",
-        "name": "即将加入",
-        "subtitle": "艺术家商店入口",
-        "placeholder": "艺术家",
-        "buttonLabel": "查看",
-        "empty": true
-      },
-      {
-        "kicker": "待补充",
-        "name": "即将加入",
-        "subtitle": "艺术家商店入口",
-        "placeholder": "艺术家",
-        "buttonLabel": "查看",
-        "empty": true
-      },
-      {
-        "kicker": "待补充",
-        "name": "即将加入",
-        "subtitle": "艺术家商店入口",
-        "placeholder": "艺术家",
-        "buttonLabel": "查看",
-        "empty": true
-      }
-    ]
-  },
-  "archiveIndex": {
-    "kicker": "Archive",
-    "title": "Exhibition Archive",
-    "lede": "Archive 是历史展览的大层级。这里会按展览列出可点击条目，后续每个展览都可以进入独立详情页。",
-    "items": [
-      {
-        "date": "2026.03.29 - 2026.05.18",
-        "title": "第一千零二夜",
-        "subtitle": "周韫仪 / Zhou Yunyi",
-        "url": "archive/one-thousand-two-nights.html",
-        "image": "assets/exhibitions/one-thousand-two-nights.jpg",
-        "imageAlt": "第一千零二夜展览海报"
-      },
-      {
-        "date": "2026.04.26 - 2026.05.31",
-        "title": "风景加工之后",
-        "subtitle": "李璨颖、罗自然、梅朝银",
-        "url": "archive/landscape-after-processing.html",
-        "image": "assets/exhibitions/landscape-after-processing.jpg",
-        "imageAlt": "风景加工之后展览海报"
-      },
-      {
-        "date": "2026.05.23 - 2026.07.08",
-        "title": "心手相印的游戏",
-        "subtitle": "孙广义 / Guangyi Sun",
-        "url": "exhibitions/sun-guangyi-game.html",
-        "image": "assets/exhibitions/sun-guangyi-game-poster.jpg",
-        "imageAlt": "心手相印的游戏展览海报"
-      }
-    ]
-  },
   "details": {
     "sunGuangyiGame": {
-      "kicker": "正在展出",
-      "title": "心手相印的游戏",
-      "subtitle": "The Game of Heart and Hand",
-      "image": "assets/exhibitions/sun-guangyi-game.jpg",
-      "imageAlt": "心手相印的游戏展览海报",
-      "meta": [
-        {
-          "label": "艺术家",
-          "valueHtml": "<a href=\"../artists/sun-guangyi.html\">孙广义 / Guangyi Sun</a>"
-        },
-        {
-          "label": "展期",
-          "valueHtml": "2026.05.23 - 2026.07.08"
-        },
-        {
-          "label": "开幕",
-          "valueHtml": "2026.05.23 16:00"
-        },
-        {
-          "label": "策展人",
-          "valueHtml": "范懿 / Yi Fan"
-        }
-      ],
-      "contentHeading": "展览",
-      "contentHtml": "<p>《心手相印的游戏》为艺术家孙广义个展，展期为 2026 年 5 月 23 日至 7 月 8 日，展览地点为旺无名画廊徐汇馆。</p><p>当前页面先搭好展览详情结构：展览介绍、艺术家链接、作品清单、微信推文入口都已经预留，后续可继续补充策展文本、现场图和媒体报道。</p>",
-      "externalUrl": "https://mp.weixin.qq.com/s/8H-DtUTQD0za3LijRqoHHw",
-      "externalLabel": "微信推文",
-      "actions": [
-        {
-          "label": "艺术家介绍",
-          "url": "artists/sun-guangyi.html"
-        },
-        {
-          "label": "在售作品",
-          "url": "shop/#sun-guangyi"
-        }
-      ],
       "worksHeading": "作品",
       "works": [
         {
@@ -517,32 +136,46 @@
           "image": "assets/works/sun-dunhuang.png",
           "imageAlt": "丝绸之路 2作品图"
         }
-      ]
-    },
-    "sunGuangyiArtist": {
-      "kicker": "Artist",
-      "title": "孙广义",
-      "subtitle": "Guangyi Sun",
-      "image": "assets/artist-avatars/sun-guangyi.jpg",
-      "imageAlt": "孙广义肖像",
+      ],
+      "externalUrl": "https://mp.weixin.qq.com/s/8H-DtUTQD0za3LijRqoHHw",
+      "contentHtml": "<p>《心手相印的游戏》为艺术家孙广义个展，展期为 2026 年 5 月 23 日至 7 月 8 日，展览地点为旺无名画廊徐汇馆。</p><p>当前页面先搭好展览详情结构：展览介绍、艺术家链接、作品清单、微信推文入口都已经预留，后续可继续补充策展文本、现场图和媒体报道。</p>",
       "meta": [
         {
-          "label": "Bio",
-          "valueHtml": "艺术家个人信息待补充。"
+          "label": "艺术家",
+          "valueHtml": "<a href=\"../artists/sun-guangyi.html\">孙广义 / Guangyi Sun</a>"
         },
         {
-          "label": "作品",
-          "valueHtml": "Mixed media / Painting"
+          "label": "展期",
+          "valueHtml": "2026.05.23 - 2026.07.08"
+        },
+        {
+          "label": "开幕",
+          "valueHtml": "2026.05.23 16:00"
+        },
+        {
+          "label": "策展人",
+          "valueHtml": "范懿 / Yi Fan"
         }
       ],
-      "contentHeading": "简介",
-      "contentHtml": "<p>这里预留孙广义的艺术家 bio、教育背景、展览经历、创作线索与代表作品介绍。当前只放入这次展览和作品清单，后续你给我正式 bio 后可以直接替换。</p><p>当前相关展览：<a href=\"../exhibitions/sun-guangyi-game.html\">《心手相印的游戏》</a>，2026.05.23 - 2026.07.08，旺无名画廊徐汇馆。</p>",
+      "externalLabel": "微信推文",
+      "contentHeading": "展览",
+      "imageAlt": "心手相印的游戏展览海报",
+      "kicker": "正在展出",
+      "subtitle": "The Game of Heart and Hand",
+      "title": "心手相印的游戏",
+      "image": "assets/exhibitions/sun-guangyi-game.jpg",
       "actions": [
+        {
+          "label": "艺术家介绍",
+          "url": "artists/sun-guangyi.html"
+        },
         {
           "label": "在售作品",
           "url": "shop/#sun-guangyi"
         }
-      ],
+      ]
+    },
+    "sunGuangyiArtist": {
       "worksHeading": "在售作品",
       "works": [
         {
@@ -678,14 +311,36 @@
           "image": "assets/works/sun-dunhuang.png",
           "imageAlt": "丝绸之路 2作品图"
         }
+      ],
+      "contentHtml": "<p>这里预留孙广义的艺术家 bio、教育背景、展览经历、创作线索与代表作品介绍。当前只放入这次展览和作品清单，后续你给我正式 bio 后可以直接替换。</p><p>当前相关展览：<a href=\"../exhibitions/sun-guangyi-game.html\">《心手相印的游戏》</a>，2026.05.23 - 2026.07.08，旺无名画廊徐汇馆。</p>",
+      "meta": [
+        {
+          "label": "Bio",
+          "valueHtml": "艺术家个人信息待补充。"
+        },
+        {
+          "label": "作品",
+          "valueHtml": "Mixed media / Painting"
+        }
+      ],
+      "contentHeading": "简介",
+      "imageAlt": "孙广义肖像",
+      "kicker": "Artist",
+      "subtitle": "Guangyi Sun",
+      "title": "孙广义",
+      "image": "assets/artist-avatars/sun-guangyi.jpg",
+      "actions": [
+        {
+          "label": "在售作品",
+          "url": "shop/#sun-guangyi"
+        }
       ]
     },
     "oneThousandTwoNights": {
-      "kicker": "Archive",
-      "title": "第一千零二夜",
-      "subtitle": "One Thousand and Two Nights",
-      "image": "assets/exhibitions/one-thousand-two-nights.jpg",
-      "imageAlt": "第一千零二夜展览海报",
+      "worksHeading": "",
+      "works": [],
+      "externalUrl": "https://mp.weixin.qq.com/s/9GtFsjLOdmfY6gNeBL69bg",
+      "contentHtml": "<p>《第一千零二夜》为周韫仪个展，展期为 2026 年 3 月 29 日至 5 月 18 日。展览信息来自本地展览物料，作为 Archive 详情页的第一条示例。</p><p>当前页面已预留展览介绍、现场图片、作品清单与微信推文入口。后续可以继续补充更完整的展览文本与作品信息。</p>",
       "meta": [
         {
           "label": "Artist",
@@ -704,20 +359,20 @@
           "valueHtml": "范懿 / Yi Fan"
         }
       ],
-      "contentHeading": "Exhibition",
-      "contentHtml": "<p>《第一千零二夜》为周韫仪个展，展期为 2026 年 3 月 29 日至 5 月 18 日。展览信息来自本地展览物料，作为 Archive 详情页的第一条示例。</p><p>当前页面已预留展览介绍、现场图片、作品清单与微信推文入口。后续可以继续补充更完整的展览文本与作品信息。</p>",
-      "externalUrl": "https://mp.weixin.qq.com/s/9GtFsjLOdmfY6gNeBL69bg",
       "externalLabel": "微信推文 / WeChat article",
-      "actions": [],
-      "worksHeading": "",
-      "works": []
+      "contentHeading": "Exhibition",
+      "imageAlt": "第一千零二夜展览海报",
+      "kicker": "Archive",
+      "subtitle": "One Thousand and Two Nights",
+      "title": "第一千零二夜",
+      "image": "assets/exhibitions/one-thousand-two-nights.jpg",
+      "actions": []
     },
     "landscapeAfterProcessing": {
-      "kicker": "Archive",
-      "title": "风景加工之后",
-      "subtitle": "When Landscapes Were Processed",
-      "image": "assets/exhibitions/landscape-after-processing.jpg",
-      "imageAlt": "风景加工之后展览海报",
+      "worksHeading": "",
+      "works": [],
+      "externalUrl": "https://mp.weixin.qq.com/s/2euLdwsZd1LFAsP0SL2Fhg",
+      "contentHtml": "<p>《风景加工之后》为 Nobody Project 无名计划第二期驻留展，展期为 2026 年 4 月 26 日至 5 月 31 日，地点为旺无名画廊金山馆。</p><p>当前页面已用本地展览物料搭好 Archive 详情结构，后续可以继续补充现场图、展览文本、作品清单与媒体报道。</p>",
       "meta": [
         {
           "label": "Artists",
@@ -736,43 +391,388 @@
           "valueHtml": "杨明月 / Yang Mingyue<br />庄泽曦 / Zhuang Zexi"
         }
       ],
-      "contentHeading": "Exhibition",
-      "contentHtml": "<p>《风景加工之后》为 Nobody Project 无名计划第二期驻留展，展期为 2026 年 4 月 26 日至 5 月 31 日，地点为旺无名画廊金山馆。</p><p>当前页面已用本地展览物料搭好 Archive 详情结构，后续可以继续补充现场图、展览文本、作品清单与媒体报道。</p>",
-      "externalUrl": "https://mp.weixin.qq.com/s/2euLdwsZd1LFAsP0SL2Fhg",
       "externalLabel": "微信推文 / WeChat article",
-      "actions": [],
-      "worksHeading": "",
-      "works": []
+      "contentHeading": "Exhibition",
+      "imageAlt": "风景加工之后展览海报",
+      "kicker": "Archive",
+      "subtitle": "When Landscapes Were Processed",
+      "title": "风景加工之后",
+      "image": "assets/exhibitions/landscape-after-processing.jpg",
+      "actions": []
     },
     "upcomingExhibition": {
-      "kicker": "即将呈现",
-      "title": "即将呈现的展览",
-      "subtitle": "",
-      "image": "",
-      "imageAlt": "",
-      "meta": [],
-      "contentHeading": "",
-      "contentHtml": "<p>这是 Upcoming 的详情页占位。后续可以填入展览标题、艺术家、展期、开幕时间、展览图、策展文本与预约入口。</p>",
-      "externalUrl": "",
-      "externalLabel": "",
-      "actions": [],
       "worksHeading": "",
-      "works": []
+      "works": [],
+      "externalUrl": "",
+      "contentHtml": "<p>这是 Upcoming 的详情页占位。后续可以填入展览标题、艺术家、展期、开幕时间、展览图、策展文本与预约入口。</p>",
+      "meta": [],
+      "externalLabel": "",
+      "contentHeading": "",
+      "imageAlt": "",
+      "kicker": "即将呈现",
+      "subtitle": "",
+      "title": "即将呈现的展览",
+      "image": "",
+      "actions": []
     },
     "nobodyEditions": {
-      "kicker": "Project",
-      "title": "Nobody Editions",
-      "subtitle": "用于承载限量作品、出版、衍生项目和长期合作计划。当前先作为 Project 详情页模板，后续可以按项目继续扩展。",
-      "image": "",
-      "imageAlt": "",
-      "meta": [],
-      "contentHeading": "Reserved fields",
-      "contentHtml": "<p>用于承载限量作品、出版、衍生项目和长期合作计划。当前先作为 Project 详情页模板，后续可以按项目继续扩展。</p><p>项目介绍 / 参与艺术家 / 作品列表 / 价格 / 购买或咨询入口 / 项目图片</p>",
-      "externalUrl": "",
-      "externalLabel": "",
-      "actions": [],
       "worksHeading": "",
-      "works": []
+      "works": [],
+      "externalUrl": "",
+      "contentHtml": "<p>用于承载限量作品、出版、衍生项目和长期合作计划。当前先作为 Project 详情页模板，后续可以按项目继续扩展。</p><p>项目介绍 / 参与艺术家 / 作品列表 / 价格 / 购买或咨询入口 / 项目图片</p>",
+      "meta": [],
+      "externalLabel": "",
+      "contentHeading": "Reserved fields",
+      "imageAlt": "",
+      "kicker": "Project",
+      "subtitle": "用于承载限量作品、出版、衍生项目和长期合作计划。当前先作为 Project 详情页模板，后续可以按项目继续扩展。",
+      "title": "Nobody Editions",
+      "image": "",
+      "actions": []
+    }
+  },
+  "global": {
+    "galleryAddress": "旺无名画廊地址：徐汇馆，上海市徐汇区宜山路660号12幢3楼302室；金山馆，上海市金山区亭卫公路8255号。",
+    "newsletterText": "第一时间了解旺无名画廊的最新展览、活动、作品与新闻。",
+    "heroPrimaryUrl": "exhibitions/sun-guangyi-game.html",
+    "heroPrimary": "了解更多",
+    "navAbout": "关于",
+    "homeAboutTitle": "关于旺无名",
+    "subscribe": "订阅",
+    "navWhatsOn": "当前展览",
+    "openingTimes": "开放时间",
+    "xiaohongshuUrl": "https://xhslink.com/m/8yE2abYjyN8",
+    "footerLine": "nobody is somebody",
+    "status": "周二至周日开放 10:00 - 19:00",
+    "heroSecondaryUrl": "visit/",
+    "location": "上海",
+    "emailPlaceholder": "邮箱",
+    "aboutReadMoreUrl": "about/",
+    "aboutReadMore": "阅读更多",
+    "navShop": "商店",
+    "heroSecondary": "计划参观",
+    "email": "nobodygallery@163.com",
+    "instagramUrl": "https://www.instagram.com/nobodygallery_wwm/",
+    "navTicketInfo": "票务信息",
+    "newsletterTitle": "订阅邮件更新",
+    "navPlanVisit": "参观计划"
+  },
+  "visit": {
+    "bookingButtonUrl": "mailto:nobodygallery@163.com",
+    "bookingHtml": "<p>当前展览可免费参观。团体导览、媒体访问、放映活动与特别项目请提前通过邮箱联系。</p>",
+    "hoursTitle": "开放时间",
+    "bookingButtonLabel": "发送邮件",
+    "spacesTitle": "空间地址",
+    "navHours": "开放时间",
+    "spaces": [
+      {
+        "label": "徐汇馆",
+        "text": "上海市徐汇区宜山路660号12幢3楼302室"
+      },
+      {
+        "label": "金山馆",
+        "text": "上海市金山区亭卫公路8255号"
+      }
+    ],
+    "hours": [
+      {
+        "label": "常规开放",
+        "text": "周二至周日，10:00 - 19:00"
+      },
+      {
+        "label": "闭馆",
+        "text": "周一"
+      }
+    ],
+    "navSpaces": "空间地址",
+    "kicker": "参观",
+    "navBooking": "预约",
+    "title": "参观计划",
+    "lede": "参观信息集中在这里：开放时间、两个空间地址、预约说明和后续票务入口。",
+    "bookingTitle": "预约"
+  },
+  "artistIndex": {
+    "kicker": "Artists A-Z",
+    "title": "Artists",
+    "lede": "艺术家索引按 A-Z 排列。你可以在 Decap CMS 中继续增加艺术家入口、头像、链接、简介与占位卡片。",
+    "items": [
+      {
+        "buttonLabel": "查看",
+        "name": "孙广义",
+        "imageAlt": "孙广义作品，无尽",
+        "url": "artists/sun-guangyi.html",
+        "avatarAlt": "孙广义肖像",
+        "kicker": "G",
+        "subtitle": "Guangyi Sun",
+        "avatar": "assets/artist-avatars/sun-guangyi.jpg",
+        "image": "assets/works/sun-wujin.png"
+      },
+      {
+        "kicker": "待补充",
+        "name": "即将加入",
+        "subtitle": "艺术家商店入口",
+        "placeholder": "艺术家",
+        "buttonLabel": "查看",
+        "empty": true
+      },
+      {
+        "kicker": "待补充",
+        "name": "即将加入",
+        "subtitle": "艺术家商店入口",
+        "placeholder": "艺术家",
+        "buttonLabel": "查看",
+        "empty": true
+      },
+      {
+        "kicker": "待补充",
+        "name": "即将加入",
+        "subtitle": "艺术家商店入口",
+        "placeholder": "艺术家",
+        "buttonLabel": "查看",
+        "empty": true
+      }
+    ]
+  },
+  "ticket": {
+    "navScreenings": "放映",
+    "navExhibitions": "展览",
+    "eventsHtml": "<p>艺术家谈话、表演、工作坊和公共项目也会使用同一票务层级，后续内容可通过 Decap CMS 更新，并由 Cloudflare Pages 发布。</p>",
+    "screeningsHtml": "<p>电影放映票务将在项目确认后发布。这里会预留票务链接、价格、人数限制和观众须知。</p>",
+    "kicker": "票务",
+    "exhibitionsTitle": "展览",
+    "exhibitionCards": [
+      {
+        "label": "当前展览",
+        "text": "免费开放。团体参观与导览请提前预约。"
+      },
+      {
+        "label": "预约",
+        "text": "团体参观、媒体访问和特别安排请发送邮件至 nobodygallery@163.com。"
+      }
+    ],
+    "title": "票务信息",
+    "lede": "这里为未来电影放映、公共活动、艺术家谈话和特别项目预留票务层级。展览免费信息也会在这里统一说明。",
+    "screeningsTitle": "放映",
+    "navEvents": "活动",
+    "eventsTitle": "活动"
+  },
+  "about": {
+    "storyHtml": "<p>德国出生的阿什肯纳兹犹太裔哲学家、文化评论家和散文家瓦尔特·本雅明（Walter Benjamin, 1892—1940）在生前最后一部作品《历史哲学论纲》中提到：“纪念无名者比纪念知名者更困难。历史的构建是献给对无名者的记忆。”</p><p>“纪念无名者比纪念知名者更困难”提示我们，历史更多地由无名者的贡献构成，而非仅仅是那些备受瞩目的人物。无名者往往代表了一种不被轻易看到却至关重要的存在，他们的努力和创造可能未被历史铭记，却依然不可或缺。</p><p>这种对无名者的关注与尊重，正是一种超越名气与标签的价值判断。纪念无名者比纪念知名者更困难，因为他们的价值往往被掩盖在历史的洪流中。然而，历史的构建，归根结底是献给无名者的记忆。</p>",
+    "contactButtonLabel": "联系画廊",
+    "storyTitle": "故事",
+    "homeHtml": "<p>德国出生的阿什肯纳兹犹太裔哲学家、文化评论家和散文家瓦尔特·本雅明在《历史哲学论纲》中提醒我们，历史更多由无名者的贡献构成，而非仅仅由那些备受瞩目的人物书写。</p><p>在旺无名画廊，我们坚持“nobody is somebody”的信念。艺术的意义不该被名气定义，而是由作品本身去触动人心。我们致力于发现和支持那些尚未被发现的艺术家，推动一个更包容、更多元的艺术世界。</p><p>画廊长期招募艺术家。只要您的作品能触动人心，我们愿意倾注资源支持您。</p>",
+    "missionTitle": "理念",
+    "artistCallHtml": "<p>我们希望通过画廊的平台，将那些可能尚未被发现但具有非凡潜力的艺术家介绍给社会和藏家。这不仅是在发掘“nobody”的艺术价值，更是推动艺术界向更多元、更开放的方向发展，让艺术的可能性超越名气本身。</p><p>无论您是否是资深艺术家，作品本身永远是我们关注的重点，而不是背景或资历的堆砌。在旺无名画廊，艺术为所有人而生，我们相信生活即艺术，艺术即生活。只要您的作品能触动人心，我们愿意倾注资源支持您。</p><p>画廊长期招募艺术家，欢迎积极联系，加入我们。</p>",
+    "artistCallTitle": "艺术家招募",
+    "missionHtml": "<p>在旺无名画廊，我们坚持“nobody is somebody”的信念。艺术的意义不该被名气定义，而是由作品本身去触动人心。我们致力于发现和支持那些尚未被发现的艺术家，用行动打破艺术生态中的壁垒，推动一个更包容、更多元的艺术世界。</p><p>在这里，生活与艺术融为一体。我们相信每一位“nobody”都有成为“somebody”的可能性，因为艺术属于所有人。</p><p>“nobody is somebody”的理念，是一种对艺术生态多样性和包容性的坚持。我们希望让更多有才华的艺术家被看到，从而推动艺术市场更健康、更开放的发展。同时，藏家也将在这个过程中，收获一段与多元艺术碰撞的丰富体验。</p>",
+    "quote": "“纪念无名者比纪念知名者更困难。历史的构建是献给对无名者的记忆。”"
+  },
+  "archiveIndex": {
+    "kicker": "Archive",
+    "title": "Exhibition Archive",
+    "lede": "Archive 是历史展览的大层级。这里会按展览列出可点击条目，后续每个展览都可以进入独立详情页。",
+    "items": [
+      {
+        "date": "2026.03.29 - 2026.05.18",
+        "title": "第一千零二夜",
+        "subtitle": "周韫仪 / Zhou Yunyi",
+        "url": "archive/one-thousand-two-nights.html",
+        "image": "assets/exhibitions/one-thousand-two-nights.jpg",
+        "imageAlt": "第一千零二夜展览海报"
+      },
+      {
+        "date": "2026.04.26 - 2026.05.31",
+        "title": "风景加工之后",
+        "subtitle": "李璨颖、罗自然、梅朝银",
+        "url": "archive/landscape-after-processing.html",
+        "image": "assets/exhibitions/landscape-after-processing.jpg",
+        "imageAlt": "风景加工之后展览海报"
+      },
+      {
+        "date": "2026.05.23 - 2026.07.08",
+        "title": "心手相印的游戏",
+        "subtitle": "孙广义 / Guangyi Sun",
+        "url": "exhibitions/sun-guangyi-game.html",
+        "image": "assets/exhibitions/sun-guangyi-game-poster.jpg",
+        "imageAlt": "心手相印的游戏展览海报"
+      }
+    ]
+  },
+  "pageIntros": {
+    "now": {
+      "title": "WHAT'S ON?",
+      "lede": "正在展出的展览与项目会集中在这里，每个条目进入独立详情页。"
+    },
+    "upcoming": {
+      "title": "即将呈现",
+      "lede": "未来展览、放映、讲座与公共项目会在这里发布。"
+    },
+    "past": {
+      "title": "过往展览",
+      "lede": "历史展览和项目按档案方式保留，可继续进入每个展览详情。"
+    }
+  },
+  "shop": {
+    "hero": {
+      "title": "商店",
+      "lede": "浏览旺无名画廊的在售作品、限量版本和艺术家页面。",
+      "image": "assets/works/sun-wenming-suipian.png",
+      "imageAlt": "孙广义作品，文明碎片",
+      "buttonLabel": "查看艺术家",
+      "buttonUrl": "#sun-guangyi"
+    },
+    "artistSection": {
+      "kicker": "艺术家",
+      "title": "合作艺术家"
+    },
+    "artists": [
+      {
+        "buttonLabel": "查看",
+        "name": "孙广义",
+        "imageAlt": "孙广义作品，无尽",
+        "url": "artists/sun-guangyi.html",
+        "avatarAlt": "孙广义肖像",
+        "kicker": "G",
+        "subtitle": "Guangyi Sun",
+        "avatar": "assets/artist-avatars/sun-guangyi.jpg",
+        "image": "assets/works/sun-wujin.png"
+      },
+      {
+        "kicker": "待补充",
+        "name": "即将加入",
+        "subtitle": "艺术家商店入口",
+        "placeholder": "艺术家",
+        "buttonLabel": "查看",
+        "empty": true
+      },
+      {
+        "kicker": "待补充",
+        "name": "即将加入",
+        "subtitle": "艺术家商店入口",
+        "placeholder": "艺术家",
+        "buttonLabel": "查看",
+        "empty": true
+      },
+      {
+        "kicker": "待补充",
+        "name": "即将加入",
+        "subtitle": "艺术家商店入口",
+        "placeholder": "艺术家",
+        "buttonLabel": "查看",
+        "empty": true
+      }
+    ],
+    "worksSection": {
+      "title": "在售作品"
+    },
+    "works": [
+      {
+        "title": "宋瓷",
+        "meta": "40 x 20 cm",
+        "price": "RMB 12,000",
+        "image": "assets/works/sun-song-ci.png",
+        "imageAlt": "宋瓷作品图"
+      },
+      {
+        "title": "殇",
+        "meta": "40 x 20 cm",
+        "price": "RMB 12,000",
+        "image": "assets/works/sun-shang.png",
+        "imageAlt": "殇作品图"
+      },
+      {
+        "title": "柴庵",
+        "meta": "40 x 40 cm",
+        "price": "RMB 18,000",
+        "image": "assets/works/sun-chai-an.png",
+        "imageAlt": "柴庵作品图"
+      },
+      {
+        "title": "接火",
+        "meta": "40 x 40 cm",
+        "price": "RMB 18,000",
+        "image": "assets/works/sun-shang.png",
+        "imageAlt": "接火作品图"
+      }
+    ]
+  },
+  "programmes": {
+    "now": [
+      {
+        "buttonLabel": "了解更多",
+        "meta": "2026.05.23 - 2026.07.08，徐汇馆",
+        "admission": "免费开放，团体参观请提前预约。",
+        "imageAlt": "心手相印的游戏展览海报",
+        "url": "exhibitions/sun-guangyi-game.html",
+        "title": "心手相印的游戏",
+        "type": "正在展出",
+        "image": "assets/exhibitions/sun-guangyi-game-poster.jpg",
+        "description": "孙广义个展，以身体、记忆与图像经验展开一场“心”与“手”之间的观看游戏。"
+      },
+      {
+        "buttonLabel": "了解更多",
+        "meta": "2026.04.26 - 2026.05.31，金山馆",
+        "admission": "免费开放，请先确认开放时间。",
+        "imageAlt": "风景加工之后展览海报",
+        "url": "archive/landscape-after-processing.html",
+        "title": "风景加工之后",
+        "type": "项目",
+        "image": "assets/exhibitions/landscape-after-processing.jpg",
+        "description": "Nobody Project 无名计划第二期驻留展，围绕风景、加工与现场经验展开。"
+      }
+    ],
+    "upcoming": [
+      {
+        "type": "即将呈现",
+        "title": "Upcoming Exhibition",
+        "meta": "日期待公布",
+        "description": "未来展览入口，后续可在 CMS 中替换为正式展览信息。",
+        "admission": "票务或预约信息将在这里更新。",
+        "placeholder": "Upcoming",
+        "url": "exhibitions/upcoming.html",
+        "buttonLabel": "了解更多"
+      },
+      {
+        "type": "活动",
+        "title": "电影放映与艺术家谈话",
+        "meta": "即将公布",
+        "description": "为后续电影放映、公共教育、艺术家谈话和票务活动预留入口。",
+        "admission": "票务信息将在票务信息页面发布。",
+        "placeholder": "Screening",
+        "url": "ticket-info/",
+        "buttonLabel": "票务信息"
+      }
+    ],
+    "past": [
+      {
+        "type": "过往展览",
+        "title": "第一千零二夜",
+        "meta": "2026.03.29 - 2026.05.18",
+        "description": "周韫仪个展，由范懿策展。历史展览进入 Archive 层级，保留详情页和微信推文入口。",
+        "image": "assets/exhibitions/one-thousand-two-nights.jpg",
+        "imageAlt": "第一千零二夜展览海报",
+        "url": "archive/one-thousand-two-nights.html",
+        "buttonLabel": "了解更多"
+      },
+      {
+        "type": "过往项目",
+        "title": "展览档案",
+        "meta": "历史展览与项目索引",
+        "description": "全部历史展览、驻留项目和跨文化项目将集中进入 Archive 索引。",
+        "image": "assets/exhibitions/sun-guangyi-game-poster.jpg",
+        "imageAlt": "展览档案海报",
+        "url": "archive/",
+        "buttonLabel": "查看档案"
+      }
+    ]
+  },
+  "home": {
+    "hero": {
+      "title": "心手相印的游戏",
+      "dates": "2026.05.23 - 2026.07.08",
+      "summary": "孙广义个展，由范懿策展。旺无名画廊以展览、现场与跨文化对话连接艺术家、作品与观看者。",
+      "image": "assets/exhibitions/sun-guangyi-game.jpg",
+      "imageAlt": "心手相印的游戏，孙广义个展"
     }
   }
 }
