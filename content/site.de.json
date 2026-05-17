@@ -559,14 +559,14 @@
   "about": {
     "storyHtml": "<p>Walter Benjamin (1892-1940), the German-born Ashkenazi Jewish philosopher, cultural critic and essayist, wrote in his final work, <em>Theses on the Philosophy of History</em>: \"It is more arduous to honour the memory of the nameless than that of the renowned. Historical construction is devoted to the memory of the nameless.\"</p><p>This sentence asks us to look at the lives and acts that rarely enter official narratives. The nameless are not absent from history; they are often the ground on which history is built.</p><p>Nobody Gallery takes that attention seriously. To remember the nameless is to resist easy labels and to recognise value before it has been validated by fame.</p>",
     "contactButtonLabel": "Galerie kontaktieren",
-    "contactButtonUrl": "https://linktr.ee/nobodygallery",
     "storyTitle": "Geschichte",
     "homeHtml": "<p>In <em>Theses on the Philosophy of History</em>, Walter Benjamin reminds us that history is shaped not only by celebrated names, but also by people whose presence is less visible and no less essential.</p><p>At Nobody Gallery, we hold to the belief that nobody is somebody. Art should not be defined by fame; it should be carried by the force of the work itself. We support artists whose practices deserve to be seen and make room for a more open, generous art world.</p><p>The gallery welcomes artists on an ongoing basis. If your work can move people, we are ready to support it.</p>",
     "missionTitle": "Mission",
     "artistCallHtml": "<p>We hope to introduce artists with uncommon potential to wider audiences and collectors through the gallery platform. This is not only about discovering the value of the nobody; it is about opening the field of art to more possibilities.</p><p>Whether you are emerging or established, the work itself is what matters here. At Nobody Gallery, art is for everyone, and we believe life is art and art is life.</p><p>The gallery welcomes artist submissions and conversations throughout the year.</p>",
     "artistCallTitle": "Künstlerbewerbungen",
     "missionHtml": "<p>At Nobody Gallery, we believe that nobody is somebody. The meaning of art should come from the work itself, not from reputation alone. We are committed to discovering and supporting artists who have not yet been widely seen.</p><p>Here, life and art are inseparable. We believe every nobody may become somebody, because art belongs to everyone.</p><p>This is also a commitment to a more diverse and inclusive ecology for art, where artists and collectors can meet through genuine attention rather than fixed hierarchies.</p>",
-    "quote": "\"Schwerer ist es, das Gedächtnis der Namenlosen zu ehren als das der Berühmten. Die historische Konstruktion ist dem Gedächtnis der Namenlosen gewidmet.\""
+    "quote": "\"Schwerer ist es, das Gedächtnis der Namenlosen zu ehren als das der Berühmten. Die historische Konstruktion ist dem Gedächtnis der Namenlosen gewidmet.\"",
+    "contactButtonUrl": "https://linktr.ee/nobodygallery"
   },
   "archiveIndex": {
     "kicker": "Archive",
@@ -772,7 +772,7 @@
       "title": "Ein Spiel von Herz und Hand",
       "dates": "23. Mai - 8. Juli 2026",
       "summary": "Eine Einzelausstellung von Sun Guangyi, kuratiert von Fanyi. Nobody Gallery verbindet Künstler, Werke und Besucher durch Ausstellungen, ortsbezogene Begegnungen und interkulturellen Dialog.",
-      "image": "assets/exhibitions/sun-guangyi-game.jpg",
+      "image": "/assets/uploads/网页首图.png",
       "imageAlt": "Ein Spiel von Herz und Hand, Einzelausstellung von Guangyi Sun"
     }
   }
