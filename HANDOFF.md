@@ -135,9 +135,9 @@ The Decap schema currently exposes:
 
 - Global site settings: open status, navigation labels, footer line, email, Instagram, Xiaohongshu, address, newsletter text, homepage button labels and links.
 - Homepage: hero title, dates, summary, hero image, image alt text.
-- About: homepage quote/body, Story, Mission, Artist submissions, section headings, contact button text.
-- What's on page intros: Now, Upcoming, Past titles and descriptions.
-- Exhibition/programme lists: Now, Upcoming, Past cards, images, labels, descriptions, admissions, buttons and links.
+- About: homepage quote/body, Story, Mission, Artist submissions, section headings, contact button text and contact button link.
+- What's on page intros: Now, Upcoming, Past titles and descriptions. Line breaks in intro text are preserved on the frontend.
+- Exhibition/programme lists: Now, Upcoming, Past cards, images, labels, descriptions, admissions, buttons and links. Programme descriptions and admission notes are multiline text fields; Decap line breaks are preserved on the frontend.
 - Visit page: hero text, side navigation, opening hours, spaces, booking copy and email button.
 - Ticket info page: hero text, side navigation, exhibition/free-entry cards, screenings and events copy.
 - Shop page: hero, cooperating artists, artist cards, works, prices, image paths and button links.
@@ -166,6 +166,23 @@ Existing static images remain in:
 - `assets/works/`
 - `assets/artist-avatars/`
 - `assets/artists/`
+
+## Image Replacement Guide
+
+Use these target sizes when replacing CMS images:
+
+- Logo wordmark, `assets/logo.png`: keep the transparent wide PNG format, ideally `2600x528` or the same `4.9:1` ratio.
+- Homepage hero, `home.hero.image`: landscape `16:9`, ideally `2400x1350` or at least `2000x1125`.
+- Exhibition detail hero, `details.sunGuangyiGame.image` and `details.oneThousandTwoNights.image`: landscape `16:9`, ideally `2400x1350` or at least `2000x1125`.
+- Poster detail hero, `details.landscapeAfterProcessing.image`: portrait `4:5`, ideally `1600x2000` or at least `1200x1500`.
+- What’s On programme cards, `programmes.*[].image`: card crop is `4:3`, ideally `1600x1200`. Keep key text/artwork near the center because portrait posters will be cropped.
+- Archive cards, `archiveIndex.items[].image`: portrait `4:5`, ideally `1600x2000`.
+- Artist profile/detail image, `details.sunGuangyiArtist.image`, plus artist avatar fields: square `1:1`, ideally `1600x1600`.
+- Shop artist main image, `shop.artists[].image`: square `1:1`, ideally `1600x1600`.
+- Shop hero, `shop.hero.image`: shown contained, not cropped; square `1600x1600` works best for current artwork assets.
+- Work cards, `details.*.works[].image` and `shop.works[].image`: square canvas `1:1`, ideally `1600x1600`, with artwork centered and enough white margin.
+
+Current uploaded source sizes are: exhibition hero images around `2200x1256`, poster images around `1080x1526` to `1080x1744`, artist avatar around `1011x1015`, and work images around `1080x824` or `1080x1080`.
 
 ## Current Pages
 
@@ -224,6 +241,13 @@ node -e "for (const f of ['content/site.json','content/site.en.json','content/si
 ruby -e "require 'yaml'; YAML.load_file('admin/config.yml')"
 ```
 
+Latest content/link updates:
+
+- The About page contact button now reads `about.contactButtonUrl` from all three content files and points to `https://linktr.ee/nobodygallery`.
+- Decap CMS now exposes `about.contactButtonUrl` next to the contact button label.
+- What’s On programme descriptions, admission notes and page intros preserve manual line breaks from CMS text fields.
+- HTML asset query strings were bumped to `v=20260517c` after editing `styles.css` and `script.js`.
+
 Production OAuth smoke test after the Cloudflare redeploy:
 
 - `https://nobodygallery.art/api/auth?provider=github` should redirect to GitHub OAuth, not Netlify.
@@ -272,7 +296,7 @@ The mobile-only CSS fixes are in `styles.css`:
 - Increased `.nav-toggle` to a 44px tall touch target.
 - Forced `.shop-artist-grid` to one column under `760px` so cooperating artist cards do not become narrow or distorted on phones.
 - Reduced mobile page/detail heading scale and added `overflow-wrap: anywhere` for long German titles such as `Ausstellungsarchiv`.
-- Bumped HTML asset query strings to `v=20260517b` so mobile browsers fetch the latest CSS and JS.
+- Bumped HTML asset query strings; the latest cache key is `v=20260517c` so mobile browsers fetch the latest CSS and JS.
 
 These changes are inside the existing responsive media query and do not change the confirmed desktop layout.
 

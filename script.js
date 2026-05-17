@@ -519,6 +519,10 @@ function escapeHtml(value = "") {
     .replace(/"/g, "&quot;");
 }
 
+function escapeAttr(value = "") {
+  return escapeHtml(value).replace(/'/g, "&#39;");
+}
+
 function applyContent(data) {
   document.querySelectorAll("[data-content]").forEach((node) => {
     const value = getPath(data, node.dataset.content);
@@ -548,26 +552,26 @@ function applyContent(data) {
 function renderProgrammeCard(item, lang) {
   const dictionary = getDictionary(lang);
   const imageMarkup = item.image
-    ? `<img src="${publicUrl(item.image)}" alt="${item.imageAlt || item.title}" />`
-    : `<span>${item.placeholder || "Programme"}</span>`;
+    ? `<img src="${escapeAttr(publicUrl(item.image))}" alt="${escapeAttr(item.imageAlt || item.title)}" />`
+    : `<span>${escapeHtml(item.placeholder || "Programme")}</span>`;
   const imageClass = item.image ? "visual-card-media image-slot" : "visual-card-media";
   const admission = item.admission
-    ? `<p class="admission"><strong>${dictionary.admissionLabel}</strong> ${item.admission}</p>`
+    ? `<p class="admission"><strong>${escapeHtml(dictionary.admissionLabel)}</strong> ${escapeHtml(item.admission)}</p>`
     : "";
 
   return `
     <article class="programme-card">
-      <a class="${imageClass}" href="${publicUrl(item.url)}">
+      <a class="${imageClass}" href="${escapeAttr(publicUrl(item.url))}">
         ${imageMarkup}
       </a>
-      <div>
-        <p class="programme-type">${item.type || ""}</p>
-        <h3>${item.title || ""}</h3>
-        <p>${item.meta || ""}</p>
-        <p class="description">${item.description || ""}</p>
+      <div class="programme-card-copy">
+        <p class="programme-type">${escapeHtml(item.type || "")}</p>
+        <h3>${escapeHtml(item.title || "")}</h3>
+        <p class="programme-meta">${escapeHtml(item.meta || "")}</p>
+        <p class="description">${escapeHtml(item.description || "")}</p>
         ${admission}
         <div class="card-actions">
-          <a class="button" href="${publicUrl(item.url)}">${item.buttonLabel || dictionary.heroPrimary}</a>
+          <a class="button" href="${escapeAttr(publicUrl(item.url))}">${escapeHtml(item.buttonLabel || dictionary.heroPrimary)}</a>
         </div>
       </div>
     </article>

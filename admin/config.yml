@@ -70,6 +70,7 @@ collections:
               - { label: "理念标题", name: "missionTitle", widget: "string" }
               - { label: "艺术家招募标题", name: "artistCallTitle", widget: "string" }
               - { label: "联系按钮文字", name: "contactButtonLabel", widget: "string" }
+              - { label: "联系按钮链接", name: "contactButtonUrl", widget: "string" }
               - { label: "首页引言", name: "quote", widget: "text" }
               - { label: "首页关于 HTML", name: "homeHtml", widget: "text" }
               - { label: "故事 HTML", name: "storyHtml", widget: "text" }
@@ -85,7 +86,7 @@ collections:
                 widget: "object"
                 fields: &intro_fields
                   - { label: "标题", name: "title", widget: "string" }
-                  - { label: "说明", name: "lede", widget: "text" }
+                  - { label: "说明", name: "lede", widget: "text", hint: "可手动换行，前台会保留换行。" }
               - label: "即将呈现页"
                 name: "upcoming"
                 widget: "object"
@@ -106,8 +107,8 @@ collections:
                   - { label: "类型", name: "type", widget: "string" }
                   - { label: "标题", name: "title", widget: "string" }
                   - { label: "时间地点", name: "meta", widget: "string" }
-                  - { label: "简介", name: "description", widget: "text" }
-                  - { label: "参观说明", name: "admission", widget: "string", required: false }
+                  - { label: "简介", name: "description", widget: "text", hint: "可手动换行，前台会保留换行。" }
+                  - { label: "参观说明", name: "admission", widget: "text", required: false, hint: "可手动换行，前台会保留换行。" }
                   - { label: "图片", name: "image", widget: "image", required: false }
                   - { label: "图片替代文字", name: "imageAlt", widget: "string", required: false }
                   - { label: "无图占位文字", name: "placeholder", widget: "string", required: false }
