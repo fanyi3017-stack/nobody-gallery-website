@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>心手相印的游戏 | Nobody Gallery</title>
-    <link rel="stylesheet" href="../styles.css?v=20260516b" />
+    <link rel="stylesheet" href="../styles.css?v=20260517a" />
   </head>
   <body>
     <header class="site-header">
@@ -38,10 +38,10 @@
     <main class="page-main">
       <section class="detail-hero">
         <div class="detail-copy">
-          <p class="kicker">正在展出</p>
-          <h1>心手相印的游戏</h1>
-          <p class="page-lede">The Game of Heart and Hand</p>
-          <div class="detail-meta">
+          <p class="kicker" data-content="details.sunGuangyiGame.kicker">正在展出</p>
+          <h1 data-content="details.sunGuangyiGame.title">心手相印的游戏</h1>
+          <p class="page-lede" data-content="details.sunGuangyiGame.subtitle">The Game of Heart and Hand</p>
+          <div class="detail-meta" data-detail-meta="details.sunGuangyiGame.meta">
             <div>
               <p class="label">艺术家</p>
               <p><a href="../artists/sun-guangyi.html">孙广义 / Guangyi Sun</a></p>
@@ -61,23 +61,25 @@
           </div>
         </div>
         <div class="media-slot detail-media image-slot">
-          <img src="../assets/exhibitions/sun-guangyi-game.jpg" alt="心手相印的游戏展览海报" />
+          <img src="../assets/exhibitions/sun-guangyi-game.jpg" alt="心手相印的游戏展览海报" data-content-attr="details.sunGuangyiGame.image:src,details.sunGuangyiGame.imageAlt:alt" />
         </div>
       </section>
 
       <section class="page-section text-columns">
-        <h2>展览</h2>
+        <h2 data-content="details.sunGuangyiGame.contentHeading">展览</h2>
         <div>
-          <p>
-            《心手相印的游戏》为艺术家孙广义个展，展期为 2026 年 5 月 23 日至 7 月 8 日，展览地点为旺无名画廊徐汇馆。
-          </p>
-          <p>
-            当前页面先搭好展览详情结构：展览介绍、艺术家链接、作品清单、微信推文入口都已经预留，后续可继续补充策展文本、现场图和媒体报道。
-          </p>
-          <a class="external-link" href="https://mp.weixin.qq.com/s/8H-DtUTQD0za3LijRqoHHw" target="_blank" rel="noreferrer">
+          <div data-content-html="details.sunGuangyiGame.contentHtml">
+            <p>
+              《心手相印的游戏》为艺术家孙广义个展，展期为 2026 年 5 月 23 日至 7 月 8 日，展览地点为旺无名画廊徐汇馆。
+            </p>
+            <p>
+              当前页面先搭好展览详情结构：展览介绍、艺术家链接、作品清单、微信推文入口都已经预留，后续可继续补充策展文本、现场图和媒体报道。
+            </p>
+          </div>
+          <a class="external-link" href="https://mp.weixin.qq.com/s/8H-DtUTQD0za3LijRqoHHw" target="_blank" rel="noreferrer" data-external-link="details.sunGuangyiGame">
             微信推文
           </a>
-          <div class="action-row">
+          <div class="action-row" data-action-list="details.sunGuangyiGame.actions">
             <a class="button" href="../artists/sun-guangyi.html">艺术家介绍</a>
             <a class="button" href="../shop/#sun-guangyi">在售作品</a>
           </div>
@@ -85,8 +87,8 @@
       </section>
 
       <section class="page-section works-section">
-        <h2>作品</h2>
-        <div class="work-grid">
+        <h2 data-content="details.sunGuangyiGame.worksHeading">作品</h2>
+        <div class="work-grid" data-work-list="details.sunGuangyiGame.works">
           <article class="work-card">
             <div class="work-image image-slot"><img src="../assets/works/sun-song-ci.png" alt="宋瓷作品图" /></div>
             <h3>宋瓷</h3><p>40 x 20 cm</p><p>RMB 12,000</p>
@@ -171,6 +173,6 @@
       <p>NOBODY GALLERY</p>
       <p data-i18n="footerLine">nobody is somebody</p>
     </footer>
-    <script src="../script.js?v=20260516b"></script>
+    <script src="../script.js?v=20260517a"></script>
   </body>
 </html>

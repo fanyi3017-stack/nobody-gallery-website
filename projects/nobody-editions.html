@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nobody Editions | Nobody Gallery</title>
-    <link rel="stylesheet" href="../styles.css?v=20260516b" />
+    <link rel="stylesheet" href="../styles.css?v=20260517a" />
   </head>
   <body>
     <header class="site-header">
@@ -38,18 +38,20 @@
     <main class="page-main">
       <section class="page-hero">
         <div>
-          <p class="kicker">Project</p>
-          <h1>Nobody Editions</h1>
+          <p class="kicker" data-content="details.nobodyEditions.kicker">Project</p>
+          <h1 data-content="details.nobodyEditions.title">Nobody Editions</h1>
         </div>
-        <p class="page-lede">
+        <p class="page-lede" data-content="details.nobodyEditions.subtitle">
           用于承载限量作品、出版、衍生项目和长期合作计划。当前先作为 Project 详情页模板，后续可以按项目继续扩展。
         </p>
       </section>
 
       <section class="page-section">
         <div class="placeholder-note">
-          <p class="label">Reserved fields</p>
-          <p>项目介绍 / 参与艺术家 / 作品列表 / 价格 / 购买或咨询入口 / 项目图片</p>
+          <p class="label" data-content="details.nobodyEditions.contentHeading">Reserved fields</p>
+          <div data-content-html="details.nobodyEditions.contentHtml">
+            <p>项目介绍 / 参与艺术家 / 作品列表 / 价格 / 购买或咨询入口 / 项目图片</p>
+          </div>
         </div>
       </section>
     </main>
@@ -58,6 +60,6 @@
       <p>NOBODY GALLERY</p>
       <p data-i18n="footerLine">nobody is somebody</p>
     </footer>
-    <script src="../script.js?v=20260516b"></script>
+    <script src="../script.js?v=20260517a"></script>
   </body>
 </html>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>关于 | Nobody Gallery</title>
-    <link rel="stylesheet" href="../styles.css?v=20260516b" />
+    <link rel="stylesheet" href="../styles.css?v=20260517a" />
   </head>
   <body>
     <header class="site-header">
@@ -59,14 +59,14 @@
       <section class="page-main page-section about-layout">
         <nav class="side-nav side-nav-with-title" aria-label="About sections">
           <h1 class="page-side-title" data-i18n="homeAboutTitle">关于旺无名</h1>
-          <a class="active" href="#story">故事</a>
-          <a href="#mission">理念</a>
-          <a href="#artists">艺术家招募</a>
+          <a class="active" href="#story" data-content="about.storyTitle">故事</a>
+          <a href="#mission" data-content="about.missionTitle">理念</a>
+          <a href="#artists" data-content="about.artistCallTitle">艺术家招募</a>
         </nav>
 
         <div class="about-content">
           <section id="story">
-            <h2>故事</h2>
+            <h2 data-content="about.storyTitle">故事</h2>
             <div data-content-html="about.storyHtml">
               <p>
                 德国出生的阿什肯纳兹犹太裔哲学家、文化评论家和散文家瓦尔特·本雅明（Walter Benjamin, 1892—1940）在生前最后一部作品《历史哲学论纲》中提到：“纪念无名者比纪念知名者更困难。历史的构建是献给对无名者的记忆。”
@@ -81,7 +81,7 @@
           </section>
 
           <section id="mission">
-            <h2>理念</h2>
+            <h2 data-content="about.missionTitle">理念</h2>
             <div data-content-html="about.missionHtml">
               <p>
                 在旺无名画廊，我们坚持“nobody is somebody”的信念。艺术的意义不该被名气定义，而是由作品本身去触动人心。我们致力于发现和支持那些尚未被发现的艺术家，用行动打破艺术生态中的壁垒，推动一个更包容、更多元的艺术世界。
@@ -96,7 +96,7 @@
           </section>
 
           <section id="artists">
-            <h2>艺术家招募</h2>
+            <h2 data-content="about.artistCallTitle">艺术家招募</h2>
             <div data-content-html="about.artistCallHtml">
               <p>
                 我们希望通过画廊的平台，将那些可能尚未被发现但具有非凡潜力的艺术家介绍给社会和藏家。这不仅是在发掘“nobody”的艺术价值，更是推动艺术界向更多元、更开放的方向发展，让艺术的可能性超越名气本身。
@@ -108,7 +108,7 @@
                 画廊长期招募艺术家，欢迎积极联系，加入我们。
               </p>
             </div>
-            <a class="button" href="mailto:nobodygallery@163.com">联系画廊</a>
+            <a class="button" href="mailto:nobodygallery@163.com" data-content="about.contactButtonLabel">联系画廊</a>
           </section>
         </div>
       </section>
@@ -132,6 +132,6 @@
         </a>
       </div>
     </footer>
-    <script src="../script.js?v=20260516b"></script>
+    <script src="../script.js?v=20260517a"></script>
   </body>
 </html>

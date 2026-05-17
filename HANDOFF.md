@@ -1,12 +1,18 @@
 # Nobody Gallery Website Handoff
 
-## Project Goal
+## Current Goal
 
-Build a static Nobody Gallery website prototype with a Saatchi Gallery-inspired hierarchy: current exhibition first, clear programme layers, About, Visit, Ticket Info, Shop, Archive, and artist detail pages.
+Nobody Gallery is a static HTML/CSS/JS website hosted from GitHub and intended for Cloudflare Pages. Decap CMS has been added so daily content edits can happen through `/admin/` instead of editing HTML by hand.
 
-The project remains plain HTML/CSS/JS and is suitable for Cloudflare Pages hosting plus Decap CMS content editing.
+The site still has no npm build step. Keep Cloudflare Pages configured as a static site:
+
+- Build command: empty
+- Output directory: `/` or project root
+- Production branch: `main`
 
 ## Local Preview
+
+Run from the repository root:
 
 ```bash
 python3 -m http.server 4173
@@ -18,95 +24,143 @@ Open:
 http://localhost:4173
 ```
 
-## Latest Structural Direction
+Admin entry:
 
-The homepage now keeps only:
+```text
+http://localhost:4173/admin/
+```
 
-- current exhibition hero
-- sticky current exhibitions section
-- macaron-green About section
+## Decap CMS Entry
 
-Shop and Visit previews were removed from the homepage because those now live in their own top-level pages.
+The CMS entry is:
 
-## Current Navigation
+```text
+/admin/
+```
 
-- 当前展览
-- 关于
-- 参观计划
-- 票务信息
-- 商店
+Files:
 
-`Now / Upcoming / Past` are no longer sections on one page. They are independent pages:
+- `admin/index.html`: loads Decap CMS from the CDN.
+- `admin/config.yml`: Decap CMS schema and GitHub backend config.
 
-- `/whats-on/now/`
-- `/whats-on/upcoming/`
-- `/whats-on/past/`
+Current backend config:
+
+```yaml
+backend:
+  name: github
+  repo: fanyi3017-stack/nobody-gallery-website
+  branch: main
+```
+
+Important: `/admin/` opens locally, but production saving requires GitHub OAuth/auth to be configured for the Cloudflare Pages domain. Until OAuth is connected, visitors can see the Decap login screen but cannot complete GitHub-backed edits from the deployed site.
+
+## Editable Content Files
+
+The frontend reads JSON content from:
+
+- `content/site.json`: Chinese source content
+- `content/site.en.json`: English content
+- `content/site.de.json`: German content
+
+`script.js` fetches these files at runtime. Chinese uses `content/site.json`; English and German merge in their language-specific JSON. The language choice is stored in `localStorage`, so once a visitor chooses English or German, the site keeps that language across page loads.
+
+## Editable Scope In Decap CMS
+
+The Decap schema currently exposes:
+
+- Global site settings: open status, navigation labels, footer line, email, Instagram, Xiaohongshu, address, newsletter text, homepage button labels and links.
+- Homepage: hero title, dates, summary, hero image, image alt text.
+- About: homepage quote/body, Story, Mission, Artist submissions, section headings, contact button text.
+- What's on page intros: Now, Upcoming, Past titles and descriptions.
+- Exhibition/programme lists: Now, Upcoming, Past cards, images, labels, descriptions, admissions, buttons and links.
+- Visit page: hero text, side navigation, opening hours, spaces, booking copy and email button.
+- Ticket info page: hero text, side navigation, exhibition/free-entry cards, screenings and events copy.
+- Shop page: hero, cooperating artists, artist cards, works, prices, image paths and button links.
+- Artists index: A-Z intro and editable artist entry cards.
+- Artist detail: Sun Guangyi profile, metadata, body text, links and works.
+- Archive index: archive intro and archive cards.
+- Archive/detail pages: current exhibition detail, past exhibition detail pages, upcoming placeholder and Nobody Editions placeholder.
+- Works lists: artwork names, sizes/materials, prices/inquiry text, image paths and alt text.
+
+Layout, spacing, typography and CSS are still edited in code. Decap is for content, links, images and lists, not for redesigning the page structure.
+
+## Image Uploads
+
+CMS uploads are configured here:
+
+```yaml
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+```
+
+The repository contains `assets/uploads/.gitkeep` so the folder exists before the first CMS upload.
+
+Existing static images remain in:
+
+- `assets/exhibitions/`
+- `assets/works/`
+- `assets/artist-avatars/`
+- `assets/artists/`
 
 ## Current Pages
 
-- `index.html`: current exhibition hero, current exhibitions, About
-- `whats-on/index.html`: redirect to `whats-on/now/`
-- `whats-on/now/index.html`: current exhibitions
-- `whats-on/upcoming/index.html`: upcoming exhibitions and events
-- `whats-on/past/index.html`: past exhibitions
-- `about/index.html`: gallery story, philosophy, artist call
-- `visit/index.html`: opening times, spaces, booking info
-- `ticket-info/index.html`: ticket layer for future screenings, talks, events
-- `shop/index.html`: featured artists and available works
-- `exhibitions/sun-guangyi-game.html`: current exhibition detail
-- `artists/sun-guangyi.html`: artist profile and works list
-- archive/project placeholder pages are retained
+- `index.html`: homepage hero, current exhibitions, About excerpt.
+- `whats-on/index.html`: redirects to `whats-on/now/`.
+- `whats-on/now/index.html`: current programmes from JSON.
+- `whats-on/upcoming/index.html`: upcoming programmes from JSON.
+- `whats-on/past/index.html`: past programmes from JSON.
+- `about/index.html`: About sections from JSON.
+- `visit/index.html`: visit info from JSON.
+- `ticket-info/index.html`: ticket info from JSON.
+- `shop/index.html`: shop artists and works from JSON.
+- `artists/index.html`: artist index from JSON.
+- `artists/sun-guangyi.html`: artist detail and works from JSON.
+- `exhibitions/sun-guangyi-game.html`: current exhibition detail from JSON.
+- `exhibitions/upcoming.html`: upcoming detail placeholder from JSON.
+- `archive/index.html`: archive cards from JSON.
+- `archive/one-thousand-two-nights.html`: archive detail from JSON.
+- `archive/landscape-after-processing.html`: archive detail from JSON.
+- `projects/nobody-editions.html`: project placeholder from JSON.
 
-## CMS-Ready Files
+## GitHub And Cloudflare Sync
 
-- `admin/index.html`: Decap CMS entry
-- `admin/config.yml`: Decap CMS config
-- `content/site.json`: editable content source consumed by `script.js`
-- `assets/uploads/.gitkeep`: upload folder placeholder
-- `CMS_SETUP.md`: notes for Cloudflare Pages and Decap CMS setup
+Normal update flow:
 
-Decap CMS is the editing interface. Cloudflare Pages is the static hosting and publishing platform.
+```bash
+git status -sb
+git add .
+git commit -m "Add Decap CMS editable content structure"
+git push
+```
 
-## Current Content
+After `git push`, Cloudflare Pages should detect the new commit on `main` and redeploy automatically. If Cloudflare does not redeploy, open the Cloudflare Pages project and trigger a retry/deploy from the latest GitHub commit.
 
-Current exhibition:
+If editing through Decap CMS in production, Decap writes commits back to GitHub. Cloudflare Pages then redeploys from those commits.
 
-- Title: `心手相印的游戏`
-- English working title: `The Game of Heart and Hand`
-- Artist: `孙广义 / Guangyi Sun`
-- Duration: `2026.05.23 - 2026.07.08`
-- Opening: `2026.05.23 16:00`
-- Curator: `范懿 / Yi Fan`
-- WeChat article link: `https://mp.weixin.qq.com/s/8H-DtUTQD0za3LijRqoHHw`
+## Verification From This Handoff
 
-About:
+Local checks completed on port `4173`:
 
-- Added Walter Benjamin / “nobody is somebody” text in Chinese
-- Added artist recruitment / open call language
+- `/` returned 200 and rendered the homepage.
+- `/archive/` returned 200 and rendered 3 archive cards.
+- `/artists/` returned 200.
+- `/artists/sun-guangyi.html` returned 200 and rendered artist works.
+- `/admin/` returned 200 and showed the Decap CMS GitHub login screen.
+- `content/site.json`, `content/site.en.json`, `content/site.de.json` returned 200 and parsed successfully.
+- Main exhibition and work images returned 200 and browser image checks reported no broken images.
+- Browser language test passed: English and German content switched correctly, and German remained active after reload.
 
-Visit/contact:
-
-- Hours: Tuesday - Sunday, `10:00-19:00`; Monday closed
-- Xuhui space: `上海市徐汇区宜山路660号12幢3楼302室`
-- Jinshan space: `上海市金山区亭卫公路8255号`
-- Email: `nobodygallery@163.com`
-- Instagram link currently points to `https://www.instagram.com/nobodygallery/` and should be replaced if the final handle differs.
-
-## Verification
-
-Run after changes:
+Syntax checks passed:
 
 ```bash
 node --check script.js
-node -e "JSON.parse(require('fs').readFileSync('content/site.json','utf8')); console.log('JSON OK')"
+node -e "for (const f of ['content/site.json','content/site.en.json','content/site.de.json']) JSON.parse(require('fs').readFileSync(f,'utf8'))"
+ruby -e "require 'yaml'; YAML.load_file('admin/config.yml')"
 ```
 
-Also run local HTTP/link checks and browser visual checks before deploy.
+## Next Tasks
 
-## Unfinished Tasks
-
-- Confirm final Instagram URL.
-- Configure Decap CMS GitHub OAuth/auth for the Cloudflare Pages domain.
-- Add final images and texts for Upcoming, Ticket Info, Shop, and all artist shop entries.
-- Decide whether prices remain public or become inquiry-only.
-- Deploy via Cloudflare Pages when ready.
+- Configure GitHub OAuth/auth for Decap CMS on the Cloudflare Pages production domain.
+- Replace placeholder text for upcoming exhibitions, Nobody Editions and some artist bio fields when final copy is ready.
+- Add final images through Decap CMS or directly into `assets/`.
+- Decide whether artwork prices stay public or switch to inquiry-only text.

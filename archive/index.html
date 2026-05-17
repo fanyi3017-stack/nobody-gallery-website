@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Archive | Nobody Gallery</title>
-    <link rel="stylesheet" href="../styles.css?v=20260516b" />
+    <link rel="stylesheet" href="../styles.css?v=20260517a" />
   </head>
   <body>
     <header class="site-header">
@@ -38,16 +38,16 @@
     <main class="page-main">
       <section class="page-hero">
         <div>
-          <p class="kicker">Archive</p>
-          <h1>Exhibition Archive</h1>
+          <p class="kicker" data-content="archiveIndex.kicker">Archive</p>
+          <h1 data-content="archiveIndex.title">Exhibition Archive</h1>
         </div>
-        <p class="page-lede">
+        <p class="page-lede" data-content="archiveIndex.lede">
           Archive 是历史展览的大层级。这里会按展览列出可点击条目，后续每个展览都可以进入独立详情页。
         </p>
       </section>
 
       <section class="page-section">
-        <div class="visual-card-grid archive-grid" aria-label="Exhibition archive">
+        <div class="visual-card-grid archive-grid" aria-label="Exhibition archive" data-archive-list="archiveIndex.items">
           <a class="visual-card" href="./one-thousand-two-nights.html">
             <div class="visual-card-media poster image-slot">
               <img src="../assets/exhibitions/one-thousand-two-nights.jpg" alt="第一千零二夜展览海报" />
@@ -80,6 +80,6 @@
       <p>NOBODY GALLERY</p>
       <p data-i18n="footerLine">nobody is somebody</p>
     </footer>
-    <script src="../script.js?v=20260516b"></script>
+    <script src="../script.js?v=20260517a"></script>
   </body>
 </html>

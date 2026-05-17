@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Artists | Nobody Gallery</title>
-    <link rel="stylesheet" href="../styles.css?v=20260516b" />
+    <link rel="stylesheet" href="../styles.css?v=20260517a" />
   </head>
   <body>
     <header class="site-header">
@@ -38,16 +38,16 @@
     <main class="page-main">
       <section class="page-hero">
         <div>
-          <p class="kicker">Artists A-Z</p>
-          <h1>Artists</h1>
+          <p class="kicker" data-content="artistIndex.kicker">Artists A-Z</p>
+          <h1 data-content="artistIndex.title">Artists</h1>
         </div>
-        <p class="page-lede">
+        <p class="page-lede" data-content="artistIndex.lede">
           艺术家索引按 A-Z 排列。当前先放入孙广义，其余位置保留为空，后续可以继续增加艺术家详情页、bio、作品与价格。
         </p>
       </section>
 
       <section class="page-section">
-        <div class="visual-card-grid artist-directory" aria-label="Artists A-Z">
+        <div class="visual-card-grid artist-directory" aria-label="Artists A-Z" data-artist-list="artistIndex.items">
           <a class="visual-card" href="./sun-guangyi.html">
             <div class="visual-card-media square image-slot">
               <img src="../assets/artist-avatars/sun-guangyi.jpg" alt="孙广义肖像" />
@@ -82,6 +82,6 @@
       <p>NOBODY GALLERY</p>
       <p data-i18n="footerLine">nobody is somebody</p>
     </footer>
-    <script src="../script.js?v=20260516b"></script>
+    <script src="../script.js?v=20260517a"></script>
   </body>
 </html>

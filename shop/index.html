@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>商店 | Nobody Gallery</title>
-    <link rel="stylesheet" href="../styles.css?v=20260516b" />
+    <link rel="stylesheet" href="../styles.css?v=20260517a" />
   </head>
   <body>
     <header class="site-header">
@@ -58,24 +58,24 @@
     <main>
       <section class="shop-hero">
         <div class="media-slot image-slot image-contain">
-          <img src="../assets/works/sun-wenming-suipian.png" alt="孙广义作品，文明碎片" />
+          <img src="../assets/works/sun-wenming-suipian.png" alt="孙广义作品，文明碎片" data-content-attr="shop.hero.image:src,shop.hero.imageAlt:alt" />
         </div>
         <div class="shop-hero-copy">
-          <h1 class="shop-heading">商店</h1>
-          <p>浏览旺无名画廊的在售作品、限量版本和艺术家页面。</p>
+          <h1 class="shop-heading" data-content="shop.hero.title">商店</h1>
+          <p data-content="shop.hero.lede">浏览旺无名画廊的在售作品、限量版本和艺术家页面。</p>
           <div class="action-row">
-            <a class="button" href="#sun-guangyi">查看艺术家</a>
+            <a class="button" href="#sun-guangyi" data-content="shop.hero.buttonLabel" data-content-attr="shop.hero.buttonUrl:href">查看艺术家</a>
           </div>
         </div>
       </section>
 
       <section class="page-main page-section" id="sun-guangyi">
         <div class="section-heading">
-          <p class="kicker">艺术家</p>
-          <h2>合作艺术家</h2>
+          <p class="kicker" data-content="shop.artistSection.kicker">艺术家</p>
+          <h2 data-content="shop.artistSection.title">合作艺术家</h2>
         </div>
 
-        <div class="shop-artist-grid">
+        <div class="shop-artist-grid" data-shop-artist-list="shop.artists">
           <a class="shop-artist-card" href="../artists/sun-guangyi.html">
             <div class="visual-card-media image-slot">
               <img src="../assets/works/sun-wujin.png" alt="孙广义作品，无尽" />
@@ -132,8 +132,8 @@
       </section>
 
       <section class="page-main page-section works-section">
-        <h2>在售作品</h2>
-        <div class="work-grid">
+        <h2 data-content="shop.worksSection.title">在售作品</h2>
+        <div class="work-grid" data-work-list="shop.works">
           <article class="work-card">
             <div class="work-image image-slot"><img src="../assets/works/sun-song-ci.png" alt="宋瓷作品图" /></div>
             <h3>宋瓷</h3><p>40 x 20 cm</p><p>RMB 12,000</p>
@@ -172,6 +172,6 @@
         </a>
       </div>
     </footer>
-    <script src="../script.js?v=20260516b"></script>
+    <script src="../script.js?v=20260517a"></script>
   </body>
 </html>

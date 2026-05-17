@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>风景加工之后 | Nobody Gallery</title>
-    <link rel="stylesheet" href="../styles.css?v=20260516b" />
+    <link rel="stylesheet" href="../styles.css?v=20260517a" />
   </head>
   <body>
     <header class="site-header">
@@ -38,10 +38,10 @@
     <main class="page-main">
       <section class="detail-hero">
         <div class="detail-copy">
-          <p class="kicker">Archive</p>
-          <h1>风景加工之后</h1>
-          <p class="page-lede">When Landscapes Were Processed</p>
-          <div class="detail-meta">
+          <p class="kicker" data-content="details.landscapeAfterProcessing.kicker">Archive</p>
+          <h1 data-content="details.landscapeAfterProcessing.title">风景加工之后</h1>
+          <p class="page-lede" data-content="details.landscapeAfterProcessing.subtitle">When Landscapes Were Processed</p>
+          <div class="detail-meta" data-detail-meta="details.landscapeAfterProcessing.meta">
             <div>
               <p class="label">Artists</p>
               <p>李璨颖 / Li Canying<br />罗自然 / Luo Ziran<br />梅朝银 / Mei Zhaoyin</p>
@@ -61,20 +61,22 @@
           </div>
         </div>
         <div class="media-slot detail-media poster-detail image-slot">
-          <img src="../assets/exhibitions/landscape-after-processing.jpg" alt="风景加工之后展览海报" />
+          <img src="../assets/exhibitions/landscape-after-processing.jpg" alt="风景加工之后展览海报" data-content-attr="details.landscapeAfterProcessing.image:src,details.landscapeAfterProcessing.imageAlt:alt" />
         </div>
       </section>
 
       <section class="page-section text-columns">
-        <h2>Exhibition</h2>
+        <h2 data-content="details.landscapeAfterProcessing.contentHeading">Exhibition</h2>
         <div>
-          <p>
-            《风景加工之后》为 Nobody Project 无名计划第二期驻留展，展期为 2026 年 4 月 26 日至 5 月 31 日，地点为旺无名画廊金山馆。
-          </p>
-          <p>
-            当前页面已用本地展览物料搭好 Archive 详情结构，后续可以继续补充现场图、展览文本、作品清单与媒体报道。
-          </p>
-          <a class="external-link" href="https://mp.weixin.qq.com/s/2euLdwsZd1LFAsP0SL2Fhg" target="_blank" rel="noreferrer">
+          <div data-content-html="details.landscapeAfterProcessing.contentHtml">
+            <p>
+              《风景加工之后》为 Nobody Project 无名计划第二期驻留展，展期为 2026 年 4 月 26 日至 5 月 31 日，地点为旺无名画廊金山馆。
+            </p>
+            <p>
+              当前页面已用本地展览物料搭好 Archive 详情结构，后续可以继续补充现场图、展览文本、作品清单与媒体报道。
+            </p>
+          </div>
+          <a class="external-link" href="https://mp.weixin.qq.com/s/2euLdwsZd1LFAsP0SL2Fhg" target="_blank" rel="noreferrer" data-external-link="details.landscapeAfterProcessing">
             微信推文 / WeChat article
           </a>
         </div>
@@ -85,6 +87,6 @@
       <p>NOBODY GALLERY</p>
       <p data-i18n="footerLine">nobody is somebody</p>
     </footer>
-    <script src="../script.js?v=20260516b"></script>
+    <script src="../script.js?v=20260517a"></script>
   </body>
 </html>

@@ -1,0 +1,778 @@
+{
+  "home": {
+    "hero": {
+      "title": "A Game of Heart and Hand",
+      "dates": "23 May - 8 July 2026",
+      "summary": "A solo exhibition by Sun Guangyi, curated by Fanyi. Nobody Gallery connects artists, artworks and viewers through exhibitions, site-specific encounters and cross-cultural dialogue.",
+      "image": "assets/exhibitions/sun-guangyi-game.jpg",
+      "imageAlt": "A Game of Heart and Hand, solo exhibition by Guangyi Sun"
+    }
+  },
+  "about": {
+    "storyTitle": "Story",
+    "missionTitle": "Mission",
+    "artistCallTitle": "Artist submissions",
+    "contactButtonLabel": "Contact the gallery",
+    "quote": "\"It is more arduous to honour the memory of the nameless than that of the renowned. Historical construction is devoted to the memory of the nameless.\"",
+    "homeHtml": "<p>In <em>Theses on the Philosophy of History</em>, Walter Benjamin reminds us that history is shaped not only by celebrated names, but also by people whose presence is less visible and no less essential.</p><p>At Nobody Gallery, we hold to the belief that nobody is somebody. Art should not be defined by fame; it should be carried by the force of the work itself. We support artists whose practices deserve to be seen and make room for a more open, generous art world.</p><p>The gallery welcomes artists on an ongoing basis. If your work can move people, we are ready to support it.</p>",
+    "storyHtml": "<p>Walter Benjamin (1892-1940), the German-born Ashkenazi Jewish philosopher, cultural critic and essayist, wrote in his final work, <em>Theses on the Philosophy of History</em>: \"It is more arduous to honour the memory of the nameless than that of the renowned. Historical construction is devoted to the memory of the nameless.\"</p><p>This sentence asks us to look at the lives and acts that rarely enter official narratives. The nameless are not absent from history; they are often the ground on which history is built.</p><p>Nobody Gallery takes that attention seriously. To remember the nameless is to resist easy labels and to recognise value before it has been validated by fame.</p>",
+    "missionHtml": "<p>At Nobody Gallery, we believe that nobody is somebody. The meaning of art should come from the work itself, not from reputation alone. We are committed to discovering and supporting artists who have not yet been widely seen.</p><p>Here, life and art are inseparable. We believe every nobody may become somebody, because art belongs to everyone.</p><p>This is also a commitment to a more diverse and inclusive ecology for art, where artists and collectors can meet through genuine attention rather than fixed hierarchies.</p>",
+    "artistCallHtml": "<p>We hope to introduce artists with uncommon potential to wider audiences and collectors through the gallery platform. This is not only about discovering the value of the nobody; it is about opening the field of art to more possibilities.</p><p>Whether you are emerging or established, the work itself is what matters here. At Nobody Gallery, art is for everyone, and we believe life is art and art is life.</p><p>The gallery welcomes artist submissions and conversations throughout the year.</p>"
+  },
+  "programmes": {
+    "now": [
+      {
+        "type": "Now",
+        "title": "A Game of Heart and Hand",
+        "meta": "23 May - 8 July 2026, Xuhui Space",
+        "description": "Sun Guangyi's solo exhibition unfolds a game of looking between body, memory and image.",
+        "admission": "Free admission. Group visits should be booked in advance.",
+        "image": "assets/exhibitions/sun-guangyi-game-poster.jpg",
+        "imageAlt": "Poster for A Game of Heart and Hand",
+        "url": "exhibitions/sun-guangyi-game.html",
+        "buttonLabel": "More info"
+      },
+      {
+        "type": "Project",
+        "title": "After the Landscape Is Processed",
+        "meta": "26 April - 31 May 2026, Jinshan Space",
+        "description": "The second Nobody Project residency exhibition explores landscape, processing and site experience.",
+        "admission": "Free admission. Please check opening hours before visiting.",
+        "image": "assets/exhibitions/landscape-after-processing.jpg",
+        "imageAlt": "Poster for After the Landscape Is Processed",
+        "url": "archive/landscape-after-processing.html",
+        "buttonLabel": "More info"
+      }
+    ],
+    "upcoming": [
+      {
+        "type": "Upcoming",
+        "title": "Upcoming Exhibition",
+        "meta": "Dates to be announced",
+        "description": "A placeholder for future exhibitions, to be replaced with confirmed programme details.",
+        "admission": "Ticketing and booking information will be updated here.",
+        "placeholder": "Upcoming",
+        "url": "exhibitions/upcoming.html",
+        "buttonLabel": "More info"
+      },
+      {
+        "type": "Event",
+        "title": "Screening and Artist Talk",
+        "meta": "To be announced",
+        "description": "A future entry point for film screenings, public programmes, artist talks and ticketed events.",
+        "admission": "Ticket information will be published on the ticket info page.",
+        "placeholder": "Screening",
+        "url": "ticket-info/",
+        "buttonLabel": "Ticket info"
+      }
+    ],
+    "past": [
+      {
+        "type": "Past exhibition",
+        "title": "The One Thousand and Second Night",
+        "meta": "29 March - 18 May 2026",
+        "description": "A solo exhibition by Zhou Yunyi, curated by Fanyi. Past exhibitions are kept in the Archive.",
+        "image": "assets/exhibitions/one-thousand-two-nights.jpg",
+        "imageAlt": "Poster for The One Thousand and Second Night",
+        "url": "archive/one-thousand-two-nights.html",
+        "buttonLabel": "More info"
+      },
+      {
+        "type": "Archive",
+        "title": "Exhibition Archive",
+        "meta": "Index of past exhibitions and projects",
+        "description": "Past exhibitions, residencies and cross-cultural projects are collected in the Archive.",
+        "image": "assets/exhibitions/sun-guangyi-game-poster.jpg",
+        "imageAlt": "Archive poster",
+        "url": "archive/",
+        "buttonLabel": "View archive"
+      }
+    ]
+  },
+  "global": {
+    "heroPrimary": "More info",
+    "heroSecondary": "Plan your visit",
+    "aboutReadMore": "Read more",
+    "homeAboutTitle": "About Nobody Gallery",
+    "footerLine": "nobody is somebody",
+    "status": "Open Tuesday - Sunday, 10:00 - 19:00",
+    "location": "Shanghai",
+    "openingTimes": "Opening times",
+    "navWhatsOn": "What's on",
+    "navAbout": "About",
+    "navPlanVisit": "Plan your visit",
+    "navTicketInfo": "Ticket info",
+    "navShop": "Shop",
+    "newsletterTitle": "Register for email updates",
+    "newsletterText": "Be the first to hear about the latest Nobody Gallery exhibitions, events, offers and news.",
+    "emailPlaceholder": "Email",
+    "subscribe": "Subscribe",
+    "galleryAddress": "Nobody Gallery addresses: Xuhui Space, Room 302, 3F, Building 12, 660 Yishan Road, Xuhui District, Shanghai; Jinshan Space, 8255 Tingwei Road, Jinshan District, Shanghai.",
+    "email": "nobodygallery@163.com",
+    "instagramUrl": "https://www.instagram.com/nobodygallery/",
+    "xiaohongshuUrl": "https://xhslink.com/m/8yE2abYjyN8",
+    "heroPrimaryUrl": "exhibitions/sun-guangyi-game.html",
+    "heroSecondaryUrl": "visit/",
+    "aboutReadMoreUrl": "about/"
+  },
+  "pageIntros": {
+    "now": {
+      "title": "WHAT'S ON?",
+      "lede": "Current exhibitions and projects are collected here, with each entry linking to its own detail page."
+    },
+    "upcoming": {
+      "title": "Upcoming",
+      "lede": "Future exhibitions, screenings, talks and public programmes will be announced here."
+    },
+    "past": {
+      "title": "Past exhibitions",
+      "lede": "Past exhibitions and projects are preserved as an archive, with each exhibition detail page still available."
+    }
+  },
+  "visit": {
+    "kicker": "Visit",
+    "title": "Plan your visit",
+    "lede": "Visitor information is collected here: opening hours, two gallery addresses, booking notes and future ticket links.",
+    "navHours": "Opening times",
+    "navSpaces": "Addresses",
+    "navBooking": "Booking",
+    "hoursTitle": "Opening times",
+    "hours": [
+      {
+        "label": "Regular hours",
+        "text": "Tuesday - Sunday, 10:00 - 19:00"
+      },
+      {
+        "label": "Closed",
+        "text": "Monday"
+      }
+    ],
+    "spacesTitle": "Addresses",
+    "spaces": [
+      {
+        "label": "Xuhui Space",
+        "text": "Room 302, 3F, Building 12, 660 Yishan Road, Xuhui District, Shanghai"
+      },
+      {
+        "label": "Jinshan Space",
+        "text": "8255 Tingwei Road, Jinshan District, Shanghai"
+      }
+    ],
+    "bookingTitle": "Booking",
+    "bookingHtml": "<p>Current exhibitions are free to visit. Please contact us by email in advance for group tours, media visits, screenings and special projects.</p>",
+    "bookingButtonLabel": "Send email",
+    "bookingButtonUrl": "mailto:nobodygallery@163.com"
+  },
+  "ticket": {
+    "kicker": "Tickets",
+    "title": "Ticket info",
+    "lede": "Ticketing for future screenings, public programmes, artist talks and special projects will live here. Free exhibition access is also explained in one place.",
+    "navExhibitions": "Exhibitions",
+    "navScreenings": "Screenings",
+    "navEvents": "Events",
+    "exhibitionsTitle": "Exhibitions",
+    "exhibitionCards": [
+      {
+        "label": "Current exhibition",
+        "text": "Free admission. Group visits and guided tours should be booked in advance."
+      },
+      {
+        "label": "Booking",
+        "text": "For group visits, media visits and special arrangements, email nobodygallery@163.com."
+      }
+    ],
+    "screeningsTitle": "Screenings",
+    "screeningsHtml": "<p>Screening tickets will be published once programmes are confirmed. Links, prices, capacity and visitor notes will appear here.</p>",
+    "eventsTitle": "Events",
+    "eventsHtml": "<p>Artist talks, performances, workshops and public programmes will use the same ticketing layer and can be updated through Decap CMS.</p>"
+  },
+  "shop": {
+    "hero": {
+      "title": "Shop",
+      "lede": "Browse available works, limited editions and artist pages from Nobody Gallery.",
+      "image": "assets/works/sun-wenming-suipian.png",
+      "imageAlt": "Sun Guangyi work, Fragments of Civilization",
+      "buttonLabel": "View artists",
+      "buttonUrl": "#sun-guangyi"
+    },
+    "artistSection": {
+      "kicker": "Artists",
+      "title": "Collaborating artists"
+    },
+    "artists": [
+      {
+        "kicker": "G",
+        "name": "Sun Guangyi",
+        "subtitle": "Guangyi Sun",
+        "url": "artists/sun-guangyi.html",
+        "image": "assets/works/sun-wujin.png",
+        "imageAlt": "Sun Guangyi work, Endless",
+        "avatar": "assets/artist-avatars/sun-guangyi.jpg",
+        "avatarAlt": "Portrait of Sun Guangyi",
+        "buttonLabel": "View"
+      },
+      {
+        "kicker": "Coming soon",
+        "name": "Coming soon",
+        "subtitle": "Artist shop entry",
+        "placeholder": "Artist",
+        "buttonLabel": "View",
+        "empty": true
+      },
+      {
+        "kicker": "Coming soon",
+        "name": "Coming soon",
+        "subtitle": "Artist shop entry",
+        "placeholder": "Artist",
+        "buttonLabel": "View",
+        "empty": true
+      },
+      {
+        "kicker": "Coming soon",
+        "name": "Coming soon",
+        "subtitle": "Artist shop entry",
+        "placeholder": "Artist",
+        "buttonLabel": "View",
+        "empty": true
+      }
+    ],
+    "worksSection": {
+      "title": "Available works"
+    },
+    "works": [
+      {
+        "title": "宋瓷",
+        "meta": "40 x 20 cm",
+        "price": "RMB 12,000",
+        "image": "assets/works/sun-song-ci.png",
+        "imageAlt": "宋瓷 work image"
+      },
+      {
+        "title": "殇",
+        "meta": "40 x 20 cm",
+        "price": "RMB 12,000",
+        "image": "assets/works/sun-shang.png",
+        "imageAlt": "殇 work image"
+      },
+      {
+        "title": "柴庵",
+        "meta": "40 x 40 cm",
+        "price": "RMB 18,000",
+        "image": "assets/works/sun-chai-an.png",
+        "imageAlt": "柴庵 work image"
+      },
+      {
+        "title": "接火",
+        "meta": "40 x 40 cm",
+        "price": "RMB 18,000",
+        "image": "assets/works/sun-shang.png",
+        "imageAlt": "接火 work image"
+      }
+    ]
+  },
+  "artistIndex": {
+    "kicker": "Artists A-Z",
+    "title": "Artists",
+    "lede": "The artist index is arranged A-Z. New artist entries, portraits, links, short descriptions and placeholder cards can be updated in Decap CMS.",
+    "items": [
+      {
+        "kicker": "G",
+        "name": "Sun Guangyi",
+        "subtitle": "Guangyi Sun",
+        "url": "artists/sun-guangyi.html",
+        "image": "assets/works/sun-wujin.png",
+        "imageAlt": "Sun Guangyi work, Endless",
+        "avatar": "assets/artist-avatars/sun-guangyi.jpg",
+        "avatarAlt": "Portrait of Sun Guangyi",
+        "buttonLabel": "View"
+      },
+      {
+        "kicker": "Coming soon",
+        "name": "Coming soon",
+        "subtitle": "Artist shop entry",
+        "placeholder": "Artist",
+        "buttonLabel": "View",
+        "empty": true
+      },
+      {
+        "kicker": "Coming soon",
+        "name": "Coming soon",
+        "subtitle": "Artist shop entry",
+        "placeholder": "Artist",
+        "buttonLabel": "View",
+        "empty": true
+      },
+      {
+        "kicker": "Coming soon",
+        "name": "Coming soon",
+        "subtitle": "Artist shop entry",
+        "placeholder": "Artist",
+        "buttonLabel": "View",
+        "empty": true
+      }
+    ]
+  },
+  "archiveIndex": {
+    "kicker": "Archive",
+    "title": "Exhibition Archive",
+    "lede": "Archive is the home for past exhibitions. Each entry links to a dedicated exhibition page.",
+    "items": [
+      {
+        "date": "2026.03.29 - 2026.05.18",
+        "title": "The One Thousand and Second Night",
+        "subtitle": "Zhou Yunyi",
+        "url": "archive/one-thousand-two-nights.html",
+        "image": "assets/exhibitions/one-thousand-two-nights.jpg",
+        "imageAlt": "Poster for The One Thousand and Second Night"
+      },
+      {
+        "date": "2026.04.26 - 2026.05.31",
+        "title": "After the Landscape Is Processed",
+        "subtitle": "Li Canying, Luo Ziran, Mei Zhaoyin",
+        "url": "archive/landscape-after-processing.html",
+        "image": "assets/exhibitions/landscape-after-processing.jpg",
+        "imageAlt": "Poster for After the Landscape Is Processed"
+      },
+      {
+        "date": "2026.05.23 - 2026.07.08",
+        "title": "A Game of Heart and Hand",
+        "subtitle": "Sun Guangyi",
+        "url": "exhibitions/sun-guangyi-game.html",
+        "image": "assets/exhibitions/sun-guangyi-game-poster.jpg",
+        "imageAlt": "Poster for A Game of Heart and Hand"
+      }
+    ]
+  },
+  "details": {
+    "sunGuangyiGame": {
+      "kicker": "Now",
+      "title": "A Game of Heart and Hand",
+      "subtitle": "The Game of Heart and Hand",
+      "image": "assets/exhibitions/sun-guangyi-game.jpg",
+      "imageAlt": "Poster for A Game of Heart and Hand",
+      "meta": [
+        {
+          "label": "Artist",
+          "valueHtml": "<a href=\"../artists/sun-guangyi.html\">Sun Guangyi</a>"
+        },
+        {
+          "label": "Duration",
+          "valueHtml": "23 May - 8 July 2026"
+        },
+        {
+          "label": "Opening",
+          "valueHtml": "23 May 2026, 16:00"
+        },
+        {
+          "label": "Curator",
+          "valueHtml": "Fanyi / Yi Fan"
+        }
+      ],
+      "contentHeading": "Exhibition",
+      "contentHtml": "<p><em>A Game of Heart and Hand</em> is a solo exhibition by Sun Guangyi, on view from 23 May to 8 July 2026 at Nobody Gallery Xuhui Space.</p><p>This page holds the exhibition introduction, artist link, works list and WeChat article entry. Curatorial text, installation images and press materials can be added here later.</p>",
+      "externalUrl": "https://mp.weixin.qq.com/s/8H-DtUTQD0za3LijRqoHHw",
+      "externalLabel": "WeChat article",
+      "actions": [
+        {
+          "label": "Artist profile",
+          "url": "artists/sun-guangyi.html"
+        },
+        {
+          "label": "Available works",
+          "url": "shop/#sun-guangyi"
+        }
+      ],
+      "worksHeading": "Works",
+      "works": [
+        {
+          "title": "宋瓷",
+          "meta": "40 x 20 cm",
+          "price": "RMB 12,000",
+          "image": "assets/works/sun-song-ci.png",
+          "imageAlt": "宋瓷 work image"
+        },
+        {
+          "title": "殇",
+          "meta": "40 x 20 cm",
+          "price": "RMB 12,000",
+          "image": "assets/works/sun-shang.png",
+          "imageAlt": "殇 work image"
+        },
+        {
+          "title": "柴庵",
+          "meta": "40 x 40 cm",
+          "price": "RMB 18,000",
+          "image": "assets/works/sun-chai-an.png",
+          "imageAlt": "柴庵 work image"
+        },
+        {
+          "title": "接火",
+          "meta": "40 x 40 cm",
+          "price": "RMB 18,000",
+          "image": "assets/works/sun-shang.png",
+          "imageAlt": "接火 work image"
+        },
+        {
+          "title": "敦煌遗韵",
+          "meta": "40 x 40 cm",
+          "price": "RMB 18,000",
+          "image": "assets/works/sun-dunhuang.png",
+          "imageAlt": "敦煌遗韵 work image"
+        },
+        {
+          "title": "无尽",
+          "meta": "80 x 60 cm",
+          "price": "RMB 52,000",
+          "image": "assets/works/sun-wujin.png",
+          "imageAlt": "无尽 work image"
+        },
+        {
+          "title": "文明碎片",
+          "meta": "80 x 60 cm",
+          "price": "RMB 52,000",
+          "image": "assets/works/sun-wenming-suipian.png",
+          "imageAlt": "文明碎片 work image"
+        },
+        {
+          "title": "听泉",
+          "meta": "20 x 40 cm",
+          "price": "RMB 12,000",
+          "image": "assets/works/sun-song-ci.png",
+          "imageAlt": "听泉 work image"
+        },
+        {
+          "title": "历史之手",
+          "meta": "20 x 40 cm",
+          "price": "RMB 12,000",
+          "image": "assets/works/sun-chai-an.png",
+          "imageAlt": "历史之手 work image"
+        },
+        {
+          "title": "若白",
+          "meta": "30 x 40 cm",
+          "price": "RMB 15,000",
+          "image": "assets/works/sun-song-ci.png",
+          "imageAlt": "若白 work image"
+        },
+        {
+          "title": "弯月黄沙",
+          "meta": "40 x 50 cm",
+          "price": "RMB 22,000",
+          "image": "assets/works/sun-dunhuang.png",
+          "imageAlt": "弯月黄沙 work image"
+        },
+        {
+          "title": "盘中鱼",
+          "meta": "40 x 30 cm",
+          "price": "RMB 15,000",
+          "image": "assets/works/sun-wenming-suipian.png",
+          "imageAlt": "盘中鱼 work image"
+        },
+        {
+          "title": "石头记",
+          "meta": "30 x 40 cm",
+          "price": "RMB 15,000",
+          "image": "assets/works/sun-shang.png",
+          "imageAlt": "石头记 work image"
+        },
+        {
+          "title": "记忆中的琴声",
+          "meta": "30 x 40 cm",
+          "price": "RMB 18,000",
+          "image": "assets/works/sun-wujin.png",
+          "imageAlt": "记忆中的琴声 work image"
+        },
+        {
+          "title": "月落黑石",
+          "meta": "30 x 40 cm",
+          "price": "RMB 18,000",
+          "image": "assets/works/sun-song-ci.png",
+          "imageAlt": "月落黑石 work image"
+        },
+        {
+          "title": "塔",
+          "meta": "30 x 40 cm",
+          "price": "RMB 16,000",
+          "image": "assets/works/sun-chai-an.png",
+          "imageAlt": "塔 work image"
+        },
+        {
+          "title": "缄默的重音",
+          "meta": "30 x 40 cm",
+          "price": "RMB 16,000",
+          "image": "assets/works/sun-wenming-suipian.png",
+          "imageAlt": "缄默的重音 work image"
+        },
+        {
+          "title": "丝绸之路 1",
+          "meta": "40 x 50 cm",
+          "price": "RMB 22,000",
+          "image": "assets/works/sun-dunhuang.png",
+          "imageAlt": "丝绸之路 1 work image"
+        },
+        {
+          "title": "丝绸之路 2",
+          "meta": "30 x 40 cm",
+          "price": "RMB 22,000",
+          "image": "assets/works/sun-dunhuang.png",
+          "imageAlt": "丝绸之路 2 work image"
+        }
+      ]
+    },
+    "sunGuangyiArtist": {
+      "kicker": "Artist",
+      "title": "Sun Guangyi",
+      "subtitle": "Guangyi Sun",
+      "image": "assets/artist-avatars/sun-guangyi.jpg",
+      "imageAlt": "Portrait of Sun Guangyi",
+      "meta": [
+        {
+          "label": "Bio",
+          "valueHtml": "Artist biography to be added."
+        },
+        {
+          "label": "Works",
+          "valueHtml": "Mixed media / Painting"
+        }
+      ],
+      "contentHeading": "Biography",
+      "contentHtml": "<p>This page is reserved for Sun Guangyi’s biography, education, exhibition history, practice notes and representative works. The current exhibition and works list are included for now.</p><p>Related exhibition: <a href=\"../exhibitions/sun-guangyi-game.html\"><em>A Game of Heart and Hand</em></a>, 23 May - 8 July 2026, Nobody Gallery Xuhui Space.</p>",
+      "actions": [
+        {
+          "label": "Available works",
+          "url": "shop/#sun-guangyi"
+        }
+      ],
+      "worksHeading": "Available works",
+      "works": [
+        {
+          "title": "宋瓷",
+          "meta": "40 x 20 cm",
+          "price": "RMB 12,000",
+          "image": "assets/works/sun-song-ci.png",
+          "imageAlt": "宋瓷 work image"
+        },
+        {
+          "title": "殇",
+          "meta": "40 x 20 cm",
+          "price": "RMB 12,000",
+          "image": "assets/works/sun-shang.png",
+          "imageAlt": "殇 work image"
+        },
+        {
+          "title": "柴庵",
+          "meta": "40 x 40 cm",
+          "price": "RMB 18,000",
+          "image": "assets/works/sun-chai-an.png",
+          "imageAlt": "柴庵 work image"
+        },
+        {
+          "title": "接火",
+          "meta": "40 x 40 cm",
+          "price": "RMB 18,000",
+          "image": "assets/works/sun-shang.png",
+          "imageAlt": "接火 work image"
+        },
+        {
+          "title": "敦煌遗韵",
+          "meta": "40 x 40 cm",
+          "price": "RMB 18,000",
+          "image": "assets/works/sun-dunhuang.png",
+          "imageAlt": "敦煌遗韵 work image"
+        },
+        {
+          "title": "无尽",
+          "meta": "80 x 60 cm",
+          "price": "RMB 52,000",
+          "image": "assets/works/sun-wujin.png",
+          "imageAlt": "无尽 work image"
+        },
+        {
+          "title": "文明碎片",
+          "meta": "80 x 60 cm",
+          "price": "RMB 52,000",
+          "image": "assets/works/sun-wenming-suipian.png",
+          "imageAlt": "文明碎片 work image"
+        },
+        {
+          "title": "听泉",
+          "meta": "20 x 40 cm",
+          "price": "RMB 12,000",
+          "image": "assets/works/sun-song-ci.png",
+          "imageAlt": "听泉 work image"
+        },
+        {
+          "title": "历史之手",
+          "meta": "20 x 40 cm",
+          "price": "RMB 12,000",
+          "image": "assets/works/sun-chai-an.png",
+          "imageAlt": "历史之手 work image"
+        },
+        {
+          "title": "若白",
+          "meta": "30 x 40 cm",
+          "price": "RMB 15,000",
+          "image": "assets/works/sun-song-ci.png",
+          "imageAlt": "若白 work image"
+        },
+        {
+          "title": "弯月黄沙",
+          "meta": "40 x 50 cm",
+          "price": "RMB 22,000",
+          "image": "assets/works/sun-dunhuang.png",
+          "imageAlt": "弯月黄沙 work image"
+        },
+        {
+          "title": "盘中鱼",
+          "meta": "40 x 30 cm",
+          "price": "RMB 15,000",
+          "image": "assets/works/sun-wenming-suipian.png",
+          "imageAlt": "盘中鱼 work image"
+        },
+        {
+          "title": "石头记",
+          "meta": "30 x 40 cm",
+          "price": "RMB 15,000",
+          "image": "assets/works/sun-shang.png",
+          "imageAlt": "石头记 work image"
+        },
+        {
+          "title": "记忆中的琴声",
+          "meta": "30 x 40 cm",
+          "price": "RMB 18,000",
+          "image": "assets/works/sun-wujin.png",
+          "imageAlt": "记忆中的琴声 work image"
+        },
+        {
+          "title": "月落黑石",
+          "meta": "30 x 40 cm",
+          "price": "RMB 18,000",
+          "image": "assets/works/sun-song-ci.png",
+          "imageAlt": "月落黑石 work image"
+        },
+        {
+          "title": "塔",
+          "meta": "30 x 40 cm",
+          "price": "RMB 16,000",
+          "image": "assets/works/sun-chai-an.png",
+          "imageAlt": "塔 work image"
+        },
+        {
+          "title": "缄默的重音",
+          "meta": "30 x 40 cm",
+          "price": "RMB 16,000",
+          "image": "assets/works/sun-wenming-suipian.png",
+          "imageAlt": "缄默的重音 work image"
+        },
+        {
+          "title": "丝绸之路 1",
+          "meta": "40 x 50 cm",
+          "price": "RMB 22,000",
+          "image": "assets/works/sun-dunhuang.png",
+          "imageAlt": "丝绸之路 1 work image"
+        },
+        {
+          "title": "丝绸之路 2",
+          "meta": "30 x 40 cm",
+          "price": "RMB 22,000",
+          "image": "assets/works/sun-dunhuang.png",
+          "imageAlt": "丝绸之路 2 work image"
+        }
+      ]
+    },
+    "oneThousandTwoNights": {
+      "kicker": "Archive",
+      "title": "The One Thousand and Second Night",
+      "subtitle": "One Thousand and Two Nights",
+      "image": "assets/exhibitions/one-thousand-two-nights.jpg",
+      "imageAlt": "Poster for The One Thousand and Second Night",
+      "meta": [
+        {
+          "label": "Artist",
+          "valueHtml": "周韫仪 / Zhou Yunyi"
+        },
+        {
+          "label": "Duration",
+          "valueHtml": "2026.03.29 - 2026.05.18"
+        },
+        {
+          "label": "Opening",
+          "valueHtml": "2026.03.29 16:00"
+        },
+        {
+          "label": "Curator",
+          "valueHtml": "范懿 / Yi Fan"
+        }
+      ],
+      "contentHeading": "Exhibition",
+      "contentHtml": "<p><em>The One Thousand and Second Night</em> is a solo exhibition by Zhou Yunyi, on view from 29 March to 18 May 2026.</p><p>The page is reserved for exhibition text, installation images, works and a WeChat article entry.</p>",
+      "externalUrl": "https://mp.weixin.qq.com/s/9GtFsjLOdmfY6gNeBL69bg",
+      "externalLabel": "WeChat article",
+      "actions": [],
+      "worksHeading": "",
+      "works": []
+    },
+    "landscapeAfterProcessing": {
+      "kicker": "Archive",
+      "title": "After the Landscape Is Processed",
+      "subtitle": "When Landscapes Were Processed",
+      "image": "assets/exhibitions/landscape-after-processing.jpg",
+      "imageAlt": "Poster for After the Landscape Is Processed",
+      "meta": [
+        {
+          "label": "Artists",
+          "valueHtml": "李璨颖 / Li Canying<br />罗自然 / Luo Ziran<br />梅朝银 / Mei Zhaoyin"
+        },
+        {
+          "label": "Duration",
+          "valueHtml": "2026.04.26 - 2026.05.31"
+        },
+        {
+          "label": "Project",
+          "valueHtml": "Nobody Project 无名计划第二期驻留展"
+        },
+        {
+          "label": "Curators",
+          "valueHtml": "杨明月 / Yang Mingyue<br />庄泽曦 / Zhuang Zexi"
+        }
+      ],
+      "contentHeading": "Exhibition",
+      "contentHtml": "<p><em>After the Landscape Is Processed</em> is the second Nobody Project residency exhibition, on view from 26 April to 31 May 2026 at Nobody Gallery Jinshan Space.</p><p>The page is reserved for installation images, exhibition text, works and press materials.</p>",
+      "externalUrl": "https://mp.weixin.qq.com/s/2euLdwsZd1LFAsP0SL2Fhg",
+      "externalLabel": "WeChat article",
+      "actions": [],
+      "worksHeading": "",
+      "works": []
+    },
+    "upcomingExhibition": {
+      "kicker": "Upcoming",
+      "title": "Upcoming Exhibition",
+      "subtitle": "",
+      "image": "",
+      "imageAlt": "",
+      "meta": [],
+      "contentHeading": "",
+      "contentHtml": "<p>This is the placeholder detail page for an upcoming exhibition. Add the title, artists, dates, opening time, exhibition image, curatorial text and booking entry here.</p>",
+      "externalUrl": "",
+      "externalLabel": "",
+      "actions": [],
+      "worksHeading": "",
+      "works": []
+    },
+    "nobodyEditions": {
+      "kicker": "Project",
+      "title": "Nobody Editions",
+      "subtitle": "A project page for limited editions, publications, related objects and long-term collaborations.",
+      "image": "",
+      "imageAlt": "",
+      "meta": [],
+      "contentHeading": "Reserved fields",
+      "contentHtml": "<p>A project page for limited editions, publications, related objects and long-term collaborations.</p><p>Project introduction / participating artists / works list / prices / purchase or inquiry link / project images.</p>",
+      "externalUrl": "",
+      "externalLabel": "",
+      "actions": [],
+      "worksHeading": "",
+      "works": []
+    }
+  }
+}

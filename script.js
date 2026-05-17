@@ -16,6 +16,7 @@ const copy = {
     heroKicker: "当前展览",
     heroPrimary: "了解更多",
     heroSecondary: "计划参观",
+    aboutReadMore: "阅读更多",
     homeWhatsOnTitle: "WHAT'S ON?",
     homeAboutTitle: "关于旺无名",
     admissionLabel: "参观：",
@@ -42,6 +43,7 @@ const copy = {
     heroKicker: "Current exhibition",
     heroPrimary: "More info",
     heroSecondary: "Plan your visit",
+    aboutReadMore: "Read more",
     homeWhatsOnTitle: "WHAT'S ON?",
     homeAboutTitle: "About Nobody Gallery",
     admissionLabel: "Admission:",
@@ -69,6 +71,7 @@ const copy = {
     heroKicker: "Aktuelle Ausstellung",
     heroPrimary: "Mehr erfahren",
     heroSecondary: "Besuch planen",
+    aboutReadMore: "Mehr erfahren",
     homeWhatsOnTitle: "WHAT'S ON?",
     homeAboutTitle: "Über Nobody Gallery",
     admissionLabel: "Eintritt:",
@@ -446,6 +449,7 @@ const originalTitle = document.title;
 const originalText = new WeakMap();
 let currentLang = "zh";
 let siteData = null;
+const localizedDataFiles = {};
 
 function getInitialLanguage() {
   const saved = localStorage.getItem("nobody-gallery-lang");
@@ -481,7 +485,7 @@ function deepMerge(base, override) {
 
 function getLocalizedData(data, lang) {
   if (lang === "zh") return data;
-  return deepMerge(data, localizedContent[lang]);
+  return deepMerge(deepMerge(data, localizedContent[lang]), localizedDataFiles[lang]);
 }
 
 function getPath(source, path) {
@@ -507,6 +511,14 @@ function publicUrl(url) {
   return new URL(url.replace(/^\.\//, ""), siteRootUrl).pathname;
 }
 
+function escapeHtml(value = "") {
+  return String(value)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
+}
+
 function applyContent(data) {
   document.querySelectorAll("[data-content]").forEach((node) => {
     const value = getPath(data, node.dataset.content);
@@ -523,11 +535,13 @@ function applyContent(data) {
   });
 
   document.querySelectorAll("[data-content-attr]").forEach((node) => {
-    const [path, attr] = node.dataset.contentAttr.split(":");
-    const value = getPath(data, path);
-    if (typeof value === "string" && attr) {
-      node.setAttribute(attr, attr === "src" || attr === "href" ? publicUrl(value) : value);
-    }
+    node.dataset.contentAttr.split(",").forEach((mapping) => {
+      const [path, attr] = mapping.trim().split(":");
+      const value = getPath(data, path);
+      if (typeof value === "string" && attr) {
+        node.setAttribute(attr, attr === "src" || attr === "href" ? publicUrl(value) : value);
+      }
+    });
   });
 }
 
@@ -571,6 +585,203 @@ function renderProgrammeLists(data, lang) {
   });
 }
 
+function renderInfoCards(items = []) {
+  return items
+    .map(
+      (item) => `
+        <div>
+          <p class="label">${escapeHtml(item.label)}</p>
+          <p>${escapeHtml(item.text)}</p>
+        </div>
+      `
+    )
+    .join("");
+}
+
+function renderDetailMeta(items = []) {
+  return items
+    .map(
+      (item) => `
+        <div>
+          <p class="label">${escapeHtml(item.label)}</p>
+          <p>${item.valueHtml || ""}</p>
+        </div>
+      `
+    )
+    .join("");
+}
+
+function renderActionLinks(items = []) {
+  return items
+    .filter((item) => item.label && item.url)
+    .map((item) => `<a class="button" href="${publicUrl(item.url)}">${escapeHtml(item.label)}</a>`)
+    .join("");
+}
+
+function renderWorkCards(items = []) {
+  return items
+    .map((item) => {
+      const image = item.image
+        ? `<div class="work-image image-slot"><img src="${publicUrl(item.image)}" alt="${escapeHtml(
+            item.imageAlt || item.title
+          )}" /></div>`
+        : `<div class="work-image"><span>${escapeHtml(item.placeholder || "Work")}</span></div>`;
+      const meta = item.meta ? `<p>${escapeHtml(item.meta)}</p>` : "";
+      const price = item.price ? `<p>${escapeHtml(item.price)}</p>` : "";
+      return `
+        <article class="work-card">
+          ${image}
+          <h3>${escapeHtml(item.title || "")}</h3>
+          ${meta}
+          ${price}
+        </article>
+      `;
+    })
+    .join("");
+}
+
+function renderShopArtists(items = []) {
+  return items
+    .map((item) => {
+      const tag = item.url && !item.empty ? "a" : "span";
+      const href = tag === "a" ? ` href="${publicUrl(item.url)}"` : "";
+      const image = item.image
+        ? `<img src="${publicUrl(item.image)}" alt="${escapeHtml(item.imageAlt || item.name)}" />`
+        : `<span>${escapeHtml(item.placeholder || "Artist")}</span>`;
+      const avatar = item.avatar
+        ? `<img src="${publicUrl(item.avatar)}" alt="${escapeHtml(item.avatarAlt || item.name)}" />`
+        : "";
+      return `
+        <${tag} class="shop-artist-card${item.empty ? " is-empty" : ""}"${href}>
+          <div class="visual-card-media image-slot">${image}</div>
+          <div class="shop-artist-meta">
+            <div class="shop-artist-avatar">${avatar}</div>
+            <div>
+              <p class="kicker">${escapeHtml(item.kicker || "")}</p>
+              <h2>${escapeHtml(item.name || "")}</h2>
+              <p>${escapeHtml(item.subtitle || "")}</p>
+            </div>
+          </div>
+          <span class="button">${escapeHtml(item.buttonLabel || "")}</span>
+        </${tag}>
+      `;
+    })
+    .join("");
+}
+
+function renderArtistDirectory(items = []) {
+  return items
+    .map((item) => {
+      const isLinked = item.url && !item.empty;
+      const tag = isLinked ? "a" : "span";
+      const href = isLinked ? ` href="${publicUrl(item.url)}"` : "";
+      const image = item.avatar || item.image;
+      const imageAlt = item.avatarAlt || item.imageAlt || item.name;
+      const media = image
+        ? `<img src="${publicUrl(image)}" alt="${escapeHtml(imageAlt)}" />`
+        : `<span>${escapeHtml(item.placeholder || item.kicker || "Artist")}</span>`;
+      return `
+        <${tag} class="visual-card${item.empty ? " is-empty" : ""}"${href}>
+          <div class="visual-card-media square${image ? " image-slot" : ""}">
+            ${media}
+          </div>
+          <p class="kicker">${escapeHtml(item.kicker || "")}</p>
+          <h2>${escapeHtml(item.name || "")}</h2>
+          <p>${escapeHtml(item.subtitle || "")}</p>
+        </${tag}>
+      `;
+    })
+    .join("");
+}
+
+function renderArchiveItems(items = []) {
+  return items
+    .map(
+      (item) => `
+        <a class="visual-card" href="${publicUrl(item.url)}">
+          <div class="visual-card-media poster image-slot">
+            <img src="${publicUrl(item.image)}" alt="${escapeHtml(item.imageAlt || item.title)}" />
+          </div>
+          <p class="kicker">${escapeHtml(item.date || "")}</p>
+          <h2>${escapeHtml(item.title || "")}</h2>
+          <p>${escapeHtml(item.subtitle || "")}</p>
+        </a>
+      `
+    )
+    .join("");
+}
+
+function renderEditableSections(data) {
+  document.querySelectorAll("[data-info-list]").forEach((node) => {
+    const items = getPath(data, node.dataset.infoList);
+    if (Array.isArray(items)) node.innerHTML = renderInfoCards(items);
+  });
+
+  document.querySelectorAll("[data-detail-meta]").forEach((node) => {
+    const items = getPath(data, node.dataset.detailMeta);
+    if (Array.isArray(items)) node.innerHTML = renderDetailMeta(items);
+  });
+
+  document.querySelectorAll("[data-action-list]").forEach((node) => {
+    const items = getPath(data, node.dataset.actionList);
+    if (Array.isArray(items)) node.innerHTML = renderActionLinks(items);
+  });
+
+  document.querySelectorAll("[data-work-list]").forEach((node) => {
+    const items = getPath(data, node.dataset.workList);
+    if (Array.isArray(items)) node.innerHTML = renderWorkCards(items);
+  });
+
+  document.querySelectorAll("[data-shop-artist-list]").forEach((node) => {
+    const items = getPath(data, node.dataset.shopArtistList);
+    if (Array.isArray(items)) node.innerHTML = renderShopArtists(items);
+  });
+
+  document.querySelectorAll("[data-artist-list]").forEach((node) => {
+    const items = getPath(data, node.dataset.artistList);
+    if (Array.isArray(items)) node.innerHTML = renderArtistDirectory(items);
+  });
+
+  document.querySelectorAll("[data-archive-list]").forEach((node) => {
+    const items = getPath(data, node.dataset.archiveList);
+    if (Array.isArray(items)) node.innerHTML = renderArchiveItems(items);
+  });
+
+  document.querySelectorAll("[data-external-link]").forEach((node) => {
+    const dataPath = node.dataset.externalLink;
+    const item = getPath(data, dataPath);
+    if (!item) return;
+    if (item.externalUrl) {
+      node.hidden = false;
+      node.href = publicUrl(item.externalUrl);
+      node.textContent = item.externalLabel || item.externalUrl;
+    } else {
+      node.hidden = true;
+    }
+  });
+}
+
+function updateGlobalLinks(data) {
+  const global = data?.global || {};
+  if (global.email) {
+    document.querySelectorAll('a[href^="mailto:"]').forEach((link) => {
+      link.href = `mailto:${global.email}`;
+    });
+  }
+
+  if (global.instagramUrl) {
+    document.querySelectorAll('a[href*="instagram.com"]').forEach((link) => {
+      link.href = global.instagramUrl;
+    });
+  }
+
+  if (global.xiaohongshuUrl) {
+    document.querySelectorAll(".xhs-link").forEach((link) => {
+      link.href = global.xiaohongshuUrl;
+    });
+  }
+}
+
 function normalizeText(value) {
   return value.replace(/\s+/g, " ").trim();
 }
@@ -580,7 +791,7 @@ function shouldSkipTextNode(node) {
   if (!parent) return true;
   return Boolean(
     parent.closest(
-      "script, style, noscript, [data-i18n], [data-content], [data-content-html], [data-programme-list]"
+      "script, style, noscript, [data-i18n], [data-content], [data-content-html], [data-programme-list], [data-info-list], [data-detail-meta], [data-action-list], [data-work-list], [data-shop-artist-list], [data-artist-list], [data-archive-list]"
     )
   );
 }
@@ -618,7 +829,8 @@ function translateStaticText(lang) {
 
 function applyLanguage(lang, options = {}) {
   currentLang = copy[lang] ? lang : "zh";
-  const dictionary = getDictionary(currentLang);
+  const data = siteData ? getLocalizedData(siteData, currentLang) : null;
+  const dictionary = { ...getDictionary(currentLang), ...(data?.global || {}) };
   html.lang = currentLang === "zh" ? "zh-CN" : currentLang;
 
   document.querySelectorAll("[data-i18n]").forEach((node) => {
@@ -632,9 +844,10 @@ function applyLanguage(lang, options = {}) {
   });
 
   if (siteData) {
-    const data = getLocalizedData(siteData, currentLang);
     applyContent(data);
     renderProgrammeLists(data, currentLang);
+    renderEditableSections(data);
+    updateGlobalLinks(data);
   }
 
   translateStaticText(currentLang);
@@ -724,9 +937,20 @@ function bindMailForms() {
 
 async function loadEditableContent() {
   try {
-    const response = await fetch(new URL("content/site.json", siteRootUrl), { cache: "no-store" });
-    if (!response.ok) return;
-    siteData = await response.json();
+    const fetchJson = async (file) => {
+      const response = await fetch(new URL(file, siteRootUrl), { cache: "no-store" });
+      if (!response.ok) return null;
+      return response.json();
+    };
+
+    siteData = await fetchJson("content/site.json");
+    if (!siteData) return;
+    const [english, german] = await Promise.all([
+      fetchJson("content/site.en.json"),
+      fetchJson("content/site.de.json"),
+    ]);
+    if (english) localizedDataFiles.en = english;
+    if (german) localizedDataFiles.de = german;
     applyLanguage(currentLang);
   } catch (error) {
     console.warn("Editable content could not be loaded.", error);

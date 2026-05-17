@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>第一千零二夜 | Nobody Gallery</title>
-    <link rel="stylesheet" href="../styles.css?v=20260516b" />
+    <link rel="stylesheet" href="../styles.css?v=20260517a" />
   </head>
   <body>
     <header class="site-header">
@@ -38,10 +38,10 @@
     <main class="page-main">
       <section class="detail-hero">
         <div class="detail-copy">
-          <p class="kicker">Archive</p>
-          <h1>第一千零二夜</h1>
-          <p class="page-lede">One Thousand and Two Nights</p>
-          <div class="detail-meta">
+          <p class="kicker" data-content="details.oneThousandTwoNights.kicker">Archive</p>
+          <h1 data-content="details.oneThousandTwoNights.title">第一千零二夜</h1>
+          <p class="page-lede" data-content="details.oneThousandTwoNights.subtitle">One Thousand and Two Nights</p>
+          <div class="detail-meta" data-detail-meta="details.oneThousandTwoNights.meta">
             <div>
               <p class="label">Artist</p>
               <p>周韫仪 / Zhou Yunyi</p>
@@ -61,20 +61,22 @@
           </div>
         </div>
         <div class="media-slot detail-media image-slot">
-          <img src="../assets/exhibitions/one-thousand-two-nights.jpg" alt="第一千零二夜展览海报" />
+          <img src="../assets/exhibitions/one-thousand-two-nights.jpg" alt="第一千零二夜展览海报" data-content-attr="details.oneThousandTwoNights.image:src,details.oneThousandTwoNights.imageAlt:alt" />
         </div>
       </section>
 
       <section class="page-section text-columns">
-        <h2>Exhibition</h2>
+        <h2 data-content="details.oneThousandTwoNights.contentHeading">Exhibition</h2>
         <div>
-          <p>
-            《第一千零二夜》为周韫仪个展，展期为 2026 年 3 月 29 日至 5 月 18 日。展览信息来自本地展览物料，作为 Archive 详情页的第一条示例。
-          </p>
-          <p>
-            当前页面已预留展览介绍、现场图片、作品清单与微信推文入口。后续可以继续补充更完整的展览文本与作品信息。
-          </p>
-          <a class="external-link" href="https://mp.weixin.qq.com/s/9GtFsjLOdmfY6gNeBL69bg" target="_blank" rel="noreferrer">
+          <div data-content-html="details.oneThousandTwoNights.contentHtml">
+            <p>
+              《第一千零二夜》为周韫仪个展，展期为 2026 年 3 月 29 日至 5 月 18 日。展览信息来自本地展览物料，作为 Archive 详情页的第一条示例。
+            </p>
+            <p>
+              当前页面已预留展览介绍、现场图片、作品清单与微信推文入口。后续可以继续补充更完整的展览文本与作品信息。
+            </p>
+          </div>
+          <a class="external-link" href="https://mp.weixin.qq.com/s/9GtFsjLOdmfY6gNeBL69bg" target="_blank" rel="noreferrer" data-external-link="details.oneThousandTwoNights">
             微信推文 / WeChat article
           </a>
         </div>
@@ -85,6 +87,6 @@
       <p>NOBODY GALLERY</p>
       <p data-i18n="footerLine">nobody is somebody</p>
     </footer>
-    <script src="../script.js?v=20260516b"></script>
+    <script src="../script.js?v=20260517a"></script>
   </body>
 </html>

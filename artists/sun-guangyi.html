@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>孙广义 / Guangyi Sun | Nobody Gallery</title>
-    <link rel="stylesheet" href="../styles.css?v=20260516b" />
+    <link rel="stylesheet" href="../styles.css?v=20260517a" />
   </head>
   <body>
     <header class="site-header">
@@ -38,10 +38,10 @@
     <main class="page-main">
       <section class="detail-hero">
         <div class="detail-copy">
-          <p class="kicker">Artist</p>
-          <h1>孙广义</h1>
-          <p class="page-lede">Guangyi Sun</p>
-          <div class="detail-meta">
+          <p class="kicker" data-content="details.sunGuangyiArtist.kicker">Artist</p>
+          <h1 data-content="details.sunGuangyiArtist.title">孙广义</h1>
+          <p class="page-lede" data-content="details.sunGuangyiArtist.subtitle">Guangyi Sun</p>
+          <div class="detail-meta" data-detail-meta="details.sunGuangyiArtist.meta">
             <div>
               <p class="label">Bio</p>
               <p>艺术家个人信息待补充。</p>
@@ -53,28 +53,30 @@
           </div>
         </div>
         <div class="media-slot detail-media image-slot">
-          <img src="../assets/artist-avatars/sun-guangyi.jpg" alt="孙广义肖像" />
+          <img src="../assets/artist-avatars/sun-guangyi.jpg" alt="孙广义肖像" data-content-attr="details.sunGuangyiArtist.image:src,details.sunGuangyiArtist.imageAlt:alt" />
         </div>
       </section>
 
       <section class="page-section text-columns">
-        <h2>简介</h2>
+        <h2 data-content="details.sunGuangyiArtist.contentHeading">简介</h2>
         <div>
-          <p>
-            这里预留孙广义的艺术家 bio、教育背景、展览经历、创作线索与代表作品介绍。当前只放入这次展览和作品清单，后续你给我正式 bio 后可以直接替换。
-          </p>
-          <p>
-            当前相关展览：<a href="../exhibitions/sun-guangyi-game.html">《心手相印的游戏》</a>，2026.05.23 - 2026.07.08，旺无名画廊徐汇馆。
-          </p>
-          <div class="action-row">
+          <div data-content-html="details.sunGuangyiArtist.contentHtml">
+            <p>
+              这里预留孙广义的艺术家 bio、教育背景、展览经历、创作线索与代表作品介绍。当前只放入这次展览和作品清单，后续你给我正式 bio 后可以直接替换。
+            </p>
+            <p>
+              当前相关展览：<a href="../exhibitions/sun-guangyi-game.html">《心手相印的游戏》</a>，2026.05.23 - 2026.07.08，旺无名画廊徐汇馆。
+            </p>
+          </div>
+          <div class="action-row" data-action-list="details.sunGuangyiArtist.actions">
             <a class="button" href="../shop/#sun-guangyi">在售作品</a>
           </div>
         </div>
       </section>
 
       <section class="page-section works-section">
-        <h2>在售作品</h2>
-        <div class="work-grid">
+        <h2 data-content="details.sunGuangyiArtist.worksHeading">在售作品</h2>
+        <div class="work-grid" data-work-list="details.sunGuangyiArtist.works">
           <article class="work-card">
             <div class="work-image image-slot"><img src="../assets/works/sun-song-ci.png" alt="宋瓷作品图" /></div>
             <h3>宋瓷</h3><p>40 x 20 cm</p><p>RMB 12,000</p>
@@ -159,6 +161,6 @@
       <p>NOBODY GALLERY</p>
       <p data-i18n="footerLine">nobody is somebody</p>
     </footer>
-    <script src="../script.js?v=20260516b"></script>
+    <script src="../script.js?v=20260517a"></script>
   </body>
 </html>

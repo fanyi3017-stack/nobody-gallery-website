@@ -10,14 +10,43 @@ public_folder: "/assets/uploads"
 
 collections:
   - name: "site_content"
-    label: "网站内容"
+    label: "网站内容 / Site Content"
     files:
-      - label: "首页 / 关于 / 展览列表"
-        name: "site"
+      - label: "中文内容"
+        name: "site_zh"
         file: "content/site.json"
         format: "json"
-        fields:
-          - label: "首页主视觉"
+        fields: &site_fields
+          - label: "全站设置"
+            name: "global"
+            widget: "object"
+            fields:
+              - { label: "开放状态", name: "status", widget: "string" }
+              - { label: "城市/位置", name: "location", widget: "string", required: false }
+              - { label: "开放时间链接文字", name: "openingTimes", widget: "string" }
+              - { label: "导航：当前展览", name: "navWhatsOn", widget: "string" }
+              - { label: "导航：关于", name: "navAbout", widget: "string" }
+              - { label: "导航：参观计划", name: "navPlanVisit", widget: "string" }
+              - { label: "导航：票务信息", name: "navTicketInfo", widget: "string" }
+              - { label: "导航：商店", name: "navShop", widget: "string" }
+              - { label: "首页主按钮", name: "heroPrimary", widget: "string" }
+              - { label: "首页主按钮链接", name: "heroPrimaryUrl", widget: "string" }
+              - { label: "首页副按钮", name: "heroSecondary", widget: "string" }
+              - { label: "首页副按钮链接", name: "heroSecondaryUrl", widget: "string" }
+              - { label: "关于阅读按钮", name: "aboutReadMore", widget: "string" }
+              - { label: "关于阅读按钮链接", name: "aboutReadMoreUrl", widget: "string" }
+              - { label: "关于标题", name: "homeAboutTitle", widget: "string" }
+              - { label: "页脚标语", name: "footerLine", widget: "string", required: false }
+              - { label: "订阅标题", name: "newsletterTitle", widget: "string" }
+              - { label: "订阅说明", name: "newsletterText", widget: "text" }
+              - { label: "邮箱输入占位", name: "emailPlaceholder", widget: "string" }
+              - { label: "订阅按钮", name: "subscribe", widget: "string" }
+              - { label: "地址行", name: "galleryAddress", widget: "text" }
+              - { label: "联系邮箱", name: "email", widget: "string" }
+              - { label: "Instagram 链接", name: "instagramUrl", widget: "string", required: false }
+              - { label: "小红书链接", name: "xiaohongshuUrl", widget: "string", required: false }
+
+          - label: "首页"
             name: "home"
             widget: "object"
             fields:
@@ -28,16 +57,42 @@ collections:
                   - { label: "展览标题", name: "title", widget: "string" }
                   - { label: "展期", name: "dates", widget: "string" }
                   - { label: "摘要", name: "summary", widget: "text" }
-                  - { label: "图片路径", name: "image", widget: "image", required: false }
+                  - { label: "图片", name: "image", widget: "image", required: false }
+                  - { label: "图片替代文字", name: "imageAlt", widget: "string", required: false }
+
           - label: "关于"
             name: "about"
             widget: "object"
             fields:
-              - { label: "引言", name: "quote", widget: "text" }
+              - { label: "故事标题", name: "storyTitle", widget: "string" }
+              - { label: "理念标题", name: "missionTitle", widget: "string" }
+              - { label: "艺术家招募标题", name: "artistCallTitle", widget: "string" }
+              - { label: "联系按钮文字", name: "contactButtonLabel", widget: "string" }
+              - { label: "首页引言", name: "quote", widget: "text" }
               - { label: "首页关于 HTML", name: "homeHtml", widget: "text" }
               - { label: "故事 HTML", name: "storyHtml", widget: "text" }
               - { label: "理念 HTML", name: "missionHtml", widget: "text" }
               - { label: "艺术家招募 HTML", name: "artistCallHtml", widget: "text" }
+
+          - label: "What’s on 页面说明"
+            name: "pageIntros"
+            widget: "object"
+            fields:
+              - label: "正在展出页"
+                name: "now"
+                widget: "object"
+                fields: &intro_fields
+                  - { label: "标题", name: "title", widget: "string" }
+                  - { label: "说明", name: "lede", widget: "text" }
+              - label: "即将呈现页"
+                name: "upcoming"
+                widget: "object"
+                fields: *intro_fields
+              - label: "过往展览页"
+                name: "past"
+                widget: "object"
+                fields: *intro_fields
+
           - label: "展览列表"
             name: "programmes"
             widget: "object"
@@ -55,7 +110,7 @@ collections:
                   - { label: "图片替代文字", name: "imageAlt", widget: "string", required: false }
                   - { label: "无图占位文字", name: "placeholder", widget: "string", required: false }
                   - { label: "链接", name: "url", widget: "string" }
-                  - { label: "按钮文字", name: "buttonLabel", widget: "string", default: "了解更多" }
+                  - { label: "按钮文字", name: "buttonLabel", widget: "string" }
               - label: "即将呈现"
                 name: "upcoming"
                 widget: "list"
@@ -64,3 +119,200 @@ collections:
                 name: "past"
                 widget: "list"
                 fields: *programme_fields
+
+          - label: "参观计划"
+            name: "visit"
+            widget: "object"
+            fields:
+              - { label: "小标题", name: "kicker", widget: "string" }
+              - { label: "页面标题", name: "title", widget: "string" }
+              - { label: "页面说明", name: "lede", widget: "text" }
+              - { label: "侧栏：开放时间", name: "navHours", widget: "string" }
+              - { label: "侧栏：空间地址", name: "navSpaces", widget: "string" }
+              - { label: "侧栏：预约", name: "navBooking", widget: "string" }
+              - { label: "开放时间标题", name: "hoursTitle", widget: "string" }
+              - label: "开放时间卡片"
+                name: "hours"
+                widget: "list"
+                fields: &label_text_fields
+                  - { label: "标签", name: "label", widget: "string" }
+                  - { label: "文字", name: "text", widget: "text" }
+              - { label: "地址标题", name: "spacesTitle", widget: "string" }
+              - label: "地址卡片"
+                name: "spaces"
+                widget: "list"
+                fields: *label_text_fields
+              - { label: "预约标题", name: "bookingTitle", widget: "string" }
+              - { label: "预约 HTML", name: "bookingHtml", widget: "text" }
+              - { label: "预约按钮文字", name: "bookingButtonLabel", widget: "string" }
+              - { label: "预约按钮链接", name: "bookingButtonUrl", widget: "string" }
+
+          - label: "票务信息"
+            name: "ticket"
+            widget: "object"
+            fields:
+              - { label: "小标题", name: "kicker", widget: "string" }
+              - { label: "页面标题", name: "title", widget: "string" }
+              - { label: "页面说明", name: "lede", widget: "text" }
+              - { label: "侧栏：展览", name: "navExhibitions", widget: "string" }
+              - { label: "侧栏：放映", name: "navScreenings", widget: "string" }
+              - { label: "侧栏：活动", name: "navEvents", widget: "string" }
+              - { label: "展览标题", name: "exhibitionsTitle", widget: "string" }
+              - label: "展览卡片"
+                name: "exhibitionCards"
+                widget: "list"
+                fields: *label_text_fields
+              - { label: "放映标题", name: "screeningsTitle", widget: "string" }
+              - { label: "放映 HTML", name: "screeningsHtml", widget: "text" }
+              - { label: "活动标题", name: "eventsTitle", widget: "string" }
+              - { label: "活动 HTML", name: "eventsHtml", widget: "text" }
+
+          - label: "商店"
+            name: "shop"
+            widget: "object"
+            fields:
+              - label: "商店主视觉"
+                name: "hero"
+                widget: "object"
+                fields:
+                  - { label: "标题", name: "title", widget: "string" }
+                  - { label: "说明", name: "lede", widget: "text" }
+                  - { label: "图片", name: "image", widget: "image", required: false }
+                  - { label: "图片替代文字", name: "imageAlt", widget: "string", required: false }
+                  - { label: "按钮文字", name: "buttonLabel", widget: "string" }
+                  - { label: "按钮链接", name: "buttonUrl", widget: "string" }
+              - label: "合作艺术家标题"
+                name: "artistSection"
+                widget: "object"
+                fields:
+                  - { label: "小标题", name: "kicker", widget: "string" }
+                  - { label: "标题", name: "title", widget: "string" }
+              - label: "合作艺术家列表"
+                name: "artists"
+                widget: "list"
+                fields: &shop_artist_fields
+                  - { label: "是否为空占位", name: "empty", widget: "boolean", required: false, default: false }
+                  - { label: "小标签", name: "kicker", widget: "string", required: false }
+                  - { label: "姓名", name: "name", widget: "string" }
+                  - { label: "副标题", name: "subtitle", widget: "string", required: false }
+                  - { label: "链接", name: "url", widget: "string", required: false }
+                  - { label: "主图", name: "image", widget: "image", required: false }
+                  - { label: "主图替代文字", name: "imageAlt", widget: "string", required: false }
+                  - { label: "头像", name: "avatar", widget: "image", required: false }
+                  - { label: "头像替代文字", name: "avatarAlt", widget: "string", required: false }
+                  - { label: "占位文字", name: "placeholder", widget: "string", required: false }
+                  - { label: "按钮文字", name: "buttonLabel", widget: "string", required: false }
+              - label: "作品区标题"
+                name: "worksSection"
+                widget: "object"
+                fields:
+                  - { label: "标题", name: "title", widget: "string" }
+              - label: "商店作品"
+                name: "works"
+                widget: "list"
+                fields: &work_fields
+                  - { label: "作品名", name: "title", widget: "string" }
+                  - { label: "尺寸/材质", name: "meta", widget: "string", required: false }
+                  - { label: "价格/询价", name: "price", widget: "string", required: false }
+                  - { label: "图片", name: "image", widget: "image", required: false }
+                  - { label: "图片替代文字", name: "imageAlt", widget: "string", required: false }
+                  - { label: "无图占位文字", name: "placeholder", widget: "string", required: false }
+
+          - label: "艺术家索引"
+            name: "artistIndex"
+            widget: "object"
+            fields:
+              - { label: "小标题", name: "kicker", widget: "string" }
+              - { label: "标题", name: "title", widget: "string" }
+              - { label: "说明", name: "lede", widget: "text" }
+              - label: "艺术家入口"
+                name: "items"
+                widget: "list"
+                fields: *shop_artist_fields
+
+          - label: "Archive 首页"
+            name: "archiveIndex"
+            widget: "object"
+            fields:
+              - { label: "小标题", name: "kicker", widget: "string" }
+              - { label: "标题", name: "title", widget: "string" }
+              - { label: "说明", name: "lede", widget: "text" }
+              - label: "Archive 卡片"
+                name: "items"
+                widget: "list"
+                fields:
+                  - { label: "日期", name: "date", widget: "string" }
+                  - { label: "标题", name: "title", widget: "string" }
+                  - { label: "副标题", name: "subtitle", widget: "string", required: false }
+                  - { label: "链接", name: "url", widget: "string" }
+                  - { label: "图片", name: "image", widget: "image", required: false }
+                  - { label: "图片替代文字", name: "imageAlt", widget: "string", required: false }
+
+          - label: "详情页"
+            name: "details"
+            widget: "object"
+            fields:
+              - label: "当前展览：心手相印的游戏"
+                name: "sunGuangyiGame"
+                widget: "object"
+                fields: &detail_fields
+                  - { label: "小标题", name: "kicker", widget: "string" }
+                  - { label: "标题", name: "title", widget: "string" }
+                  - { label: "副标题", name: "subtitle", widget: "string", required: false }
+                  - { label: "图片", name: "image", widget: "image", required: false }
+                  - { label: "图片替代文字", name: "imageAlt", widget: "string", required: false }
+                  - label: "元信息"
+                    name: "meta"
+                    widget: "list"
+                    fields:
+                      - { label: "标签", name: "label", widget: "string" }
+                      - { label: "内容 HTML", name: "valueHtml", widget: "text" }
+                  - { label: "正文标题", name: "contentHeading", widget: "string", required: false }
+                  - { label: "正文 HTML", name: "contentHtml", widget: "text" }
+                  - { label: "外部链接", name: "externalUrl", widget: "string", required: false }
+                  - { label: "外部链接文字", name: "externalLabel", widget: "string", required: false }
+                  - label: "按钮"
+                    name: "actions"
+                    widget: "list"
+                    required: false
+                    fields:
+                      - { label: "文字", name: "label", widget: "string" }
+                      - { label: "链接", name: "url", widget: "string" }
+                  - { label: "作品区标题", name: "worksHeading", widget: "string", required: false }
+                  - label: "作品列表"
+                    name: "works"
+                    widget: "list"
+                    required: false
+                    fields: *work_fields
+              - label: "艺术家：孙广义"
+                name: "sunGuangyiArtist"
+                widget: "object"
+                fields: *detail_fields
+              - label: "Archive：第一千零二夜"
+                name: "oneThousandTwoNights"
+                widget: "object"
+                fields: *detail_fields
+              - label: "Archive：风景加工之后"
+                name: "landscapeAfterProcessing"
+                widget: "object"
+                fields: *detail_fields
+              - label: "即将呈现详情页"
+                name: "upcomingExhibition"
+                widget: "object"
+                fields: *detail_fields
+              - label: "Project：Nobody Editions"
+                name: "nobodyEditions"
+                widget: "object"
+                fields: *detail_fields
+
+      - label: "English Content"
+        name: "site_en"
+        file: "content/site.en.json"
+        format: "json"
+        fields: *site_fields
+
+      - label: "Deutsch Inhalt"
+        name: "site_de"
+        file: "content/site.de.json"
+        format: "json"
+        fields: *site_fields

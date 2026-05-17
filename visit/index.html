@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>参观计划 | Nobody Gallery</title>
-    <link rel="stylesheet" href="../styles.css?v=20260516b" />
+    <link rel="stylesheet" href="../styles.css?v=20260517a" />
   </head>
   <body>
     <header class="site-header">
@@ -58,25 +58,25 @@
     <main class="page-main">
       <section class="page-hero">
         <div>
-          <p class="kicker">参观</p>
-          <h1>参观计划</h1>
+          <p class="kicker" data-content="visit.kicker">参观</p>
+          <h1 data-content="visit.title">参观计划</h1>
         </div>
-        <p class="page-lede">
+        <p class="page-lede" data-content="visit.lede">
           参观信息集中在这里：开放时间、两个空间地址、预约说明和后续票务入口。
         </p>
       </section>
 
       <section class="page-section visit-layout">
         <nav class="side-nav" aria-label="Visit sections">
-          <a class="active" href="#hours">开放时间</a>
-          <a href="#spaces">空间地址</a>
-          <a href="#booking">预约</a>
+          <a class="active" href="#hours" data-content="visit.navHours">开放时间</a>
+          <a href="#spaces" data-content="visit.navSpaces">空间地址</a>
+          <a href="#booking" data-content="visit.navBooking">预约</a>
         </nav>
 
         <div class="visit-content">
           <section id="hours">
-            <h2>开放时间</h2>
-            <div class="visit-grid">
+            <h2 data-content="visit.hoursTitle">开放时间</h2>
+            <div class="visit-grid" data-info-list="visit.hours">
               <div>
                 <p class="label">常规开放</p>
                 <p>周二至周日，10:00 - 19:00</p>
@@ -89,8 +89,8 @@
           </section>
 
           <section id="spaces" class="page-section">
-            <h2>空间地址</h2>
-            <div class="visit-grid">
+            <h2 data-content="visit.spacesTitle">空间地址</h2>
+            <div class="visit-grid" data-info-list="visit.spaces">
               <div>
                 <p class="label">徐汇馆</p>
                 <p>上海市徐汇区宜山路660号12幢3楼302室</p>
@@ -103,11 +103,13 @@
           </section>
 
           <section id="booking" class="page-section">
-            <h2>预约</h2>
-            <p>
-              当前展览可免费参观。团体导览、媒体访问、放映活动与特别项目请提前通过邮箱联系。
-            </p>
-            <a class="button" href="mailto:nobodygallery@163.com">发送邮件</a>
+            <h2 data-content="visit.bookingTitle">预约</h2>
+            <div data-content-html="visit.bookingHtml">
+              <p>
+                当前展览可免费参观。团体导览、媒体访问、放映活动与特别项目请提前通过邮箱联系。
+              </p>
+            </div>
+            <a class="button" href="mailto:nobodygallery@163.com" data-content="visit.bookingButtonLabel" data-content-attr="visit.bookingButtonUrl:href">发送邮件</a>
           </section>
         </div>
       </section>
@@ -131,6 +133,6 @@
         </a>
       </div>
     </footer>
-    <script src="../script.js?v=20260516b"></script>
+    <script src="../script.js?v=20260517a"></script>
   </body>
 </html>
