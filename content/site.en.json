@@ -707,7 +707,7 @@
         "url": "exhibitions/sun-guangyi-game.html",
         "title": "A Game of Heart and Hand",
         "type": "Now",
-        "image": "assets/exhibitions/sun-guangyi-game-poster.jpg",
+        "image": "/assets/uploads/网页小卡.png",
         "description": "Sun Guangyi's solo exhibition unfolds a game of looking between body, memory and image."
       },
       {
@@ -717,8 +717,8 @@
         "imageAlt": "Poster for After the Landscape Is Processed",
         "url": "archive/landscape-after-processing.html",
         "title": "After the Landscape Is Processed",
-        "type": "Project",
-        "image": "assets/exhibitions/landscape-after-processing.jpg",
+        "type": "Now",
+        "image": "/assets/uploads/fj网页小卡.png",
         "description": "The second Nobody Project residency exhibition explores landscape, processing and site experience."
       }
     ],
@@ -750,7 +750,7 @@
         "title": "The One Thousand and Second Night",
         "meta": "29 March - 18 May 2026",
         "description": "A solo exhibition by Zhou Yunyi, curated by Fanyi. Past exhibitions are kept in the Archive.",
-        "image": "assets/exhibitions/one-thousand-two-nights.jpg",
+        "image": "/assets/uploads/网页小卡1q.png",
         "imageAlt": "Poster for The One Thousand and Second Night",
         "url": "archive/one-thousand-two-nights.html",
         "buttonLabel": "More info"
@@ -760,7 +760,7 @@
         "title": "Exhibition Archive",
         "meta": "Index of past exhibitions and projects",
         "description": "Past exhibitions, residencies and cross-cultural projects are collected in the Archive.",
-        "image": "assets/exhibitions/sun-guangyi-game-poster.jpg",
+        "image": "",
         "imageAlt": "Archive poster",
         "url": "archive/",
         "buttonLabel": "View archive"
