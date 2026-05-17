@@ -2,7 +2,7 @@
 
 ## Current Goal
 
-Nobody Gallery is a static HTML/CSS/JS website hosted from GitHub and intended for Cloudflare Pages. Decap CMS has been added so daily content edits can happen through `/admin/` instead of editing HTML by hand.
+Nobody Gallery is a static HTML/CSS/JS website hosted from GitHub and intended for Cloudflare Pages. Decap CMS has been added so daily content edits can happen through `/admin/` instead of editing HTML by hand. Decap CMS GitHub OAuth is handled by a Cloudflare Pages Function in `functions/api/[[path]].js`.
 
 The site still has no npm build step. Keep Cloudflare Pages configured as a static site:
 
@@ -50,9 +50,74 @@ backend:
   name: github
   repo: fanyi3017-stack/nobody-gallery-website
   branch: main
+  base_url: https://nobodygallery.art
+  auth_endpoint: api/auth
+  site_domain: nobodygallery.art
 ```
 
-Important: `/admin/` opens locally, but production saving requires GitHub OAuth/auth to be configured for the Cloudflare Pages domain. Until OAuth is connected, visitors can see the Decap login screen but cannot complete GitHub-backed edits from the deployed site.
+Important: keep `base_url` and `auth_endpoint` in place. Without them, Decap CMS falls back to the default Netlify OAuth URL, `https://api.netlify.com/auth`, which returns Not Found for this Cloudflare Pages site.
+
+`publish_mode` is intentionally not configured. With `branch: main`, CMS saves commit directly to `main` so Cloudflare Pages can redeploy from the GitHub update.
+
+## GitHub OAuth App For Production CMS
+
+Create a GitHub OAuth App from GitHub settings:
+
+```text
+Settings -> Developer settings -> OAuth Apps -> New OAuth App
+```
+
+Use these exact production URLs:
+
+```text
+Application name: Nobody Gallery Decap CMS
+Homepage URL: https://nobodygallery.art/admin/
+Authorization callback URL: https://nobodygallery.art/api/callback
+```
+
+After creating the OAuth App, generate a Client Secret and keep the Client ID and Client Secret ready for Cloudflare.
+
+## Cloudflare Pages OAuth Proxy
+
+The OAuth proxy is a Cloudflare Pages Function:
+
+```text
+functions/api/[[path]].js
+```
+
+Function invocation is limited to `/api/*` by:
+
+```text
+_routes.json
+```
+
+It exposes:
+
+```text
+GET https://nobodygallery.art/api/auth?provider=github
+GET https://nobodygallery.art/api/callback
+```
+
+`/api/auth` redirects the Decap login popup to GitHub. `/api/callback` exchanges the GitHub code for an access token and returns it to Decap CMS through the popup message flow.
+
+Set these Cloudflare Pages Production environment variables:
+
+```text
+GITHUB_OAUTH_CLIENT_ID=<GitHub OAuth App Client ID>
+GITHUB_OAUTH_CLIENT_SECRET=<GitHub OAuth App Client Secret>
+```
+
+Store `GITHUB_OAUTH_CLIENT_SECRET` as a secret/encrypted value. The Client ID can be a normal variable.
+
+Optional:
+
+```text
+GITHUB_REPO_PRIVATE=1
+```
+
+Only set `GITHUB_REPO_PRIVATE=1` if the repository is private. For the current public repository, omit it or set it to `0`; the proxy requests `public_repo user`.
+
+After adding or changing Cloudflare variables, redeploy the latest Pages deployment so the Function sees the values.
 
 ## Editable Content Files
 
@@ -128,14 +193,14 @@ Normal update flow:
 
 ```bash
 git status -sb
-git add .
-git commit -m "Add Decap CMS editable content structure"
+git add admin/config.yml 'functions/api/[[path]].js' _routes.json CMS_SETUP.md HANDOFF.md
+git commit -m "Configure Decap CMS GitHub OAuth"
 git push
 ```
 
 After `git push`, Cloudflare Pages should detect the new commit on `main` and redeploy automatically. If Cloudflare does not redeploy, open the Cloudflare Pages project and trigger a retry/deploy from the latest GitHub commit.
 
-If editing through Decap CMS in production, Decap writes commits back to GitHub. Cloudflare Pages then redeploys from those commits.
+If editing through Decap CMS in production, Decap writes commits back to GitHub `main`. Cloudflare Pages then redeploys from those commits.
 
 ## Verification From This Handoff
 
@@ -154,9 +219,18 @@ Syntax checks passed:
 
 ```bash
 node --check script.js
+node --check 'functions/api/[[path]].js'
 node -e "for (const f of ['content/site.json','content/site.en.json','content/site.de.json']) JSON.parse(require('fs').readFileSync(f,'utf8'))"
 ruby -e "require 'yaml'; YAML.load_file('admin/config.yml')"
 ```
+
+Production OAuth smoke test after the Cloudflare redeploy:
+
+- `https://nobodygallery.art/api/auth?provider=github` should redirect to GitHub OAuth, not Netlify.
+- `https://nobodygallery.art/admin/` -> Login with GitHub should complete the popup flow.
+- Editing the Chinese content entry should save to `content/site.json`.
+- Saving should create a GitHub commit on `main`.
+- Cloudflare Pages should redeploy from that GitHub commit.
 
 ## Responsive Checks
 
@@ -221,7 +295,8 @@ Final responsive audit result: all tested widths returned 0 layout problems acro
 
 ## Next Tasks
 
-- Configure GitHub OAuth/auth for Decap CMS on the Cloudflare Pages production domain.
+- Add the GitHub OAuth App credentials to Cloudflare Pages Production environment variables and redeploy.
+- Run a live CMS login/save smoke test after the Cloudflare redeploy.
 - Replace placeholder text for upcoming exhibitions, Nobody Editions and some artist bio fields when final copy is ready.
 - Add final images through Decap CMS or directly into `assets/`.
 - Decide whether artwork prices stay public or switch to inquiry-only text.

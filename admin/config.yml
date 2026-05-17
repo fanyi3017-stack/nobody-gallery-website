@@ -2,9 +2,11 @@ backend:
   name: github
   repo: fanyi3017-stack/nobody-gallery-website
   branch: main
+  base_url: https://nobodygallery.art
+  auth_endpoint: api/auth
+  site_domain: nobodygallery.art
 
 local_backend: true
-publish_mode: editorial_workflow
 media_folder: "assets/uploads"
 public_folder: "/assets/uploads"
 
