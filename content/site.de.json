@@ -1,387 +1,6 @@
 {
-  "home": {
-    "hero": {
-      "title": "Ein Spiel von Herz und Hand",
-      "dates": "23. Mai - 8. Juli 2026",
-      "summary": "Eine Einzelausstellung von Sun Guangyi, kuratiert von Fanyi. Nobody Gallery verbindet Künstler, Werke und Besucher durch Ausstellungen, ortsbezogene Begegnungen und interkulturellen Dialog.",
-      "image": "assets/exhibitions/sun-guangyi-game.jpg",
-      "imageAlt": "Ein Spiel von Herz und Hand, Einzelausstellung von Guangyi Sun"
-    }
-  },
-  "about": {
-    "storyTitle": "Geschichte",
-    "missionTitle": "Mission",
-    "artistCallTitle": "Künstlerbewerbungen",
-    "contactButtonLabel": "Galerie kontaktieren",
-    "quote": "\"Schwerer ist es, das Gedächtnis der Namenlosen zu ehren als das der Berühmten. Die historische Konstruktion ist dem Gedächtnis der Namenlosen gewidmet.\"",
-    "homeHtml": "<p>In <em>Theses on the Philosophy of History</em>, Walter Benjamin reminds us that history is shaped not only by celebrated names, but also by people whose presence is less visible and no less essential.</p><p>At Nobody Gallery, we hold to the belief that nobody is somebody. Art should not be defined by fame; it should be carried by the force of the work itself. We support artists whose practices deserve to be seen and make room for a more open, generous art world.</p><p>The gallery welcomes artists on an ongoing basis. If your work can move people, we are ready to support it.</p>",
-    "storyHtml": "<p>Walter Benjamin (1892-1940), the German-born Ashkenazi Jewish philosopher, cultural critic and essayist, wrote in his final work, <em>Theses on the Philosophy of History</em>: \"It is more arduous to honour the memory of the nameless than that of the renowned. Historical construction is devoted to the memory of the nameless.\"</p><p>This sentence asks us to look at the lives and acts that rarely enter official narratives. The nameless are not absent from history; they are often the ground on which history is built.</p><p>Nobody Gallery takes that attention seriously. To remember the nameless is to resist easy labels and to recognise value before it has been validated by fame.</p>",
-    "missionHtml": "<p>At Nobody Gallery, we believe that nobody is somebody. The meaning of art should come from the work itself, not from reputation alone. We are committed to discovering and supporting artists who have not yet been widely seen.</p><p>Here, life and art are inseparable. We believe every nobody may become somebody, because art belongs to everyone.</p><p>This is also a commitment to a more diverse and inclusive ecology for art, where artists and collectors can meet through genuine attention rather than fixed hierarchies.</p>",
-    "artistCallHtml": "<p>We hope to introduce artists with uncommon potential to wider audiences and collectors through the gallery platform. This is not only about discovering the value of the nobody; it is about opening the field of art to more possibilities.</p><p>Whether you are emerging or established, the work itself is what matters here. At Nobody Gallery, art is for everyone, and we believe life is art and art is life.</p><p>The gallery welcomes artist submissions and conversations throughout the year.</p>"
-  },
-  "programmes": {
-    "now": [
-      {
-        "type": "Aktuell",
-        "title": "Ein Spiel von Herz und Hand",
-        "meta": "23. Mai - 8. Juli 2026, Xuhui Space",
-        "description": "Sun Guangyis Einzelausstellung entfaltet ein Spiel des Sehens zwischen Körper, Erinnerung und Bild.",
-        "admission": "Freier Eintritt. Gruppenbesuche bitte im Voraus anmelden.",
-        "image": "assets/exhibitions/sun-guangyi-game-poster.jpg",
-        "imageAlt": "Plakat zu Ein Spiel von Herz und Hand",
-        "url": "exhibitions/sun-guangyi-game.html",
-        "buttonLabel": "Mehr erfahren"
-      },
-      {
-        "type": "Projekt",
-        "title": "Nach der Bearbeitung der Landschaft",
-        "meta": "26. April - 31. Mai 2026, Jinshan Space",
-        "description": "Die zweite Residency-Ausstellung von Nobody Project untersucht Landschaft, Bearbeitung und Ortserfahrung.",
-        "admission": "Freier Eintritt. Bitte prüfen Sie vor dem Besuch die Öffnungszeiten.",
-        "image": "assets/exhibitions/landscape-after-processing.jpg",
-        "imageAlt": "Plakat zu Nach der Bearbeitung der Landschaft",
-        "url": "archive/landscape-after-processing.html",
-        "buttonLabel": "Mehr erfahren"
-      }
-    ],
-    "upcoming": [
-      {
-        "type": "Demnächst",
-        "title": "Kommende Ausstellung",
-        "meta": "Termine werden bekannt gegeben",
-        "description": "Ein Platzhalter für kommende Ausstellungen, der später durch bestätigte Programmdetails ersetzt wird.",
-        "admission": "Ticket- und Buchungsinformationen werden hier aktualisiert.",
-        "placeholder": "Demnächst",
-        "url": "exhibitions/upcoming.html",
-        "buttonLabel": "Mehr erfahren"
-      },
-      {
-        "type": "Veranstaltung",
-        "title": "Filmvorführung und Künstlergespräch",
-        "meta": "Wird bekannt gegeben",
-        "description": "Ein künftiger Einstieg für Filmvorführungen, öffentliche Programme, Künstlergespräche und Veranstaltungen mit Ticket.",
-        "admission": "Ticketinformationen werden auf der Ticketseite veröffentlicht.",
-        "placeholder": "Screening",
-        "url": "ticket-info/",
-        "buttonLabel": "Tickets"
-      }
-    ],
-    "past": [
-      {
-        "type": "Vergangene Ausstellung",
-        "title": "Die eintausendzweite Nacht",
-        "meta": "29. März - 18. Mai 2026",
-        "description": "Eine Einzelausstellung von Zhou Yunyi, kuratiert von Fanyi. Vergangene Ausstellungen bleiben im Archiv zugänglich.",
-        "image": "assets/exhibitions/one-thousand-two-nights.jpg",
-        "imageAlt": "Poster for The One Thousand and Second Night",
-        "url": "archive/one-thousand-two-nights.html",
-        "buttonLabel": "Mehr erfahren"
-      },
-      {
-        "type": "Archiv",
-        "title": "Ausstellungsarchiv",
-        "meta": "Index vergangener Ausstellungen und Projekte",
-        "description": "Vergangene Ausstellungen, Residencies und interkulturelle Projekte werden im Archiv gesammelt.",
-        "image": "assets/exhibitions/sun-guangyi-game-poster.jpg",
-        "imageAlt": "Archive poster",
-        "url": "archive/",
-        "buttonLabel": "Archiv ansehen"
-      }
-    ]
-  },
-  "global": {
-    "heroPrimary": "Mehr erfahren",
-    "heroSecondary": "Besuch planen",
-    "aboutReadMore": "Mehr erfahren",
-    "homeAboutTitle": "Über Nobody Gallery",
-    "footerLine": "nobody is somebody",
-    "status": "Geöffnet Dienstag - Sonntag, 10:00 - 19:00",
-    "location": "Shanghai",
-    "openingTimes": "Öffnungszeiten",
-    "navWhatsOn": "Programm",
-    "navAbout": "Über uns",
-    "navPlanVisit": "Besuch planen",
-    "navTicketInfo": "Tickets",
-    "navShop": "Shop",
-    "newsletterTitle": "Für E-Mail-Updates anmelden",
-    "newsletterText": "Erfahren Sie als Erste von neuen Ausstellungen, Veranstaltungen, Angeboten und Neuigkeiten der Nobody Gallery.",
-    "emailPlaceholder": "E-Mail",
-    "subscribe": "Abonnieren",
-    "galleryAddress": "Adressen der Nobody Gallery: Xuhui Space, Raum 302, 3. OG, Gebäude 12, 660 Yishan Road, Xuhui District, Shanghai; Jinshan Space, 8255 Tingwei Road, Jinshan District, Shanghai.",
-    "email": "nobodygallery@163.com",
-    "instagramUrl": "https://www.instagram.com/nobodygallery/",
-    "xiaohongshuUrl": "https://xhslink.com/m/8yE2abYjyN8",
-    "heroPrimaryUrl": "exhibitions/sun-guangyi-game.html",
-    "heroSecondaryUrl": "visit/",
-    "aboutReadMoreUrl": "about/"
-  },
-  "pageIntros": {
-    "now": {
-      "title": "WHAT'S ON?",
-      "lede": "Aktuelle Ausstellungen und Projekte werden hier gesammelt; jeder Eintrag führt zu einer eigenen Detailseite."
-    },
-    "upcoming": {
-      "title": "Demnächst",
-      "lede": "Künftige Ausstellungen, Filmvorführungen, Gespräche und öffentliche Programme werden hier angekündigt."
-    },
-    "past": {
-      "title": "Vergangene Ausstellungen",
-      "lede": "Vergangene Ausstellungen und Projekte bleiben als Archiv erhalten; die Detailseiten sind weiterhin zugänglich."
-    }
-  },
-  "visit": {
-    "kicker": "Besuch",
-    "title": "Besuch planen",
-    "lede": "Besuchsinformationen: Öffnungszeiten, die zwei Galeriestandorte, Buchungshinweise und künftige Ticketlinks.",
-    "navHours": "Öffnungszeiten",
-    "navSpaces": "Adressen",
-    "navBooking": "Buchung",
-    "hoursTitle": "Öffnungszeiten",
-    "hours": [
-      {
-        "label": "Reguläre Zeiten",
-        "text": "Dienstag - Sonntag, 10:00 - 19:00"
-      },
-      {
-        "label": "Geschlossen",
-        "text": "Montag"
-      }
-    ],
-    "spacesTitle": "Adressen",
-    "spaces": [
-      {
-        "label": "Xuhui Space",
-        "text": "Room 302, 3F, Building 12, 660 Yishan Road, Xuhui District, Shanghai"
-      },
-      {
-        "label": "Jinshan Space",
-        "text": "8255 Tingwei Road, Jinshan District, Shanghai"
-      }
-    ],
-    "bookingTitle": "Buchung",
-    "bookingHtml": "<p>Aktuelle Ausstellungen sind kostenlos zugänglich. Für Gruppenführungen, Medienbesuche, Screenings und Sonderprojekte kontaktieren Sie uns bitte vorab per E-Mail.</p>",
-    "bookingButtonLabel": "E-Mail senden",
-    "bookingButtonUrl": "mailto:nobodygallery@163.com"
-  },
-  "ticket": {
-    "kicker": "Tickets",
-    "title": "Tickets",
-    "lede": "Hier werden künftige Filmvorführungen, öffentliche Programme, Künstlergespräche und Sonderprojekte gebündelt. Informationen zum freien Ausstellungseintritt stehen ebenfalls hier.",
-    "navExhibitions": "Ausstellungen",
-    "navScreenings": "Vorführungen",
-    "navEvents": "Veranstaltungen",
-    "exhibitionsTitle": "Ausstellungen",
-    "exhibitionCards": [
-      {
-        "label": "Aktuelle Ausstellung",
-        "text": "Freier Eintritt. Gruppenbesuche und Führungen bitte im Voraus anmelden."
-      },
-      {
-        "label": "Buchung",
-        "text": "Für Gruppenbesuche, Medienbesuche und besondere Arrangements schreiben Sie an nobodygallery@163.com."
-      }
-    ],
-    "screeningsTitle": "Vorführungen",
-    "screeningsHtml": "<p>Tickets für Filmvorführungen werden nach Programmbestätigung veröffentlicht. Links, Preise, Kapazitäten und Hinweise erscheinen hier.</p>",
-    "eventsTitle": "Veranstaltungen",
-    "eventsHtml": "<p>Künstlergespräche, Performances, Workshops und öffentliche Programme nutzen dieselbe Ticketstruktur und können später über Decap CMS aktualisiert werden.</p>"
-  },
-  "shop": {
-    "hero": {
-      "title": "Shop",
-      "lede": "Entdecken Sie verfügbare Werke, limitierte Editionen und Künstlerseiten der Nobody Gallery.",
-      "image": "assets/works/sun-wenming-suipian.png",
-      "imageAlt": "Sun Guangyi work, Fragments of Civilization",
-      "buttonLabel": "Künstler ansehen",
-      "buttonUrl": "#sun-guangyi"
-    },
-    "artistSection": {
-      "kicker": "Künstler",
-      "title": "Kooperierende Künstler"
-    },
-    "artists": [
-      {
-        "kicker": "G",
-        "name": "Sun Guangyi",
-        "subtitle": "Guangyi Sun",
-        "url": "artists/sun-guangyi.html",
-        "image": "assets/works/sun-wujin.png",
-        "imageAlt": "Sun Guangyi work, Endless",
-        "avatar": "assets/artist-avatars/sun-guangyi.jpg",
-        "avatarAlt": "Portrait of Sun Guangyi",
-        "buttonLabel": "Ansehen"
-      },
-      {
-        "kicker": "Demnächst",
-        "name": "Demnächst",
-        "subtitle": "Künstler-Shop",
-        "placeholder": "Künstler",
-        "buttonLabel": "Ansehen",
-        "empty": true
-      },
-      {
-        "kicker": "Demnächst",
-        "name": "Demnächst",
-        "subtitle": "Künstler-Shop",
-        "placeholder": "Künstler",
-        "buttonLabel": "Ansehen",
-        "empty": true
-      },
-      {
-        "kicker": "Demnächst",
-        "name": "Demnächst",
-        "subtitle": "Künstler-Shop",
-        "placeholder": "Künstler",
-        "buttonLabel": "Ansehen",
-        "empty": true
-      }
-    ],
-    "worksSection": {
-      "title": "Verfügbare Werke"
-    },
-    "works": [
-      {
-        "title": "宋瓷",
-        "meta": "40 x 20 cm",
-        "price": "RMB 12,000",
-        "image": "assets/works/sun-song-ci.png",
-        "imageAlt": "宋瓷 work image"
-      },
-      {
-        "title": "殇",
-        "meta": "40 x 20 cm",
-        "price": "RMB 12,000",
-        "image": "assets/works/sun-shang.png",
-        "imageAlt": "殇 work image"
-      },
-      {
-        "title": "柴庵",
-        "meta": "40 x 40 cm",
-        "price": "RMB 18,000",
-        "image": "assets/works/sun-chai-an.png",
-        "imageAlt": "柴庵 work image"
-      },
-      {
-        "title": "接火",
-        "meta": "40 x 40 cm",
-        "price": "RMB 18,000",
-        "image": "assets/works/sun-shang.png",
-        "imageAlt": "接火 work image"
-      }
-    ]
-  },
-  "artistIndex": {
-    "kicker": "Künstler A-Z",
-    "title": "Künstler",
-    "lede": "Das Künstlerverzeichnis ist von A-Z angelegt. Neue Einträge, Porträts, Links, Kurztexte und Platzhalterkarten können in Decap CMS aktualisiert werden.",
-    "items": [
-      {
-        "kicker": "G",
-        "name": "Sun Guangyi",
-        "subtitle": "Guangyi Sun",
-        "url": "artists/sun-guangyi.html",
-        "image": "assets/works/sun-wujin.png",
-        "imageAlt": "Sun Guangyi work, Endless",
-        "avatar": "assets/artist-avatars/sun-guangyi.jpg",
-        "avatarAlt": "Portrait of Sun Guangyi",
-        "buttonLabel": "Ansehen"
-      },
-      {
-        "kicker": "Demnächst",
-        "name": "Demnächst",
-        "subtitle": "Künstler-Shop",
-        "placeholder": "Künstler",
-        "buttonLabel": "Ansehen",
-        "empty": true
-      },
-      {
-        "kicker": "Demnächst",
-        "name": "Demnächst",
-        "subtitle": "Künstler-Shop",
-        "placeholder": "Künstler",
-        "buttonLabel": "Ansehen",
-        "empty": true
-      },
-      {
-        "kicker": "Demnächst",
-        "name": "Demnächst",
-        "subtitle": "Künstler-Shop",
-        "placeholder": "Künstler",
-        "buttonLabel": "Ansehen",
-        "empty": true
-      }
-    ]
-  },
-  "archiveIndex": {
-    "kicker": "Archive",
-    "title": "Ausstellungsarchiv",
-    "lede": "Das Archiv sammelt vergangene Ausstellungen. Jeder Eintrag führt zu einer eigenen Ausstellungsseite.",
-    "items": [
-      {
-        "date": "2026.03.29 - 2026.05.18",
-        "title": "Die eintausendzweite Nacht",
-        "subtitle": "Zhou Yunyi",
-        "url": "archive/one-thousand-two-nights.html",
-        "image": "assets/exhibitions/one-thousand-two-nights.jpg",
-        "imageAlt": "Plakat zu Die eintausendzweite Nacht"
-      },
-      {
-        "date": "2026.04.26 - 2026.05.31",
-        "title": "Nach der Bearbeitung der Landschaft",
-        "subtitle": "Li Canying, Luo Ziran, Mei Zhaoyin",
-        "url": "archive/landscape-after-processing.html",
-        "image": "assets/exhibitions/landscape-after-processing.jpg",
-        "imageAlt": "Plakat zu Nach der Bearbeitung der Landschaft"
-      },
-      {
-        "date": "2026.05.23 - 2026.07.08",
-        "title": "Ein Spiel von Herz und Hand",
-        "subtitle": "Sun Guangyi",
-        "url": "exhibitions/sun-guangyi-game.html",
-        "image": "assets/exhibitions/sun-guangyi-game-poster.jpg",
-        "imageAlt": "Plakat zu Ein Spiel von Herz und Hand"
-      }
-    ]
-  },
   "details": {
     "sunGuangyiGame": {
-      "kicker": "Aktuell",
-      "title": "Ein Spiel von Herz und Hand",
-      "subtitle": "The Game of Heart and Hand",
-      "image": "assets/exhibitions/sun-guangyi-game.jpg",
-      "imageAlt": "Poster for A Game of Heart and Hand",
-      "meta": [
-        {
-          "label": "Künstler",
-          "valueHtml": "<a href=\"../artists/sun-guangyi.html\">Sun Guangyi</a>"
-        },
-        {
-          "label": "Dauer",
-          "valueHtml": "23. Mai - 8. Juli 2026"
-        },
-        {
-          "label": "Eröffnung",
-          "valueHtml": "23. Mai 2026, 16:00"
-        },
-        {
-          "label": "Kuratorin",
-          "valueHtml": "Fanyi / Yi Fan"
-        }
-      ],
-      "contentHeading": "Ausstellung",
-      "contentHtml": "<p><em>Ein Spiel von Herz und Hand</em> ist eine Einzelausstellung von Sun Guangyi und vom 23. Mai bis 8. Juli 2026 im Nobody Gallery Xuhui Space zu sehen.</p><p>Diese Seite enthält Ausstellungstext, Künstlerlink, Werkliste und WeChat-Artikel. Kuratorischer Text, Installationsansichten und Presse können später ergänzt werden.</p>",
-      "externalUrl": "https://mp.weixin.qq.com/s/8H-DtUTQD0za3LijRqoHHw",
-      "externalLabel": "WeChat-Artikel",
-      "actions": [
-        {
-          "label": "Künstlerprofil",
-          "url": "artists/sun-guangyi.html"
-        },
-        {
-          "label": "Verfügbare Werke",
-          "url": "shop/#sun-guangyi"
-        }
-      ],
       "worksHeading": "Werke",
       "works": [
         {
@@ -517,32 +136,46 @@
           "image": "assets/works/sun-dunhuang.png",
           "imageAlt": "丝绸之路 2 work image"
         }
-      ]
-    },
-    "sunGuangyiArtist": {
-      "kicker": "Künstler",
-      "title": "Sun Guangyi",
-      "subtitle": "Guangyi Sun",
-      "image": "assets/artist-avatars/sun-guangyi.jpg",
-      "imageAlt": "Portrait of Sun Guangyi",
+      ],
+      "externalUrl": "https://mp.weixin.qq.com/s/8H-DtUTQD0za3LijRqoHHw",
+      "contentHtml": "<p><em>Ein Spiel von Herz und Hand</em> ist eine Einzelausstellung von Sun Guangyi und vom 23. Mai bis 8. Juli 2026 im Nobody Gallery Xuhui Space zu sehen.</p><p>Diese Seite enthält Ausstellungstext, Künstlerlink, Werkliste und WeChat-Artikel. Kuratorischer Text, Installationsansichten und Presse können später ergänzt werden.</p>",
       "meta": [
         {
-          "label": "Bio",
-          "valueHtml": "Künstlerbiografie folgt."
+          "label": "Künstler",
+          "valueHtml": "<a href=\"../artists/sun-guangyi.html\">Sun Guangyi</a>"
         },
         {
-          "label": "Werke",
-          "valueHtml": "Mixed Media / Malerei"
+          "label": "Dauer",
+          "valueHtml": "23. Mai - 8. Juli 2026"
+        },
+        {
+          "label": "Eröffnung",
+          "valueHtml": "23. Mai 2026, 16:00"
+        },
+        {
+          "label": "Kuratorin",
+          "valueHtml": "Fanyi / Yi Fan"
         }
       ],
-      "contentHeading": "Biografie",
-      "contentHtml": "<p>Diese Seite ist für Sun Guangyis Biografie, Ausbildung, Ausstellungsgeschichte, Praxisnotizen und repräsentative Werke reserviert.</p><p>Aktuelle Ausstellung: <a href=\"../exhibitions/sun-guangyi-game.html\"><em>Ein Spiel von Herz und Hand</em></a>, 23. Mai - 8. Juli 2026, Nobody Gallery Xuhui Space.</p>",
+      "externalLabel": "WeChat-Artikel",
+      "contentHeading": "Ausstellung",
+      "imageAlt": "Poster for A Game of Heart and Hand",
+      "kicker": "Aktuell",
+      "subtitle": "The Game of Heart and Hand",
+      "title": "Ein Spiel von Herz und Hand",
+      "image": "assets/exhibitions/sun-guangyi-game.jpg",
       "actions": [
+        {
+          "label": "Künstlerprofil",
+          "url": "artists/sun-guangyi.html"
+        },
         {
           "label": "Verfügbare Werke",
           "url": "shop/#sun-guangyi"
         }
-      ],
+      ]
+    },
+    "sunGuangyiArtist": {
       "worksHeading": "Verfügbare Werke",
       "works": [
         {
@@ -678,14 +311,36 @@
           "image": "assets/works/sun-dunhuang.png",
           "imageAlt": "丝绸之路 2 work image"
         }
+      ],
+      "contentHtml": "<p>Diese Seite ist für Sun Guangyis Biografie, Ausbildung, Ausstellungsgeschichte, Praxisnotizen und repräsentative Werke reserviert.</p><p>Aktuelle Ausstellung: <a href=\"../exhibitions/sun-guangyi-game.html\"><em>Ein Spiel von Herz und Hand</em></a>, 23. Mai - 8. Juli 2026, Nobody Gallery Xuhui Space.</p>",
+      "meta": [
+        {
+          "label": "Bio",
+          "valueHtml": "Künstlerbiografie folgt."
+        },
+        {
+          "label": "Werke",
+          "valueHtml": "Mixed Media / Malerei"
+        }
+      ],
+      "contentHeading": "Biografie",
+      "imageAlt": "Portrait of Sun Guangyi",
+      "kicker": "Künstler",
+      "subtitle": "Guangyi Sun",
+      "title": "Sun Guangyi",
+      "image": "assets/artist-avatars/sun-guangyi.jpg",
+      "actions": [
+        {
+          "label": "Verfügbare Werke",
+          "url": "shop/#sun-guangyi"
+        }
       ]
     },
     "oneThousandTwoNights": {
-      "kicker": "Archive",
-      "title": "Die eintausendzweite Nacht",
-      "subtitle": "One Thousand and Two Nights",
-      "image": "assets/exhibitions/one-thousand-two-nights.jpg",
-      "imageAlt": "Poster for The One Thousand and Second Night",
+      "worksHeading": "",
+      "works": [],
+      "externalUrl": "https://mp.weixin.qq.com/s/9GtFsjLOdmfY6gNeBL69bg",
+      "contentHtml": "<p><em>Die eintausendzweite Nacht</em> ist eine Einzelausstellung von Zhou Yunyi und war vom 29. März bis 18. Mai 2026 zu sehen.</p><p>Diese Seite ist für Ausstellungstext, Installationsansichten, Werke und den WeChat-Beitrag reserviert.</p>",
       "meta": [
         {
           "label": "Artist",
@@ -704,20 +359,20 @@
           "valueHtml": "范懿 / Yi Fan"
         }
       ],
-      "contentHeading": "Ausstellung",
-      "contentHtml": "<p><em>Die eintausendzweite Nacht</em> ist eine Einzelausstellung von Zhou Yunyi und war vom 29. März bis 18. Mai 2026 zu sehen.</p><p>Diese Seite ist für Ausstellungstext, Installationsansichten, Werke und den WeChat-Beitrag reserviert.</p>",
-      "externalUrl": "https://mp.weixin.qq.com/s/9GtFsjLOdmfY6gNeBL69bg",
       "externalLabel": "WeChat-Beitrag",
-      "actions": [],
-      "worksHeading": "",
-      "works": []
+      "contentHeading": "Ausstellung",
+      "imageAlt": "Poster for The One Thousand and Second Night",
+      "kicker": "Archive",
+      "subtitle": "One Thousand and Two Nights",
+      "title": "Die eintausendzweite Nacht",
+      "image": "assets/exhibitions/one-thousand-two-nights.jpg",
+      "actions": []
     },
     "landscapeAfterProcessing": {
-      "kicker": "Archive",
-      "title": "Nach der Bearbeitung der Landschaft",
-      "subtitle": "When Landscapes Were Processed",
-      "image": "assets/exhibitions/landscape-after-processing.jpg",
-      "imageAlt": "Poster for After the Landscape Is Processed",
+      "worksHeading": "",
+      "works": [],
+      "externalUrl": "https://mp.weixin.qq.com/s/2euLdwsZd1LFAsP0SL2Fhg",
+      "contentHtml": "<p><em>Nach der Bearbeitung der Landschaft</em> ist die zweite Residency-Ausstellung von Nobody Project und war vom 26. April bis 31. Mai 2026 im Nobody Gallery Jinshan Space zu sehen.</p><p>Diese Seite ist für Installationsansichten, Ausstellungstext, Werke und Pressematerialien reserviert.</p>",
       "meta": [
         {
           "label": "Artists",
@@ -736,43 +391,388 @@
           "valueHtml": "杨明月 / Yang Mingyue<br />庄泽曦 / Zhuang Zexi"
         }
       ],
-      "contentHeading": "Ausstellung",
-      "contentHtml": "<p><em>Nach der Bearbeitung der Landschaft</em> ist die zweite Residency-Ausstellung von Nobody Project und war vom 26. April bis 31. Mai 2026 im Nobody Gallery Jinshan Space zu sehen.</p><p>Diese Seite ist für Installationsansichten, Ausstellungstext, Werke und Pressematerialien reserviert.</p>",
-      "externalUrl": "https://mp.weixin.qq.com/s/2euLdwsZd1LFAsP0SL2Fhg",
       "externalLabel": "WeChat-Beitrag",
-      "actions": [],
-      "worksHeading": "",
-      "works": []
+      "contentHeading": "Ausstellung",
+      "imageAlt": "Poster for After the Landscape Is Processed",
+      "kicker": "Archive",
+      "subtitle": "When Landscapes Were Processed",
+      "title": "Nach der Bearbeitung der Landschaft",
+      "image": "assets/exhibitions/landscape-after-processing.jpg",
+      "actions": []
     },
     "upcomingExhibition": {
-      "kicker": "Demnächst",
-      "title": "Kommende Ausstellung",
-      "subtitle": "",
-      "image": "",
-      "imageAlt": "",
-      "meta": [],
-      "contentHeading": "",
-      "contentHtml": "<p>Dies ist die Platzhalterseite für eine kommende Ausstellung. Titel, Künstler, Termine, Eröffnung, Bild, kuratorischer Text und Buchungslink können hier ergänzt werden.</p>",
-      "externalUrl": "",
-      "externalLabel": "",
-      "actions": [],
       "worksHeading": "",
-      "works": []
+      "works": [],
+      "externalUrl": "",
+      "contentHtml": "<p>Dies ist die Platzhalterseite für eine kommende Ausstellung. Titel, Künstler, Termine, Eröffnung, Bild, kuratorischer Text und Buchungslink können hier ergänzt werden.</p>",
+      "meta": [],
+      "externalLabel": "",
+      "contentHeading": "",
+      "imageAlt": "",
+      "kicker": "Demnächst",
+      "subtitle": "",
+      "title": "Kommende Ausstellung",
+      "image": "",
+      "actions": []
     },
     "nobodyEditions": {
-      "kicker": "Projekt",
-      "title": "Nobody Editions",
-      "subtitle": "Eine Projektseite für limitierte Editionen, Publikationen, verwandte Objekte und langfristige Kooperationen.",
-      "image": "",
-      "imageAlt": "",
-      "meta": [],
-      "contentHeading": "Reservierte Felder",
-      "contentHtml": "<p>Eine Projektseite für limitierte Editionen, Publikationen, verwandte Objekte und langfristige Kooperationen.</p><p>Projektbeschreibung / teilnehmende Künstler / Werkliste / Preise / Kauf- oder Anfrage-Link / Projektbilder.</p>",
-      "externalUrl": "",
-      "externalLabel": "",
-      "actions": [],
       "worksHeading": "",
-      "works": []
+      "works": [],
+      "externalUrl": "",
+      "contentHtml": "<p>Eine Projektseite für limitierte Editionen, Publikationen, verwandte Objekte und langfristige Kooperationen.</p><p>Projektbeschreibung / teilnehmende Künstler / Werkliste / Preise / Kauf- oder Anfrage-Link / Projektbilder.</p>",
+      "meta": [],
+      "externalLabel": "",
+      "contentHeading": "Reservierte Felder",
+      "imageAlt": "",
+      "kicker": "Projekt",
+      "subtitle": "Eine Projektseite für limitierte Editionen, Publikationen, verwandte Objekte und langfristige Kooperationen.",
+      "title": "Nobody Editions",
+      "image": "",
+      "actions": []
+    }
+  },
+  "global": {
+    "galleryAddress": "Adressen der Nobody Gallery: Xuhui Space, Raum 302, 3. OG, Gebäude 12, 660 Yishan Road, Xuhui District, Shanghai; Jinshan Space, 8255 Tingwei Road, Jinshan District, Shanghai.",
+    "newsletterText": "Erfahren Sie als Erste von neuen Ausstellungen, Veranstaltungen, Angeboten und Neuigkeiten der Nobody Gallery.",
+    "heroPrimaryUrl": "exhibitions/sun-guangyi-game.html",
+    "heroPrimary": "Mehr erfahren",
+    "navAbout": "Über uns",
+    "homeAboutTitle": "Über Nobody Gallery",
+    "subscribe": "Abonnieren",
+    "navWhatsOn": "Programm",
+    "openingTimes": "Öffnungszeiten",
+    "xiaohongshuUrl": "linktr.ee/nobodygallery",
+    "footerLine": "nobody is somebody",
+    "status": "Geöffnet Dienstag - Sonntag, 10:00 - 19:00",
+    "heroSecondaryUrl": "visit/",
+    "location": "Shanghai",
+    "emailPlaceholder": "E-Mail",
+    "aboutReadMoreUrl": "about/",
+    "aboutReadMore": "Mehr erfahren",
+    "navShop": "Shop",
+    "heroSecondary": "Besuch planen",
+    "email": "nobodygallery@163.com",
+    "instagramUrl": "https://www.instagram.com/nobodygallery/",
+    "navTicketInfo": "Tickets",
+    "newsletterTitle": "Für E-Mail-Updates anmelden",
+    "navPlanVisit": "Besuch planen"
+  },
+  "visit": {
+    "bookingButtonUrl": "mailto:nobodygallery@163.com",
+    "bookingHtml": "<p>Aktuelle Ausstellungen sind kostenlos zugänglich. Für Gruppenführungen, Medienbesuche, Screenings und Sonderprojekte kontaktieren Sie uns bitte vorab per E-Mail.</p>",
+    "hoursTitle": "Öffnungszeiten",
+    "bookingButtonLabel": "E-Mail senden",
+    "spacesTitle": "Adressen",
+    "navHours": "Öffnungszeiten",
+    "spaces": [
+      {
+        "label": "Xuhui Space",
+        "text": "Room 302, 3F, Building 12, 660 Yishan Road, Xuhui District, Shanghai"
+      },
+      {
+        "label": "Jinshan Space",
+        "text": "8255 Tingwei Road, Jinshan District, Shanghai"
+      }
+    ],
+    "hours": [
+      {
+        "label": "Reguläre Zeiten",
+        "text": "Dienstag - Sonntag, 10:00 - 19:00"
+      },
+      {
+        "label": "Geschlossen",
+        "text": "Montag"
+      }
+    ],
+    "navSpaces": "Adressen",
+    "kicker": "Besuch",
+    "navBooking": "Buchung",
+    "title": "Besuch planen",
+    "lede": "Besuchsinformationen: Öffnungszeiten, die zwei Galeriestandorte, Buchungshinweise und künftige Ticketlinks.",
+    "bookingTitle": "Buchung"
+  },
+  "artistIndex": {
+    "kicker": "Künstler A-Z",
+    "title": "Künstler",
+    "lede": "Das Künstlerverzeichnis ist von A-Z angelegt. Neue Einträge, Porträts, Links, Kurztexte und Platzhalterkarten können in Decap CMS aktualisiert werden.",
+    "items": [
+      {
+        "buttonLabel": "Ansehen",
+        "name": "Sun Guangyi",
+        "imageAlt": "Sun Guangyi work, Endless",
+        "url": "artists/sun-guangyi.html",
+        "avatarAlt": "Portrait of Sun Guangyi",
+        "kicker": "G",
+        "subtitle": "Guangyi Sun",
+        "avatar": "assets/artist-avatars/sun-guangyi.jpg",
+        "image": "assets/works/sun-wujin.png"
+      },
+      {
+        "kicker": "Demnächst",
+        "name": "Demnächst",
+        "subtitle": "Künstler-Shop",
+        "placeholder": "Künstler",
+        "buttonLabel": "Ansehen",
+        "empty": true
+      },
+      {
+        "kicker": "Demnächst",
+        "name": "Demnächst",
+        "subtitle": "Künstler-Shop",
+        "placeholder": "Künstler",
+        "buttonLabel": "Ansehen",
+        "empty": true
+      },
+      {
+        "kicker": "Demnächst",
+        "name": "Demnächst",
+        "subtitle": "Künstler-Shop",
+        "placeholder": "Künstler",
+        "buttonLabel": "Ansehen",
+        "empty": true
+      }
+    ]
+  },
+  "ticket": {
+    "navScreenings": "Vorführungen",
+    "navExhibitions": "Ausstellungen",
+    "eventsHtml": "<p>Künstlergespräche, Performances, Workshops und öffentliche Programme nutzen dieselbe Ticketstruktur und können später über Decap CMS aktualisiert werden.</p>",
+    "screeningsHtml": "<p>Tickets für Filmvorführungen werden nach Programmbestätigung veröffentlicht. Links, Preise, Kapazitäten und Hinweise erscheinen hier.</p>",
+    "kicker": "Tickets",
+    "exhibitionsTitle": "Ausstellungen",
+    "exhibitionCards": [
+      {
+        "label": "Aktuelle Ausstellung",
+        "text": "Freier Eintritt. Gruppenbesuche und Führungen bitte im Voraus anmelden."
+      },
+      {
+        "label": "Buchung",
+        "text": "Für Gruppenbesuche, Medienbesuche und besondere Arrangements schreiben Sie an nobodygallery@163.com."
+      }
+    ],
+    "title": "Tickets",
+    "lede": "Hier werden künftige Filmvorführungen, öffentliche Programme, Künstlergespräche und Sonderprojekte gebündelt. Informationen zum freien Ausstellungseintritt stehen ebenfalls hier.",
+    "screeningsTitle": "Vorführungen",
+    "navEvents": "Veranstaltungen",
+    "eventsTitle": "Veranstaltungen"
+  },
+  "about": {
+    "storyHtml": "<p>Walter Benjamin (1892-1940), the German-born Ashkenazi Jewish philosopher, cultural critic and essayist, wrote in his final work, <em>Theses on the Philosophy of History</em>: \"It is more arduous to honour the memory of the nameless than that of the renowned. Historical construction is devoted to the memory of the nameless.\"</p><p>This sentence asks us to look at the lives and acts that rarely enter official narratives. The nameless are not absent from history; they are often the ground on which history is built.</p><p>Nobody Gallery takes that attention seriously. To remember the nameless is to resist easy labels and to recognise value before it has been validated by fame.</p>",
+    "contactButtonLabel": "Galerie kontaktieren",
+    "storyTitle": "Geschichte",
+    "homeHtml": "<p>In <em>Theses on the Philosophy of History</em>, Walter Benjamin reminds us that history is shaped not only by celebrated names, but also by people whose presence is less visible and no less essential.</p><p>At Nobody Gallery, we hold to the belief that nobody is somebody. Art should not be defined by fame; it should be carried by the force of the work itself. We support artists whose practices deserve to be seen and make room for a more open, generous art world.</p><p>The gallery welcomes artists on an ongoing basis. If your work can move people, we are ready to support it.</p>",
+    "missionTitle": "Mission",
+    "artistCallHtml": "<p>We hope to introduce artists with uncommon potential to wider audiences and collectors through the gallery platform. This is not only about discovering the value of the nobody; it is about opening the field of art to more possibilities.</p><p>Whether you are emerging or established, the work itself is what matters here. At Nobody Gallery, art is for everyone, and we believe life is art and art is life.</p><p>The gallery welcomes artist submissions and conversations throughout the year.</p>",
+    "artistCallTitle": "Künstlerbewerbungen",
+    "missionHtml": "<p>At Nobody Gallery, we believe that nobody is somebody. The meaning of art should come from the work itself, not from reputation alone. We are committed to discovering and supporting artists who have not yet been widely seen.</p><p>Here, life and art are inseparable. We believe every nobody may become somebody, because art belongs to everyone.</p><p>This is also a commitment to a more diverse and inclusive ecology for art, where artists and collectors can meet through genuine attention rather than fixed hierarchies.</p>",
+    "quote": "\"Schwerer ist es, das Gedächtnis der Namenlosen zu ehren als das der Berühmten. Die historische Konstruktion ist dem Gedächtnis der Namenlosen gewidmet.\""
+  },
+  "archiveIndex": {
+    "kicker": "Archive",
+    "title": "Ausstellungsarchiv",
+    "lede": "Das Archiv sammelt vergangene Ausstellungen. Jeder Eintrag führt zu einer eigenen Ausstellungsseite.",
+    "items": [
+      {
+        "date": "2026.03.29 - 2026.05.18",
+        "title": "Die eintausendzweite Nacht",
+        "subtitle": "Zhou Yunyi",
+        "url": "archive/one-thousand-two-nights.html",
+        "image": "assets/exhibitions/one-thousand-two-nights.jpg",
+        "imageAlt": "Plakat zu Die eintausendzweite Nacht"
+      },
+      {
+        "date": "2026.04.26 - 2026.05.31",
+        "title": "Nach der Bearbeitung der Landschaft",
+        "subtitle": "Li Canying, Luo Ziran, Mei Zhaoyin",
+        "url": "archive/landscape-after-processing.html",
+        "image": "assets/exhibitions/landscape-after-processing.jpg",
+        "imageAlt": "Plakat zu Nach der Bearbeitung der Landschaft"
+      },
+      {
+        "date": "2026.05.23 - 2026.07.08",
+        "title": "Ein Spiel von Herz und Hand",
+        "subtitle": "Sun Guangyi",
+        "url": "exhibitions/sun-guangyi-game.html",
+        "image": "assets/exhibitions/sun-guangyi-game-poster.jpg",
+        "imageAlt": "Plakat zu Ein Spiel von Herz und Hand"
+      }
+    ]
+  },
+  "pageIntros": {
+    "now": {
+      "title": "WHAT'S ON?",
+      "lede": "Aktuelle Ausstellungen und Projekte werden hier gesammelt; jeder Eintrag führt zu einer eigenen Detailseite."
+    },
+    "upcoming": {
+      "title": "Demnächst",
+      "lede": "Künftige Ausstellungen, Filmvorführungen, Gespräche und öffentliche Programme werden hier angekündigt."
+    },
+    "past": {
+      "title": "Vergangene Ausstellungen",
+      "lede": "Vergangene Ausstellungen und Projekte bleiben als Archiv erhalten; die Detailseiten sind weiterhin zugänglich."
+    }
+  },
+  "shop": {
+    "hero": {
+      "title": "Shop",
+      "lede": "Entdecken Sie verfügbare Werke, limitierte Editionen und Künstlerseiten der Nobody Gallery.",
+      "image": "assets/works/sun-wenming-suipian.png",
+      "imageAlt": "Sun Guangyi work, Fragments of Civilization",
+      "buttonLabel": "Künstler ansehen",
+      "buttonUrl": "#sun-guangyi"
+    },
+    "artistSection": {
+      "kicker": "Künstler",
+      "title": "Kooperierende Künstler"
+    },
+    "artists": [
+      {
+        "buttonLabel": "Ansehen",
+        "name": "Sun Guangyi",
+        "imageAlt": "Sun Guangyi work, Endless",
+        "url": "artists/sun-guangyi.html",
+        "avatarAlt": "Portrait of Sun Guangyi",
+        "kicker": "G",
+        "subtitle": "Guangyi Sun",
+        "avatar": "assets/artist-avatars/sun-guangyi.jpg",
+        "image": "assets/works/sun-wujin.png"
+      },
+      {
+        "kicker": "Demnächst",
+        "name": "Demnächst",
+        "subtitle": "Künstler-Shop",
+        "placeholder": "Künstler",
+        "buttonLabel": "Ansehen",
+        "empty": true
+      },
+      {
+        "kicker": "Demnächst",
+        "name": "Demnächst",
+        "subtitle": "Künstler-Shop",
+        "placeholder": "Künstler",
+        "buttonLabel": "Ansehen",
+        "empty": true
+      },
+      {
+        "kicker": "Demnächst",
+        "name": "Demnächst",
+        "subtitle": "Künstler-Shop",
+        "placeholder": "Künstler",
+        "buttonLabel": "Ansehen",
+        "empty": true
+      }
+    ],
+    "worksSection": {
+      "title": "Verfügbare Werke"
+    },
+    "works": [
+      {
+        "title": "宋瓷",
+        "meta": "40 x 20 cm",
+        "price": "RMB 12,000",
+        "image": "assets/works/sun-song-ci.png",
+        "imageAlt": "宋瓷 work image"
+      },
+      {
+        "title": "殇",
+        "meta": "40 x 20 cm",
+        "price": "RMB 12,000",
+        "image": "assets/works/sun-shang.png",
+        "imageAlt": "殇 work image"
+      },
+      {
+        "title": "柴庵",
+        "meta": "40 x 40 cm",
+        "price": "RMB 18,000",
+        "image": "assets/works/sun-chai-an.png",
+        "imageAlt": "柴庵 work image"
+      },
+      {
+        "title": "接火",
+        "meta": "40 x 40 cm",
+        "price": "RMB 18,000",
+        "image": "assets/works/sun-shang.png",
+        "imageAlt": "接火 work image"
+      }
+    ]
+  },
+  "programmes": {
+    "now": [
+      {
+        "buttonLabel": "Mehr erfahren",
+        "meta": "23. Mai - 8. Juli 2026, Xuhui Space",
+        "admission": "Freier Eintritt. Gruppenbesuche bitte im Voraus anmelden.",
+        "imageAlt": "Plakat zu Ein Spiel von Herz und Hand",
+        "url": "exhibitions/sun-guangyi-game.html",
+        "title": "Ein Spiel von Herz und Hand",
+        "type": "Aktuell",
+        "image": "assets/exhibitions/sun-guangyi-game-poster.jpg",
+        "description": "Sun Guangyis Einzelausstellung entfaltet ein Spiel des Sehens zwischen Körper, Erinnerung und Bild."
+      },
+      {
+        "buttonLabel": "Mehr erfahren",
+        "meta": "26. April - 31. Mai 2026, Jinshan Space",
+        "admission": "Freier Eintritt. Bitte prüfen Sie vor dem Besuch die Öffnungszeiten.",
+        "imageAlt": "Plakat zu Nach der Bearbeitung der Landschaft",
+        "url": "archive/landscape-after-processing.html",
+        "title": "Nach der Bearbeitung der Landschaft",
+        "type": "Projekt",
+        "image": "assets/exhibitions/landscape-after-processing.jpg",
+        "description": "Die zweite Residency-Ausstellung von Nobody Project untersucht Landschaft, Bearbeitung und Ortserfahrung."
+      }
+    ],
+    "upcoming": [
+      {
+        "type": "Demnächst",
+        "title": "Kommende Ausstellung",
+        "meta": "Termine werden bekannt gegeben",
+        "description": "Ein Platzhalter für kommende Ausstellungen, der später durch bestätigte Programmdetails ersetzt wird.",
+        "admission": "Ticket- und Buchungsinformationen werden hier aktualisiert.",
+        "placeholder": "Demnächst",
+        "url": "exhibitions/upcoming.html",
+        "buttonLabel": "Mehr erfahren"
+      },
+      {
+        "type": "Veranstaltung",
+        "title": "Filmvorführung und Künstlergespräch",
+        "meta": "Wird bekannt gegeben",
+        "description": "Ein künftiger Einstieg für Filmvorführungen, öffentliche Programme, Künstlergespräche und Veranstaltungen mit Ticket.",
+        "admission": "Ticketinformationen werden auf der Ticketseite veröffentlicht.",
+        "placeholder": "Screening",
+        "url": "ticket-info/",
+        "buttonLabel": "Tickets"
+      }
+    ],
+    "past": [
+      {
+        "type": "Vergangene Ausstellung",
+        "title": "Die eintausendzweite Nacht",
+        "meta": "29. März - 18. Mai 2026",
+        "description": "Eine Einzelausstellung von Zhou Yunyi, kuratiert von Fanyi. Vergangene Ausstellungen bleiben im Archiv zugänglich.",
+        "image": "assets/exhibitions/one-thousand-two-nights.jpg",
+        "imageAlt": "Poster for The One Thousand and Second Night",
+        "url": "archive/one-thousand-two-nights.html",
+        "buttonLabel": "Mehr erfahren"
+      },
+      {
+        "type": "Archiv",
+        "title": "Ausstellungsarchiv",
+        "meta": "Index vergangener Ausstellungen und Projekte",
+        "description": "Vergangene Ausstellungen, Residencies und interkulturelle Projekte werden im Archiv gesammelt.",
+        "image": "assets/exhibitions/sun-guangyi-game-poster.jpg",
+        "imageAlt": "Archive poster",
+        "url": "archive/",
+        "buttonLabel": "Archiv ansehen"
+      }
+    ]
+  },
+  "home": {
+    "hero": {
+      "title": "Ein Spiel von Herz und Hand",
+      "dates": "23. Mai - 8. Juli 2026",
+      "summary": "Eine Einzelausstellung von Sun Guangyi, kuratiert von Fanyi. Nobody Gallery verbindet Künstler, Werke und Besucher durch Ausstellungen, ortsbezogene Begegnungen und interkulturellen Dialog.",
+      "image": "assets/exhibitions/sun-guangyi-game.jpg",
+      "imageAlt": "Ein Spiel von Herz und Hand, Einzelausstellung von Guangyi Sun"
     }
   }
 }
