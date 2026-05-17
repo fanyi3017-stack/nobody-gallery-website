@@ -246,7 +246,7 @@ Latest content/link updates:
 - The About page contact button now reads `about.contactButtonUrl` from all three content files and points to `https://linktr.ee/nobodygallery`.
 - Decap CMS now exposes `about.contactButtonUrl` next to the contact button label.
 - What’s On programme descriptions, admission notes and page intros preserve manual line breaks from CMS text fields.
-- HTML asset query strings were bumped to `v=20260517c` after editing `styles.css` and `script.js`.
+- HTML asset query strings were bumped to `v=20260517d` after editing `styles.css` and `script.js`.
 
 Production OAuth smoke test after the Cloudflare redeploy:
 
@@ -296,7 +296,10 @@ The mobile-only CSS fixes are in `styles.css`:
 - Increased `.nav-toggle` to a 44px tall touch target.
 - Forced `.shop-artist-grid` to one column under `760px` so cooperating artist cards do not become narrow or distorted on phones.
 - Reduced mobile page/detail heading scale and added `overflow-wrap: anywhere` for long German titles such as `Ausstellungsarchiv`.
-- Bumped HTML asset query strings; the latest cache key is `v=20260517c` so mobile browsers fetch the latest CSS and JS.
+- Bumped HTML asset query strings; the latest cache key is `v=20260517d` so mobile browsers fetch the latest CSS and JS.
+- Social icons remain visible on phone widths instead of being hidden by the mobile nav CSS.
+- The email social icon copies the gallery email address to the clipboard and shows a small translucent grey confirmation toast.
+- Typography now prefers a loaded `Noto Sans SC` web font before local system fallbacks, and display headings use the same family to reduce device-specific font differences.
 
 These changes are inside the existing responsive media query and do not change the confirmed desktop layout.
 

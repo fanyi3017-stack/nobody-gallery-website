@@ -23,6 +23,7 @@ const copy = {
     newsletterTitle: "订阅邮件更新",
     newsletterText: "第一时间了解旺无名画廊的最新展览、活动、作品与新闻。",
     emailPlaceholder: "邮箱",
+    emailCopied: "邮箱已复制",
     subscribe: "订阅",
     galleryAddress:
       "旺无名画廊地址：徐汇馆，上海市徐汇区宜山路660号12幢3楼302室；金山馆，上海市金山区亭卫公路8255号。",
@@ -51,6 +52,7 @@ const copy = {
     newsletterText:
       "Be the first to hear about the latest Nobody Gallery exhibitions, events, offers and news.",
     emailPlaceholder: "Email",
+    emailCopied: "Email copied",
     subscribe: "Subscribe",
     galleryAddress:
       "Nobody Gallery addresses: Xuhui Space, Room 302, 3F, Building 12, 660 Yishan Road, Xuhui District, Shanghai; Jinshan Space, 8255 Tingwei Road, Jinshan District, Shanghai.",
@@ -79,6 +81,7 @@ const copy = {
     newsletterText:
       "Erfahren Sie als Erste von neuen Ausstellungen, Veranstaltungen, Angeboten und Neuigkeiten der Nobody Gallery.",
     emailPlaceholder: "E-Mail",
+    emailCopied: "E-Mail kopiert",
     subscribe: "Abonnieren",
     galleryAddress:
       "Adressen der Nobody Gallery: Xuhui Space, Raum 302, 3. OG, Gebäude 12, 660 Yishan Road, Xuhui District, Shanghai; Jinshan Space, 8255 Tingwei Road, Jinshan District, Shanghai.",
@@ -450,6 +453,7 @@ const originalText = new WeakMap();
 let currentLang = "zh";
 let siteData = null;
 const localizedDataFiles = {};
+let copyToastTimer;
 
 function getInitialLanguage() {
   const saved = localStorage.getItem("nobody-gallery-lang");
@@ -509,6 +513,91 @@ function publicUrl(url) {
   }
   if (url.startsWith("/")) return url;
   return new URL(url.replace(/^\.\//, ""), siteRootUrl).pathname;
+}
+
+function getActiveSiteData() {
+  return siteData ? getLocalizedData(siteData, currentLang) : null;
+}
+
+function getConfiguredEmail() {
+  return getActiveSiteData()?.global?.email || siteData?.global?.email || "nobodygallery@163.com";
+}
+
+function getEmailFromLink(link) {
+  if (link.dataset.emailAddress) return link.dataset.emailAddress;
+
+  const href = link.getAttribute("href") || "";
+  if (href.startsWith("mailto:")) {
+    return decodeURIComponent(href.replace(/^mailto:/, "").split("?")[0]);
+  }
+
+  return getConfiguredEmail();
+}
+
+async function copyTextToClipboard(text) {
+  if (navigator.clipboard?.writeText && window.isSecureContext) {
+    try {
+      await navigator.clipboard.writeText(text);
+      return;
+    } catch (error) {
+      console.warn("Clipboard API copy failed; trying fallback copy.", error);
+    }
+  }
+
+  const field = document.createElement("textarea");
+  field.value = text;
+  field.setAttribute("readonly", "");
+  field.style.position = "fixed";
+  field.style.top = "-1000px";
+  field.style.left = "-1000px";
+  document.body.append(field);
+  field.select();
+
+  try {
+    const copied = document.execCommand("copy");
+    if (!copied) throw new Error("Copy command was not accepted.");
+  } finally {
+    field.remove();
+  }
+}
+
+function showCopyToast() {
+  let toast = document.querySelector(".copy-toast");
+  if (!toast) {
+    toast = document.createElement("div");
+    toast.className = "copy-toast";
+    toast.setAttribute("role", "status");
+    toast.setAttribute("aria-live", "polite");
+    document.body.append(toast);
+  }
+
+  toast.textContent = getDictionary(currentLang).emailCopied || copy.zh.emailCopied;
+  toast.classList.add("is-visible");
+  window.clearTimeout(copyToastTimer);
+  copyToastTimer = window.setTimeout(() => {
+    toast.classList.remove("is-visible");
+  }, 1800);
+}
+
+function bindEmailCopyLinks() {
+  document.querySelectorAll('.social-links .social-icon[href^="mailto:"], .email-copy-link').forEach((link) => {
+    if (link.dataset.copyBound === "true") return;
+
+    link.classList.add("email-copy-link");
+    link.dataset.copyBound = "true";
+    link.addEventListener("click", async (event) => {
+      event.preventDefault();
+      const email = getEmailFromLink(event.currentTarget);
+
+      try {
+        await copyTextToClipboard(email);
+        showCopyToast();
+      } catch (error) {
+        console.warn("Email address could not be copied.", error);
+        window.location.href = `mailto:${email}`;
+      }
+    });
+  });
 }
 
 function escapeHtml(value = "") {
@@ -768,19 +857,20 @@ function renderEditableSections(data) {
 function updateGlobalLinks(data) {
   const global = data?.global || {};
   if (global.email) {
-    document.querySelectorAll('a[href^="mailto:"]').forEach((link) => {
+    document.querySelectorAll('a[href^="mailto:"], .email-copy-link').forEach((link) => {
       link.href = `mailto:${global.email}`;
+      link.dataset.emailAddress = global.email;
     });
   }
 
   if (global.instagramUrl) {
-    document.querySelectorAll('a[href*="instagram.com"]').forEach((link) => {
+    document.querySelectorAll('a[href*="instagram.com"], .instagram-link').forEach((link) => {
       link.href = global.instagramUrl;
     });
   }
 
   if (global.xiaohongshuUrl) {
-    document.querySelectorAll(".xhs-link").forEach((link) => {
+    document.querySelectorAll(".xhs-link, .linktree-link").forEach((link) => {
       link.href = global.xiaohongshuUrl;
     });
   }
@@ -867,22 +957,53 @@ function applyLanguage(lang, options = {}) {
   }
 }
 
-function ensureXiaohongshuLinks() {
+function createSocialIcon({ className, href, label, svg }) {
+  const anchor = document.createElement("a");
+  anchor.className = `social-icon ${className}`;
+  anchor.href = href;
+  anchor.target = "_blank";
+  anchor.rel = "noreferrer";
+  anchor.setAttribute("aria-label", label);
+  anchor.innerHTML = svg;
+  return anchor;
+}
+
+function ensureSocialLinks() {
   document.querySelectorAll(".social-links").forEach((links) => {
-    if (links.querySelector(".xhs-link")) return;
-    const anchor = document.createElement("a");
-    anchor.className = "social-icon xhs-link";
-    anchor.href = "https://xhslink.com/m/8yE2abYjyN8";
-    anchor.target = "_blank";
-    anchor.rel = "noreferrer";
-    anchor.setAttribute("aria-label", "Nobody Gallery Xiaohongshu");
-    anchor.innerHTML = `
+    if (!links.querySelector('a[href*="instagram.com"], .instagram-link')) {
+      links.append(
+        createSocialIcon({
+          className: "instagram-link",
+          href: "https://www.instagram.com/nobodygallery/",
+          label: "Nobody Gallery Instagram",
+          svg: `
       <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-        <rect x="4.5" y="5" width="15" height="14" rx="2.2" stroke-width="1.8" />
-        <path d="M8 10h8M8 14h8M10 7.5v9M14 7.5v9" stroke-width="1.6" />
+        <rect x="5" y="5" width="14" height="14" rx="4" stroke-width="1.8" />
+        <circle cx="12" cy="12" r="3.4" stroke-width="1.8" />
+        <circle cx="16.5" cy="7.5" r="0.9" fill="currentColor" />
       </svg>
-    `;
-    links.append(anchor);
+    `,
+        })
+      );
+    }
+
+    if (!links.querySelector(".xhs-link, .linktree-link")) {
+      links.append(
+        createSocialIcon({
+          className: "xhs-link linktree-link",
+          href: "https://linktr.ee/nobodygallery",
+          label: "Nobody Gallery Linktree",
+          svg: `
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M12 4v16" stroke-width="1.7" />
+        <path d="m7 7.5 5-4 5 4" stroke-width="1.7" />
+        <path d="M5.8 12h12.4M7.5 16h9" stroke-width="1.7" />
+        <path d="m8.2 9.2 3.8 2.8 3.8-2.8" stroke-width="1.7" />
+      </svg>
+    `,
+        })
+      );
+    }
   });
 }
 
@@ -979,7 +1100,8 @@ langButtons.forEach((button) => {
   button.addEventListener("click", () => applyLanguage(button.dataset.lang, { persist: true }));
 });
 
-ensureXiaohongshuLinks();
+ensureSocialLinks();
+bindEmailCopyLinks();
 ensureAddressLines();
 ensureNewsletterBlock();
 bindMailForms();
