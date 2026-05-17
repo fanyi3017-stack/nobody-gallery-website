@@ -707,7 +707,7 @@
         "url": "exhibitions/sun-guangyi-game.html",
         "title": "心手相印的游戏",
         "type": "正在展出",
-        "image": "assets/exhibitions/sun-guangyi-game-poster.jpg",
+        "image": "/assets/uploads/网页小卡.png",
         "description": "孙广义个展，以身体、记忆与图像经验展开一场“心”与“手”之间的观看游戏。"
       },
       {
@@ -717,8 +717,8 @@
         "imageAlt": "风景加工之后展览海报",
         "url": "archive/landscape-after-processing.html",
         "title": "风景加工之后",
-        "type": "项目",
-        "image": "assets/exhibitions/landscape-after-processing.jpg",
+        "type": "正在展出",
+        "image": "/assets/uploads/fj网页小卡.png",
         "description": "Nobody Project 无名计划第二期驻留展，围绕风景、加工与现场经验展开。"
       }
     ],
@@ -750,7 +750,7 @@
         "title": "第一千零二夜",
         "meta": "2026.03.29 - 2026.05.18",
         "description": "周韫仪个展，由范懿策展。历史展览进入 Archive 层级，保留详情页和微信推文入口。",
-        "image": "assets/exhibitions/one-thousand-two-nights.jpg",
+        "image": "/assets/uploads/网页小卡1q.png",
         "imageAlt": "第一千零二夜展览海报",
         "url": "archive/one-thousand-two-nights.html",
         "buttonLabel": "了解更多"
@@ -760,7 +760,7 @@
         "title": "展览档案",
         "meta": "历史展览与项目索引",
         "description": "全部历史展览、驻留项目和跨文化项目将集中进入 Archive 索引。",
-        "image": "assets/exhibitions/sun-guangyi-game-poster.jpg",
+        "image": "",
         "imageAlt": "展览档案海报",
         "url": "archive/",
         "buttonLabel": "查看档案"
