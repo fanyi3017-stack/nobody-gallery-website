@@ -639,12 +639,17 @@
         "image": "assets/works/sun-wujin.png"
       },
       {
-        "kicker": "待补充",
-        "name": "即将加入",
-        "subtitle": "艺术家商店入口",
-        "placeholder": "艺术家",
         "buttonLabel": "查看",
-        "empty": true
+        "name": "周韫仪",
+        "empty": true,
+        "imageAlt": "周韫仪作品，芽刑",
+        "url": "Yunyi Zhou",
+        "avatarAlt": "周韫仪肖像",
+        "placeholder": "艺术家",
+        "kicker": "Y",
+        "subtitle": "艺术家商店入口",
+        "avatar": "/assets/uploads/wechatimg734.jpg",
+        "image": "/assets/uploads/截屏2026-05-19-17.56.12.png"
       },
       {
         "kicker": "待补充",
