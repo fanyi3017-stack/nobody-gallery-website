@@ -696,6 +696,17 @@
         "subtitle": "Lei Ma",
         "avatar": "/assets/uploads/wechatimg742.jpg",
         "image": "/assets/uploads/wechatimg743.jpg"
+      },
+      {
+        "buttonLabel": "查看",
+        "name": "王熙然",
+        "empty": false,
+        "imageAlt": "王熙然作品，徘徊",
+        "avatarAlt": "王熙然肖像",
+        "kicker": "X",
+        "subtitle": "Xiran Wang",
+        "avatar": "/assets/uploads/wechatimg744.jpg",
+        "image": "/assets/uploads/wechatimg745.jpg"
       }
     ],
     "worksSection": {
