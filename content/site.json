@@ -652,12 +652,16 @@
         "image": "/assets/uploads/截屏2026-05-19-17.56.12.png"
       },
       {
-        "kicker": "待补充",
-        "name": "即将加入",
-        "subtitle": "艺术家商店入口",
-        "placeholder": "艺术家",
         "buttonLabel": "查看",
-        "empty": true
+        "name": "杨芮",
+        "empty": true,
+        "imageAlt": "杨芮作品，无相",
+        "avatarAlt": "杨芮肖像",
+        "placeholder": "",
+        "kicker": "R",
+        "subtitle": "Rui Yang",
+        "avatar": "/assets/uploads/wechatimg736.jpg",
+        "image": "/assets/uploads/wechatimg737.jpg"
       },
       {
         "kicker": "待补充",
