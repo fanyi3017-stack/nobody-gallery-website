@@ -762,6 +762,17 @@
         "subtitle": "Xiaoye Xv",
         "avatar": "/assets/uploads/wechatimg106.jpg",
         "image": "/assets/uploads/截屏2026-05-20-12.52.13.png"
+      },
+      {
+        "buttonLabel": "查看",
+        "name": "李阳",
+        "empty": false,
+        "imageAlt": "李阳作品，习作202468",
+        "avatarAlt": "李阳肖像",
+        "kicker": "Y",
+        "subtitle": "Yang Li",
+        "avatar": "/assets/uploads/wechatimg757.jpg",
+        "image": "/assets/uploads/wechatimg758.jpg"
       }
     ],
     "worksSection": {
