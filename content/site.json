@@ -729,6 +729,17 @@
         "subtitle": "Discoverer2045",
         "avatar": "/assets/uploads/截屏2026-05-20-11.37.45.png",
         "image": "/assets/uploads/wechatimg749.jpg"
+      },
+      {
+        "buttonLabel": "查看",
+        "name": "王岚彬",
+        "empty": false,
+        "imageAlt": "王岚彬作品，雨",
+        "avatarAlt": "王岚彬肖像",
+        "kicker": "L",
+        "subtitle": "Lanbin Wang",
+        "avatar": "/assets/uploads/wechatimg750.jpg",
+        "image": "/assets/uploads/截屏2026-05-20-11.46.23.png"
       }
     ],
     "worksSection": {
