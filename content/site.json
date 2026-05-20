@@ -664,12 +664,16 @@
         "image": "/assets/uploads/截屏2026-05-20-10.09.29.png"
       },
       {
-        "kicker": "待补充",
-        "name": "即将加入",
-        "subtitle": "艺术家商店入口",
-        "placeholder": "艺术家",
         "buttonLabel": "查看",
-        "empty": true
+        "name": "应昂",
+        "empty": true,
+        "imageAlt": "应昂作品，能指与所指7",
+        "avatarAlt": "应昂肖像",
+        "placeholder": "",
+        "kicker": "A",
+        "subtitle": "Ang Ying",
+        "avatar": "/assets/uploads/wechatimg739.jpg",
+        "image": "/assets/uploads/wechatimg738.jpg"
       }
     ],
     "worksSection": {
