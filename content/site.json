@@ -795,6 +795,17 @@
         "subtitle": "Guangyuan Liu",
         "avatar": "/assets/uploads/wechatimg759.jpg",
         "image": "/assets/uploads/截屏2026-05-20-17.55.22.png"
+      },
+      {
+        "buttonLabel": "查看",
+        "name": "杨方儿",
+        "empty": false,
+        "imageAlt": "杨方儿作品，寒虫与哀草",
+        "avatarAlt": "杨方儿肖像",
+        "kicker": "F",
+        "subtitle": "Fanger Yang",
+        "avatar": "/assets/uploads/wechatimg761.jpg",
+        "image": "/assets/uploads/wechatimg762.jpg"
       }
     ],
     "worksSection": {
