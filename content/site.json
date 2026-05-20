@@ -667,13 +667,13 @@
         "buttonLabel": "查看",
         "name": "应昂",
         "empty": true,
-        "imageAlt": "应昂作品，能指与所指7",
+        "imageAlt": "应昂作品，葡萄",
         "avatarAlt": "应昂肖像",
         "placeholder": "",
         "kicker": "A",
         "subtitle": "Ang Ying",
         "avatar": "/assets/uploads/截屏2026-05-20-10.51.42.png",
-        "image": "/assets/uploads/wechatimg738.jpg"
+        "image": "/assets/uploads/wechatimg110.jpg"
       },
       {
         "buttonLabel": "查看",
@@ -773,6 +773,17 @@
         "subtitle": "Yang Li",
         "avatar": "/assets/uploads/wechatimg757.jpg",
         "image": "/assets/uploads/wechatimg758.jpg"
+      },
+      {
+        "buttonLabel": "查看",
+        "name": "吴琼琼",
+        "empty": false,
+        "imageAlt": "吴琼琼作品，能指与所指7",
+        "avatarAlt": "吴琼琼肖像",
+        "kicker": "Q",
+        "subtitle": "Qiongqiong Wu",
+        "avatar": "/assets/uploads/wechatimg109.jpg",
+        "image": "/assets/uploads/wechatimg738.jpg"
       }
     ],
     "worksSection": {
