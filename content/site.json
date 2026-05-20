@@ -674,6 +674,17 @@
         "subtitle": "Ang Ying",
         "avatar": "/assets/uploads/截屏2026-05-20-10.51.42.png",
         "image": "/assets/uploads/wechatimg738.jpg"
+      },
+      {
+        "buttonLabel": "查看",
+        "name": "龙彦西",
+        "empty": false,
+        "imageAlt": "龙彦西作品，to be or not to be",
+        "avatarAlt": "龙彦西肖像",
+        "kicker": "Y",
+        "subtitle": "Yanxi Long",
+        "avatar": "/assets/uploads/wechatimg740.jpg",
+        "image": "/assets/uploads/wechatimg741.jpg"
       }
     ],
     "worksSection": {
