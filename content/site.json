@@ -707,6 +707,17 @@
         "subtitle": "Xiran Wang",
         "avatar": "/assets/uploads/wechatimg744.jpg",
         "image": "/assets/uploads/wechatimg745.jpg"
+      },
+      {
+        "buttonLabel": "查看",
+        "name": "马傲",
+        "empty": false,
+        "imageAlt": "马傲作品，知音难觅",
+        "avatarAlt": "马傲肖像",
+        "kicker": "A",
+        "subtitle": "Ma Ao",
+        "avatar": "/assets/uploads/wechatimg746.jpg",
+        "image": "/assets/uploads/wechatimg747.jpg"
       }
     ],
     "worksSection": {
