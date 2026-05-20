@@ -685,6 +685,17 @@
         "subtitle": "Yanxi Long",
         "avatar": "/assets/uploads/wechatimg740.jpg",
         "image": "/assets/uploads/wechatimg741.jpg"
+      },
+      {
+        "buttonLabel": "查看",
+        "name": "马雷",
+        "empty": false,
+        "imageAlt": "马雷作品，素色生长",
+        "avatarAlt": "马雷肖像",
+        "kicker": "L",
+        "subtitle": "Lei Ma",
+        "avatar": "/assets/uploads/wechatimg742.jpg",
+        "image": "/assets/uploads/wechatimg743.jpg"
       }
     ],
     "worksSection": {
