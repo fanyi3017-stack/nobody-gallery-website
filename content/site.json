@@ -751,6 +751,17 @@
         "subtitle": "Jianeng Huang",
         "avatar": "/assets/uploads/wechatimg751.jpg",
         "image": "/assets/uploads/wechatimg752.jpg"
+      },
+      {
+        "buttonLabel": "查看",
+        "name": "徐小叶",
+        "empty": false,
+        "imageAlt": "徐小叶作品，角色3",
+        "avatarAlt": "徐小叶肖像",
+        "kicker": "X",
+        "subtitle": "Xiaoye Xv",
+        "avatar": "/assets/uploads/wechatimg106.jpg",
+        "image": "/assets/uploads/截屏2026-05-20-12.52.13.png"
       }
     ],
     "worksSection": {
