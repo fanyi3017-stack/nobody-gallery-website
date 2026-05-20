@@ -784,6 +784,17 @@
         "subtitle": "Qiongqiong Wu",
         "avatar": "/assets/uploads/截屏2026-05-20-17.36.19.png",
         "image": "/assets/uploads/wechatimg738.jpg"
+      },
+      {
+        "buttonLabel": "查看",
+        "name": "刘光远",
+        "empty": false,
+        "imageAlt": "刘光远作品，猫系列之跃",
+        "avatarAlt": "刘光远肖像",
+        "kicker": "G",
+        "subtitle": "Guangyuan Liu",
+        "avatar": "/assets/uploads/wechatimg759.jpg",
+        "image": "/assets/uploads/wechatimg760.jpg"
       }
     ],
     "worksSection": {
