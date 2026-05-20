@@ -740,6 +740,17 @@
         "subtitle": "Lanbin Wang",
         "avatar": "/assets/uploads/截屏2026-05-20-11.48.43.png",
         "image": "/assets/uploads/截屏2026-05-20-11.46.23.png"
+      },
+      {
+        "buttonLabel": "查看",
+        "name": "黄嘉能",
+        "empty": false,
+        "imageAlt": "黄嘉能作品，手",
+        "avatarAlt": "黄嘉能肖像",
+        "kicker": "J",
+        "subtitle": "Jianeng Huang",
+        "avatar": "/assets/uploads/wechatimg751.jpg",
+        "image": "/assets/uploads/wechatimg752.jpg"
       }
     ],
     "worksSection": {
