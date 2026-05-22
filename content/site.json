@@ -916,6 +916,17 @@
         "subtitle": "Jingjing Song",
         "avatar": "/assets/uploads/wechatimg786.jpg",
         "image": "/assets/uploads/wechatimg787.jpg"
+      },
+      {
+        "buttonLabel": "查看",
+        "name": "张图为",
+        "empty": false,
+        "imageAlt": "张图为作品，许愿池",
+        "avatarAlt": "张图为肖像",
+        "kicker": "T",
+        "subtitle": "Tuwei Zhang",
+        "avatar": "/assets/uploads/wechatimg788.jpg",
+        "image": "/assets/uploads/wechatimg789.jpg"
       }
     ],
     "worksSection": {
