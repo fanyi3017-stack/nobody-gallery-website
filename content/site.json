@@ -894,6 +894,17 @@
         "subtitle": "Shun Zong",
         "avatar": "/assets/uploads/wechatimg484.jpg",
         "image": "/assets/uploads/wechatimg783.jpg"
+      },
+      {
+        "buttonLabel": "查看",
+        "name": "李翔",
+        "empty": false,
+        "imageAlt": "李翔作品，杂交",
+        "avatarAlt": "李翔肖像",
+        "kicker": "X",
+        "subtitle": "Xiang Li",
+        "avatar": "/assets/uploads/wechatimg784.jpg",
+        "image": "/assets/uploads/wechatimg785.jpg"
       }
     ],
     "worksSection": {
