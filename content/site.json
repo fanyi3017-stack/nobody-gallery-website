@@ -883,6 +883,17 @@
         "subtitle": "Zhang Kai",
         "avatar": "/assets/uploads/wechatimg781.jpg",
         "image": "/assets/uploads/wechatimg782.jpg"
+      },
+      {
+        "buttonLabel": "查看",
+        "name": "宗顺",
+        "empty": false,
+        "imageAlt": "宗顺作品，渔翁的序曲",
+        "avatarAlt": "宗顺肖像",
+        "kicker": "S",
+        "subtitle": "Shun Zong",
+        "avatar": "/assets/uploads/wechatimg484.jpg",
+        "image": "/assets/uploads/wechatimg783.jpg"
       }
     ],
     "worksSection": {
