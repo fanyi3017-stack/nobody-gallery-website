@@ -817,6 +817,17 @@
         "subtitle": "Jichen Lu",
         "avatar": "/assets/uploads/wechatimg768.jpg",
         "image": "/assets/uploads/wechatimg769.jpg"
+      },
+      {
+        "buttonLabel": "查看",
+        "name": "李俊明",
+        "empty": false,
+        "imageAlt": "李俊明作品，《缠绕》-失明者",
+        "avatarAlt": "李俊明肖像",
+        "kicker": "J",
+        "subtitle": "Junming Li",
+        "avatar": "/assets/uploads/wechatimg771.jpg",
+        "image": "/assets/uploads/截屏2026-05-22-13.48.39.png"
       }
     ],
     "worksSection": {
