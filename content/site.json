@@ -806,6 +806,17 @@
         "subtitle": "Fanger Yang",
         "avatar": "/assets/uploads/wechatimg761.jpg",
         "image": "/assets/uploads/wechatimg762.jpg"
+      },
+      {
+        "buttonLabel": "查看",
+        "name": "路济尘",
+        "empty": false,
+        "imageAlt": "路济尘作品，风景",
+        "avatarAlt": "路济尘肖像",
+        "kicker": "J",
+        "subtitle": "Jichen Lu",
+        "avatar": "/assets/uploads/wechatimg768.jpg",
+        "image": "/assets/uploads/wechatimg769.jpg"
       }
     ],
     "worksSection": {
