@@ -828,6 +828,17 @@
         "subtitle": "Junming Li",
         "avatar": "/assets/uploads/wechatimg771.jpg",
         "image": "/assets/uploads/截屏2026-05-22-13.48.39.png"
+      },
+      {
+        "buttonLabel": "查看",
+        "name": "吴思麒",
+        "empty": false,
+        "imageAlt": "吴思麒作品，盛满星星的湖泊长出了萝卜",
+        "avatarAlt": "吴思麒肖像",
+        "kicker": "S",
+        "subtitle": "Siqi Wu",
+        "avatar": "/assets/uploads/wechatimg774.jpg",
+        "image": "/assets/uploads/wechatimg773.jpg"
       }
     ],
     "worksSection": {
