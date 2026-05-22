@@ -861,6 +861,17 @@
         "subtitle": "Jiajia Zhang",
         "avatar": "/assets/uploads/wechatimg777.jpg",
         "image": "/assets/uploads/wechatimg778.jpg"
+      },
+      {
+        "buttonLabel": "查看",
+        "name": "廖湘展",
+        "empty": false,
+        "imageAlt": "廖湘展作品，你曾说条条道路通罗马",
+        "avatarAlt": "廖湘展作品",
+        "kicker": "X",
+        "subtitle": "Xiangzhan Liao",
+        "avatar": "/assets/uploads/wechatimg779.jpg",
+        "image": "/assets/uploads/wechatimg780.jpg"
       }
     ],
     "worksSection": {
