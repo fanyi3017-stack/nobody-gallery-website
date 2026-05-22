@@ -872,6 +872,17 @@
         "subtitle": "Xiangzhan Liao",
         "avatar": "/assets/uploads/wechatimg779.jpg",
         "image": "/assets/uploads/wechatimg780.jpg"
+      },
+      {
+        "buttonLabel": "查看",
+        "name": "张开",
+        "empty": false,
+        "imageAlt": "张开作品，青春 Youth A608012424",
+        "avatarAlt": "张开肖像",
+        "kicker": "K",
+        "subtitle": "Zhang Kai",
+        "avatar": "/assets/uploads/wechatimg781.jpg",
+        "image": "/assets/uploads/wechatimg782.jpg"
       }
     ],
     "worksSection": {
