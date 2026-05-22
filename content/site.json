@@ -850,6 +850,17 @@
         "subtitle": "Junqiao Len",
         "avatar": "/assets/uploads/wechatimg775.jpg",
         "image": "/assets/uploads/wechatimg776.jpg"
+      },
+      {
+        "buttonLabel": "查看",
+        "name": "张佳佳",
+        "empty": false,
+        "imageAlt": "张佳佳作品，夜间百合",
+        "avatarAlt": "张佳佳肖像",
+        "kicker": "J",
+        "subtitle": "Jiajia Zhang",
+        "avatar": "/assets/uploads/wechatimg777.jpg",
+        "image": "/assets/uploads/wechatimg778.jpg"
       }
     ],
     "worksSection": {
