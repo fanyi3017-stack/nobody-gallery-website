@@ -905,6 +905,17 @@
         "subtitle": "Xiang Li",
         "avatar": "/assets/uploads/wechatimg784.jpg",
         "image": "/assets/uploads/wechatimg785.jpg"
+      },
+      {
+        "buttonLabel": "查看",
+        "name": "宋晶晶",
+        "empty": false,
+        "imageAlt": "宋晶晶作品，黄兴湖岸",
+        "avatarAlt": "宋晶晶肖像",
+        "kicker": "J",
+        "subtitle": "Jingjing Song",
+        "avatar": "/assets/uploads/wechatimg786.jpg",
+        "image": "/assets/uploads/wechatimg787.jpg"
       }
     ],
     "worksSection": {
