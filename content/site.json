@@ -839,6 +839,17 @@
         "subtitle": "Siqi Wu",
         "avatar": "/assets/uploads/wechatimg774.jpg",
         "image": "/assets/uploads/wechatimg773.jpg"
+      },
+      {
+        "buttonLabel": "查看",
+        "name": "冷俊乔",
+        "empty": false,
+        "imageAlt": "冷俊乔作品，房屋云朵河流",
+        "avatarAlt": "冷俊乔肖像",
+        "kicker": "J",
+        "subtitle": "Junqiao Len",
+        "avatar": "/assets/uploads/wechatimg775.jpg",
+        "image": "/assets/uploads/wechatimg776.jpg"
       }
     ],
     "worksSection": {
