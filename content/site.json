@@ -949,6 +949,17 @@
         "subtitle": "Qian Guo",
         "avatar": "/assets/uploads/wechatimg791.jpg",
         "image": "/assets/uploads/截屏2026-05-23-11.57.58.png"
+      },
+      {
+        "buttonLabel": "查看",
+        "name": "韦宇芊",
+        "empty": false,
+        "imageAlt": "韦宇芊作品，作影乐•隙间",
+        "avatarAlt": "韦宇芊肖像",
+        "kicker": "Y",
+        "subtitle": "Yuqian Wei",
+        "avatar": "/assets/uploads/wechatimg792.jpg",
+        "image": "/assets/uploads/wechatimg793.jpg"
       }
     ],
     "worksSection": {
