@@ -1004,6 +1004,17 @@
         "subtitle": "Shiyin Li",
         "avatar": "/assets/uploads/wechatimg803.jpg",
         "image": "/assets/uploads/wechatimg804.jpg"
+      },
+      {
+        "buttonLabel": "查看",
+        "name": "云志宇",
+        "empty": false,
+        "imageAlt": "云志宇作品，雾霭小夜曲",
+        "avatarAlt": "云志宇肖像",
+        "kicker": "Z",
+        "subtitle": "Zhiyu Yun",
+        "avatar": "/assets/uploads/wechatimg805.jpg",
+        "image": "/assets/uploads/wechatimg806.jpg"
       }
     ],
     "worksSection": {
