@@ -971,6 +971,17 @@
         "subtitle": "Xinyuan Nan",
         "avatar": "/assets/uploads/wechatimg796.jpg",
         "image": "/assets/uploads/wechatimg797-1.jpg"
+      },
+      {
+        "buttonLabel": "查看",
+        "name": "董婧",
+        "empty": false,
+        "imageAlt": "董婧作品，无言",
+        "avatarAlt": "董婧肖像",
+        "kicker": "J",
+        "subtitle": "Jing Dong",
+        "avatar": "/assets/uploads/wechatimg798.jpg",
+        "image": "/assets/uploads/wechatimg799.jpg"
       }
     ],
     "worksSection": {
