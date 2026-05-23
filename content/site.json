@@ -993,6 +993,17 @@
         "subtitle": "ACAD",
         "avatar": "/assets/uploads/wechatimg800.jpg",
         "image": "/assets/uploads/wechatimg801.jpg"
+      },
+      {
+        "buttonLabel": "查看",
+        "name": "李诗音",
+        "empty": false,
+        "imageAlt": "李诗音作品，透明国贵妃娘娘的府邸",
+        "avatarAlt": "李诗音肖像",
+        "kicker": "S",
+        "subtitle": "Shiyin Li",
+        "avatar": "/assets/uploads/wechatimg803.jpg",
+        "image": "/assets/uploads/wechatimg804.jpg"
       }
     ],
     "worksSection": {
