@@ -1015,6 +1015,17 @@
         "subtitle": "Zhiyu Yun",
         "avatar": "/assets/uploads/wechatimg805.jpg",
         "image": "/assets/uploads/wechatimg806.jpg"
+      },
+      {
+        "buttonLabel": "查看",
+        "name": "汪文韬",
+        "empty": false,
+        "imageAlt": "汪文韬作品，在梦⾥尾焰拖拽着危险",
+        "avatarAlt": "汪文韬肖像",
+        "kicker": "W",
+        "subtitle": "Wentao Wang",
+        "avatar": "/assets/uploads/wechatimg807.jpg",
+        "image": "/assets/uploads/截屏2026-05-23-16.50.12.png"
       }
     ],
     "worksSection": {
