@@ -982,6 +982,17 @@
         "subtitle": "Jing Dong",
         "avatar": "/assets/uploads/wechatimg798.jpg",
         "image": "/assets/uploads/wechatimg799.jpg"
+      },
+      {
+        "buttonLabel": "查看",
+        "name": "阿猫阿狗ACAD",
+        "empty": false,
+        "imageAlt": "阿猫阿狗ACAD作品，情人的像素转化",
+        "avatarAlt": "阿猫阿狗ACAD肖像",
+        "kicker": "A",
+        "subtitle": "ACAD",
+        "avatar": "/assets/uploads/wechatimg800.jpg",
+        "image": "/assets/uploads/wechatimg801.jpg"
       }
     ],
     "worksSection": {
