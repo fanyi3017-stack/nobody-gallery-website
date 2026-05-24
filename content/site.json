@@ -1059,6 +1059,17 @@
         "subtitle": "Yutian Deng",
         "avatar": "/assets/uploads/wechatimg823.jpg",
         "image": "/assets/uploads/wechatimg824.jpg"
+      },
+      {
+        "buttonLabel": "查看",
+        "name": "王文涛",
+        "empty": false,
+        "imageAlt": "王文涛作品，争斗",
+        "avatarAlt": "王文涛肖像",
+        "kicker": "W",
+        "subtitle": "Wentao Wang",
+        "avatar": "/assets/uploads/wechatimg825.jpg",
+        "image": "/assets/uploads/wechatimg826.jpg"
       }
     ],
     "worksSection": {
