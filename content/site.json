@@ -1048,6 +1048,17 @@
         "subtitle": "Lu Ma",
         "avatar": "/assets/uploads/wechatimg821.jpg",
         "image": "/assets/uploads/wechatimg822.jpg"
+      },
+      {
+        "buttonLabel": "查看",
+        "name": "邓雨田",
+        "empty": false,
+        "imageAlt": "邓雨田作品，蜗⻆之争",
+        "avatarAlt": "邓雨田肖像",
+        "kicker": "Y",
+        "subtitle": "Yutian Deng",
+        "avatar": "/assets/uploads/wechatimg823.jpg",
+        "image": "/assets/uploads/wechatimg824.jpg"
       }
     ],
     "worksSection": {
