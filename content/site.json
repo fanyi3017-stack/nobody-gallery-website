@@ -1026,6 +1026,17 @@
         "subtitle": "Wentao Wang",
         "avatar": "/assets/uploads/wechatimg807.jpg",
         "image": "/assets/uploads/截屏2026-05-23-16.50.12.png"
+      },
+      {
+        "buttonLabel": "查看",
+        "name": "公柯彤",
+        "empty": false,
+        "imageAlt": "公柯彤作品，在当下寻一个赤诚的表达",
+        "avatarAlt": "公柯彤肖像",
+        "kicker": "K",
+        "subtitle": "Ketong Gong",
+        "avatar": "/assets/uploads/wechatimg818.jpg",
+        "image": "/assets/uploads/wechatimg819.jpg"
       }
     ],
     "worksSection": {
