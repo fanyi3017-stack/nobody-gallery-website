@@ -1037,6 +1037,17 @@
         "subtitle": "Ketong Gong",
         "avatar": "/assets/uploads/wechatimg818.jpg",
         "image": "/assets/uploads/wechatimg819.jpg"
+      },
+      {
+        "buttonLabel": "查看",
+        "name": "马陆",
+        "empty": false,
+        "imageAlt": "马陆作品，春之色",
+        "avatarAlt": "马陆肖像",
+        "kicker": "L",
+        "subtitle": "Lu Ma",
+        "avatar": "/assets/uploads/wechatimg821.jpg",
+        "image": "/assets/uploads/wechatimg822.jpg"
       }
     ],
     "worksSection": {
