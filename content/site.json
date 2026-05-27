@@ -1092,6 +1092,17 @@
         "subtitle": "Long Hao",
         "avatar": "/assets/uploads/截屏2026-05-27-17.47.57.png",
         "image": "/assets/uploads/截屏2026-05-27-17.43.42.png"
+      },
+      {
+        "buttonLabel": "查看",
+        "name": "李华",
+        "empty": false,
+        "imageAlt": "李华作品，",
+        "avatarAlt": "李华肖像",
+        "kicker": "H",
+        "subtitle": "Hua Li",
+        "avatar": "/assets/uploads/wechatimg835.jpg",
+        "image": "/assets/uploads/截屏2026-05-27-17.53.52.png"
       }
     ],
     "worksSection": {
