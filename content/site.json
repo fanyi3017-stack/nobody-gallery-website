@@ -1070,6 +1070,17 @@
         "subtitle": "Wentao Wang",
         "avatar": "/assets/uploads/wechatimg825.jpg",
         "image": "/assets/uploads/wechatimg826.jpg"
+      },
+      {
+        "buttonLabel": "查看",
+        "name": "樊海平",
+        "empty": false,
+        "imageAlt": "樊海平作品，像由心生系列像",
+        "avatarAlt": "樊海平肖像",
+        "kicker": "H",
+        "subtitle": "Haiping Fan",
+        "avatar": "/assets/uploads/wechatimg833.jpg",
+        "image": "/assets/uploads/截屏2026-05-27-17.36.55.png"
       }
     ],
     "worksSection": {
