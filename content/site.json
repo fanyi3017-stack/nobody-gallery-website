@@ -1081,6 +1081,17 @@
         "subtitle": "Haiping Fan",
         "avatar": "/assets/uploads/wechatimg833.jpg",
         "image": "/assets/uploads/截屏2026-05-27-17.36.55.png"
+      },
+      {
+        "buttonLabel": "查看",
+        "name": "郝龙",
+        "empty": false,
+        "imageAlt": "郝龙作品，倒下的树",
+        "avatarAlt": "郝龙肖像",
+        "kicker": "L",
+        "subtitle": "Long Hao",
+        "avatar": "/assets/uploads/截屏2026-05-27-17.47.57.png",
+        "image": "/assets/uploads/截屏2026-05-27-17.43.42.png"
       }
     ],
     "worksSection": {
