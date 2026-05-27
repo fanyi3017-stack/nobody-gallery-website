@@ -1103,6 +1103,17 @@
         "subtitle": "Hua Li",
         "avatar": "/assets/uploads/wechatimg835.jpg",
         "image": "/assets/uploads/截屏2026-05-27-17.53.52.png"
+      },
+      {
+        "buttonLabel": "查看",
+        "name": "李慶隆",
+        "empty": false,
+        "imageAlt": "李慶隆作品，草木灰",
+        "avatarAlt": "李慶隆肖像",
+        "kicker": "Q",
+        "subtitle": "Qinglong Li",
+        "avatar": "/assets/uploads/wechatimg836.jpg",
+        "image": "/assets/uploads/截屏2026-05-27-18.01.02.png"
       }
     ],
     "worksSection": {
