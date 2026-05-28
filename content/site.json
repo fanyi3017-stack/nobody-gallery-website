@@ -1114,6 +1114,17 @@
         "subtitle": "Qinglong Li",
         "avatar": "/assets/uploads/wechatimg836.jpg",
         "image": "/assets/uploads/截屏2026-05-27-18.01.02.png"
+      },
+      {
+        "buttonLabel": "查看",
+        "name": "陈翔宇",
+        "empty": false,
+        "imageAlt": "陈翔宇作品，花之灵 4",
+        "avatarAlt": "陈翔宇肖像",
+        "kicker": "X",
+        "subtitle": "Xiangyu Chen",
+        "avatar": "/assets/uploads/wechatimg844.jpg",
+        "image": "/assets/uploads/截屏2026-05-28-11.04.43.png"
       }
     ],
     "worksSection": {
