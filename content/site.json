@@ -1125,6 +1125,17 @@
         "subtitle": "Xiangyu Chen",
         "avatar": "/assets/uploads/wechatimg844.jpg",
         "image": "/assets/uploads/截屏2026-05-28-11.04.43.png"
+      },
+      {
+        "buttonLabel": "查看",
+        "name": "孙昊",
+        "empty": false,
+        "imageAlt": "孙昊作品，猫1",
+        "avatarAlt": "孙昊肖像",
+        "kicker": "H",
+        "subtitle": "Hao Sun",
+        "avatar": "/assets/uploads/截屏2026-06-03-11.11.24.png",
+        "image": "/assets/uploads/wechatimg871.jpg"
       }
     ],
     "worksSection": {
